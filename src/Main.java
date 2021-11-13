@@ -1,4 +1,3 @@
-import accommondations.Accommondation;
 import communication.Messenger;
 import users.Broker;
 import users.User;

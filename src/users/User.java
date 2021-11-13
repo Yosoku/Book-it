@@ -1,6 +1,7 @@
 package users;
 
 import communication.Message;
+import communication.Review;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ public abstract class User {
     protected String email;
     protected Gender gender;
     protected String phone;
+    protected List<Review> writtenReviews; // Reviews the User writes in other accommodations
 
     public User(String name, int age, String username, String email, Gender gender, String phone) {
         this.name = name;
@@ -27,6 +29,8 @@ public abstract class User {
         this.gender = gender;
         this.phone = phone;
         inbox = new ArrayList<Message>();
+        writtenReviews = new ArrayList<Review>();
+
     }
 
 
@@ -85,19 +89,24 @@ public abstract class User {
             inbox.add(message);
     }
 
-    public void viewAllMessages()
+    public List<Message> viewAllMessages()
     {
-        for(Message m : inbox)
-            System.out.println(m.getContents());
+        return inbox;
     }
 
-    public void viewUnseenMessages()
+    public List<Message> viewUnseenMessages()
     {
+        List<Message> temp = new ArrayList<Message>();
         for(Message m : inbox)
         {
             if(!m.isSeen())
-                System.out.println(m);
+                temp.add(m);
         }
+        return temp;
+    }
+
+    public List<Review> readAllReviews(){
+        return writtenReviews;
     }
 
 }

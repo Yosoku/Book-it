@@ -1,28 +1,34 @@
-package accommondations;
+package accommodations;
 
+import communication.Review;
 import users.User;
 
 import javax.swing.*;
-import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 
 
-public class Accommondation {
+public class Accommodation {
+
     private int space; // square meters
     private String address;
     private User owner; // Owner can be either a broker or just another user
     private List<ImageIcon> images;
-    private String description;
-    //private List<Review> reviews;
+    private String description;    //Brief description of the accomodation
+    private List<Review> reviews; // User reviews
+
+
+
     //calendar sth
 
 
-    public Accommondation(int space, String address, User owner, List<ImageIcon> images, String description) {
+    public Accommodation(int space, String address, User owner, List<ImageIcon> images, String description) {
         this.space = space;
         this.address = address;
         this.owner = owner;
         this.images = images;
         this.description = description;
+        reviews = new ArrayList<Review>();
     }
 
     //========================== Getters & Setters =============================================
@@ -64,6 +70,13 @@ public class Accommondation {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<Review> getReviews() {
+        return reviews;
+    }
+    public void addReview(Review rev){
+        reviews.add(rev);
     }
 
     @Override

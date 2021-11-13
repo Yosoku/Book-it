@@ -1,17 +1,17 @@
 package users;
 
-import accommondations.Accommondation;
+import accommodations.Accommodation;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Customer extends User{
 
-    private List<Accommondation> favorites;
+    private List<Accommodation> favorites;
 
     public Customer(String name, int age, String username, String email, Gender gender, String phone) {
         super(name, age, username, email, gender, phone);
-        favorites = new ArrayList<Accommondation>();
+        favorites = new ArrayList<Accommodation>();
     }
 
     @Override
