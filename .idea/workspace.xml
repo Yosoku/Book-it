@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/accommondations/Accommondation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/Broker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +18,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Edward Koulakidis" />
         <option value="Edward" />
       </list>
     </option>
