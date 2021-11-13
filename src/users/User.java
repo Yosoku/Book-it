@@ -1,12 +1,17 @@
 package users;
 
+import communication.Message;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class User {
 
 
     public enum Gender {
         MALE,FEMALE
     }
-
+    protected List<Message> inbox;
     protected String name;
     protected int age;
     protected String username;
@@ -21,6 +26,7 @@ public abstract class User {
         this.email = email;
         this.gender = gender;
         this.phone = phone;
+        inbox = new ArrayList<Message>();
     }
 
 
@@ -74,5 +80,24 @@ public abstract class User {
         this.phone = phone;
     }
 
+    public void addMessage(Message message){
+        if(message!=null)
+            inbox.add(message);
+    }
+
+    public void viewAllMessages()
+    {
+        for(Message m : inbox)
+            System.out.println(m.getContents());
+    }
+
+    public void viewUnseenMessages()
+    {
+        for(Message m : inbox)
+        {
+            if(!m.isSeen())
+                System.out.println(m);
+        }
+    }
 
 }
