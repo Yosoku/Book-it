@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/accommodations/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accommondations/Accommondation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Accommodation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Accommodation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Accommodation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Broker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
     </list>
