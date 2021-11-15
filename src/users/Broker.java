@@ -1,12 +1,14 @@
 package users;
 
-public class Broker extends User{
-    private String company;
+public class Broker extends User {
+    private final String company;
 
-    public Broker(String name, int age, String username, String email, Gender gender, String phone,String company) {
-        super(name, age, username, email, gender, phone);
-        this.company = this.company;
+    public Broker(String name, int age, String username, String email, Gender gender, String phone, String password, String company) {
+        super(name, age, username, email, gender, phone, password);
+        this.company = company;
+
     }
+
 
     @Override
     public String toString() {

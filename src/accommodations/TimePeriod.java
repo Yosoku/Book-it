@@ -1,6 +1,5 @@
 package accommodations;
 
-import java.sql.Time;
 import java.time.LocalDateTime;
 
 public class TimePeriod implements Comparable<TimePeriod> {
@@ -44,15 +43,14 @@ public class TimePeriod implements Comparable<TimePeriod> {
         {
             if (end.isBefore(other.start)) // -------[]---(----
                 return false;
-            if (end.isAfter(other.start)) // ---[--(---]---
-                return true;
+            // ---[--(---]---
+            return end.isAfter(other.start);
         } else {                           // ----(--[
             if (other.end.isBefore(start)) // ---(--)--[--]
                 return false;
-            if (start.isBefore(other.end)) // ---(-[--)-]
-                return true;
+            // ---(-[--)-]
+            return start.isBefore(other.end);
         }
-        return false;
     }
 
     public LocalDateTime getStart() {

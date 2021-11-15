@@ -4,10 +4,8 @@ import communication.Review;
 import users.User;
 
 import javax.swing.*;
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.TreeSet;
 
 
@@ -18,11 +16,11 @@ public class Accommodation {
     private User owner; // Owner can be either a broker or just another user
     private List<ImageIcon> images;
     private String description;    //Brief description of the accommodation
-    private List<Review> reviews; // User reviews
-    private int price; // Price per night
+    private final List<Review> reviews; // User reviews
+    private final int price; // Price per night
     private boolean available; // Availability of the accommodation depending on renovations etc
-    private List<Reservation> reservations;
-    private TreeSet<TimePeriod> calendar;
+    private final List<Reservation> reservations;
+    private final TreeSet<TimePeriod> calendar;
 
     //calendar sth
 
@@ -111,8 +109,6 @@ public class Accommodation {
         return reservations;
     }
 
-    ;
-
     //==================================================================================================================
 
     public void addReservation(Reservation newReservation) {
@@ -146,8 +142,7 @@ public class Accommodation {
             if (calendar.isEmpty())
                 return false;
         } else {
-            if (period.intersects(temp))
-                return true;
+            return period.intersects(temp);
         }
         return false;
     }
