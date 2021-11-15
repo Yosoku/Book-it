@@ -12,24 +12,27 @@ public abstract class User {
     public enum Gender {
         MALE,FEMALE
     }
+
     protected List<Message> inbox;
     protected String name;
     protected int age;
     protected String username;
+    protected String password;
     protected String email;
     protected Gender gender;
     protected String phone;
-    protected List<Review> writtenReviews; // Reviews the User writes in other accommodations
 
-    public User(String name, int age, String username, String email, Gender gender, String phone) {
+
+    public User(String name, int age, String username, String email, Gender gender, String phone, String password) {
         this.name = name;
         this.age = age;
         this.username = username;
         this.email = email;
         this.gender = gender;
         this.phone = phone;
+        this.password = password;
         inbox = new ArrayList<Message>();
-        writtenReviews = new ArrayList<Review>();
+
 
     }
 
@@ -105,8 +108,5 @@ public abstract class User {
         return temp;
     }
 
-    public List<Review> readAllReviews(){
-        return writtenReviews;
-    }
 
 }
