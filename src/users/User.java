@@ -1,42 +1,56 @@
 package users;
 
+import auth.Credentials;
 import communication.Message;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.Serial;
+import java.io.Serializable;
 
-public abstract class User {
+/**
+ * <p>
+ * An abstract User class for handling User information. This class exists as a convenience for creating and handling
+ * different types of Users in an application.</p>
+ * <p>
+ * Each user has information about his name,age,Username and password(Credentials),his privileges(Admin,Customer,Broker)
+ * ,his email address,gender and phone number.</p>
+ * <p>Use this class as a blueprint to create different types of Users in an Application
+ * which supports login/sign up functionality</p>
+ * <p>This class also implements the Serializable interface in case you want to store a User object in a file</p>
+ *
+ * @author Edward Koulakidis
+ * @see java.io.Serializable
+ * @see Customer
+ * @see Broker
+ * @see Admin
+ */
+
+public abstract class User implements Serializable {
 
 
-    public enum Gender {
-        MALE,FEMALE
-    }
-
-    protected List<Message> inbox;
-    protected String name;
-    protected int age;
-    protected String username;
-    protected String password;
-    protected String email;
-    protected Gender gender;
-    protected String phone;
-
-
-    public User(String name, int age, String username, String email, Gender gender, String phone, String password) {
+    /**
+     * A basic constructor which takes the parameters below and initializes a User object
+     * @param credentials A username/password combination
+     * @param name The users name
+     * @param age The users age
+     * @param email The users email
+     * @param gender The users gender
+     * @param phone The users phone number
+     * @param privilege The users privilege(Customer/Admin/Broker)
+     * @see Credentials
+     * @see Privilege
+     */
+    public User(Credentials credentials, String name, int age, String email, Gender gender, String phone, Privilege privilege) {
         this.name = name;
         this.age = age;
-        this.username = username;
+        this.credentials = credentials;
         this.email = email;
         this.gender = gender;
         this.phone = phone;
-        this.password = password;
-        inbox = new ArrayList<Message>();
-
-
+        this.privilege = privilege;
     }
 
 
-    //=========================== Getters & Setters ==========================
+    //=========================== Getters & Setters ====================================================================
 
     public String getName() {
         return name;
@@ -54,12 +68,12 @@ public abstract class User {
         this.age = age;
     }
 
-    public String getUsername() {
-        return username;
+    public Privilege getPrivilege() {
+        return privilege;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public Credentials getCredentials() {
+        return credentials;
     }
 
     public String getEmail() {
@@ -86,26 +100,20 @@ public abstract class User {
         this.phone = phone;
     }
 
-    public void addMessage(Message message){
-        if(message!=null)
-            inbox.add(message);
-    }
 
-    public List<Message> viewAllMessages()
-    {
-        return inbox;
-    }
-
-    public List<Message> viewUnseenMessages()
-    {
-        List<Message> temp = new ArrayList<Message>();
-        for(Message m : inbox)
-        {
-            if(!m.isSeen())
-                temp.add(m);
-        }
-        return temp;
+    public String readMessage(Message message) {
+        message.setSeen(true);
+        return message.getContents();
     }
 
 
+    @Serial
+    private static final long serialVersionUID = 0;
+    protected String name;
+    protected int age;
+    protected Credentials credentials;
+    protected final Privilege privilege;
+    protected String email;
+    protected Gender gender;
+    protected String phone;
 }
