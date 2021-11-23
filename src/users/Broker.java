@@ -22,7 +22,8 @@ public class Broker extends User {
     }
 
     /**
-     * An override of toString() method useful for debuging/printing information
+     * An override of toString() method useful for debugging/printing information
+     *
      * @return A String representation of a Broker instance
      */
     @Override
