@@ -3,15 +3,18 @@ package database;
 import communication.Message;
 import users.User;
 
+import java.io.Serial;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class UserMessages extends Database {
     private final HashMap<User, ArrayList<Message>> userInbox;
+    @Serial
+    private static final long serialVersionUID = 0;
 
     public UserMessages() {
-        super(DatabaseType.USER_MESSAGES, "");
+        super("src/config/userMessages.ser");
         userInbox = new HashMap<User, ArrayList<Message>>();
     }
 
@@ -38,13 +41,5 @@ public class UserMessages extends Database {
         userInbox.get(user).remove(message);
     }
 
-    @Override
-    public void write() {
 
-    }
-
-    @Override
-    public void read() {
-
-    }
 }
