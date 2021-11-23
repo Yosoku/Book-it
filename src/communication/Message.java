@@ -2,12 +2,13 @@ package communication;
 
 import users.User;
 
-public class Message {
+import java.io.Serializable;
+
+public class Message implements Serializable {
     private User sender;
     private User receiver;
     private String contents;
     private boolean seen;
-
 
 
     public Message(User sender, User receiver, String contents) {
@@ -49,5 +50,12 @@ public class Message {
         this.contents = contents;
     }
 
-
+    @Override
+    public String toString() {
+        return "Message{" +
+                "sender=" + sender +
+                ", contents='" + contents + '\'' +
+                ", seen=" + seen +
+                '}';
+    }
 }
