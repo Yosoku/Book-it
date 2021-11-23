@@ -1,4 +1,5 @@
 ### Java template
 # Compiled class file
 *.class
-/codemr/
+codemr/*
+out/production/MyBooking/config/*.ser
