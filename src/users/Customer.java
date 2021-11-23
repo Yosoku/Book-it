@@ -1,38 +1,35 @@
 package users;
 
-import accommodations.Accommodation;
+import auth.Credentials;
 
-import java.util.ArrayList;
-import java.util.List;
+/**
+ * <p>
+ * A customer class representing a Customer in an application. The customer class inherits from the abstract Class User
+ * resulting in inheritance of all the fields (Credentials, Name, Age,Email,Gender, Phone number) and its getter/setter
+ * methods for each field. It also provides a toString() override useful for printing a Customer class to a stream
+ * </p>
+ *
+ * @author Edward Koulakidis
+ * @see User
+ */
 
 public class Customer extends User {
 
-    private final List<Accommodation> favorites; // Users favorite accommodations
-
-
-    public Customer(String name, int age, String username, String email, Gender gender, String phone, String password) {
-        super(name, age, username, email, gender, phone, password);
-        favorites = new ArrayList<Accommodation>();
-
+    public Customer(Credentials credentials, String name, int age, String email, Gender gender, String phone) {
+        super(credentials, name, age, email, gender, phone, Privilege.CUSTOMER);
     }
 
-
-    public void addFavorite(Accommodation newFavorite) {
-        if (newFavorite != null)
-            favorites.add(newFavorite);
-    }
-
-    public void removeFavorite(Accommodation delFavorite) {
-        favorites.remove(delFavorite);
-    }
-
+    /**
+     * An override of toString() method useful for debugging/printing information
+     * @return A String representation of a Customer instance
+     */
     @Override
     public String toString() {
         return "Customer{" +
-                "favorites=" + favorites +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", username='" + username + '\'' +
+                ", username='" + credentials.username() + '\'' +
+                ", password='" + credentials.password() + '\'' +
                 ", email='" + email + '\'' +
                 ", gender=" + gender +
                 ", phone='" + phone + '\'' +
