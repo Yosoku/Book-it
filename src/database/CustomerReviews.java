@@ -3,20 +3,23 @@ package database;
 import communication.Review;
 import users.Customer;
 
+import java.io.Serial;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class CustomerReviews extends Database {
+    @Serial
+    private static final long serialVersionUID = 0;
     private final HashMap<Customer, ArrayList<Review>> userReviews;
 
     public CustomerReviews() {
-        super(DatabaseType.CUSTOMER_REVIEWS, "");
+        super("src/config/customerReviews.ser");
         userReviews = new HashMap<Customer, ArrayList<Review>>();
     }
 
 
-    public void insertReviewToUser(Review review, Customer customer) {
+    public void insertReviewToUser(Customer customer, Review review) {
         if (customer == null || review == null)
             return;
         ArrayList<Review> reviewList = userReviews.get(customer);
@@ -38,13 +41,5 @@ public class CustomerReviews extends Database {
         userReviews.get(customer).remove(review);
     }
 
-    @Override
-    public void write() {
 
-    }
-
-    @Override
-    public void read() {
-
-    }
 }
