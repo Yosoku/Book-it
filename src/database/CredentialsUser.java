@@ -4,14 +4,17 @@ import auth.Credentials;
 import auth.Encryption;
 import users.User;
 
+import java.io.Serial;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
 public class CredentialsUser extends Database {
-    private final HashMap<String, User> users;
+    @Serial
+    private static final long serialVersionUID = 0;
+    private HashMap<String, User> users;
 
     public CredentialsUser() {
-        super(DatabaseType.CREDENTIALS_USER, "");
+        super("src/config/credentialsUser.ser");
         users = new HashMap<String, User>();
     }
 
@@ -31,19 +34,10 @@ public class CredentialsUser extends Database {
     }
 
     public void dropUser(Credentials credentials, User user) throws NoSuchAlgorithmException {
-        String hash = Encryption.SHA_512(credentials.toString());
         if (credentials == null || user == null)
             return;
+        String hash = Encryption.SHA_512(credentials.toString());
         users.remove(hash);
     }
 
-    @Override
-    public void write() {
-
-    }
-
-    @Override
-    public void read() {
-
-    }
 }
