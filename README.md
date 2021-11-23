@@ -29,7 +29,7 @@ Note that the Credentials below are case __SENSITIVE__
 
 ![](https://cdn.vox-cdn.com/thumbor/Ffrvj4ltYfBKJni5dvdYaaGrGP4=/0x0:1432x1080/920x613/filters:focal(616x165:844x393):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64687982/chrome_2019_07_08_14_17_05.0.jpg)
 
-_Disclaimer: the following project is written in Java, continue at your own risk. Team Rocket is not responsible for any
+_Disclaimer: the following project is written in [Java](https://scontent.fskg4-1.fna.fbcdn.net/v/t1.18169-9/14563499_1116950058340286_6555439546896528327_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=973b4a&_nc_ohc=BQurIi23UzMAX-Vx47T&_nc_ht=scontent.fskg4-1.fna&oh=d22cb3cb5f00bbc255793e2037b5975c&oe=61C0DD23), continue at your own risk. Team Rocket is not responsible for any
 Python users being confused by indentation or what an  ```int``` is_
 
 ### License
