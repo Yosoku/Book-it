@@ -1,15 +1,453 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Project requirements added to repo">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added codemr to gitignore">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/idmap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/graphs/all-by-modularity.cmr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/graphs/all-by-package.cmr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/graphs/all-by-project-module.cmr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/graphs/all-inheritance.cmr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/graphs/all-package-deps.cmr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/graphs/all-ug.cmr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-by-modularity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-by-modularity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-by-package.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-by-package.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-by-project-module.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-by-project-module.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-inheritance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-inheritance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-package-deps.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-package-deps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-ug.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/all-ug.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/graph_htmls/graphlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/Xdonut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/circlepack.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/dependency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/donut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/donutcharts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/donutchartssimple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/lbd/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/lbd/graphs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/lbd/metricdescriptions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/lbd/notifications.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/lbd/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/lbd/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/metricchartmethod.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/metricchartpackage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/metricchartx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/modeldata/defaultclassmetrics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/modeldata/overview_metric_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/modeldata/packagedependency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/modeldata/summary_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/modeldata/sunburst_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/modeldata/table_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/reportforprint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/sunburst.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/htmlx/treemap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/html_report_mybooking/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/css/helptip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/css/light-bootstrap-dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/codemr-lg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/codemr-sm-32x32.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/codemr-sm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/default-avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/loading-bubbles.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/new_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/img/sidebar-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/js/bootstrap-checkbox-radio-switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/js/bootstrap-notify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/js/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/js/chartist.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/js/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/js/light-bootstrap-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_alerts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_checkbox-radio-switch.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_footers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_inputs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_sidebar-and-main-panel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_inputs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_labels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_morphing-buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_social-buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_transparency.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/lbd/mixins/_vendor-prefixes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/assets/sass/light-bootstrap-dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/css/barchartstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/css/graph.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/css/helptip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/css/legend.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/css/treemap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/css/vis.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/css/animation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/css/codemr-codes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/css/codemr-embedded.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/css/codemr-ie7-codes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/css/codemr-ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/css/codemr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/font/codemr.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/font/codemr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/font/codemr.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/font/codemr.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/font-codemr/font/codemr.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-300.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-700.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-700.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/fonts/robotofonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/img/eqGraphlegend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/img/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/circlepack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/d3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/d3.tip.v0.6.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/dependency_wheel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/donut3d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/eq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/metric_definitions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/metricchart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/sunburst.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/treemap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/vis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/vis_eq_cluster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/html/js/vis_eq_graph_base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/Xdonut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/circlepack.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/dependency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/donut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/donutcharts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/donutchartssimple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/lbd/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/lbd/graphs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/lbd/metricdescriptions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/lbd/notifications.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/lbd/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/lbd/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/metricchartmethod.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/metricchartpackage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/metricchartx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/modeldata/defaultclassmetrics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/modeldata/overview_metric_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/modeldata/packagedependency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/modeldata/summary_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/modeldata/sunburst_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/modeldata/table_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/reportforprint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/sunburst.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/htmlx/treemap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/main_report/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/html/workingsets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/mybooking-team-rocket 1.mdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/mybooking-team-rocket 1.qa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket 1/mybooking-team-rocket 1.ws" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/graph_htmls/graphlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/Xdonut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/circlepack.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/dependency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/donut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/donutcharts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/donutchartssimple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/lbd/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/lbd/graphs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/lbd/metricdescriptions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/lbd/notifications.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/lbd/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/lbd/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/metricchartmethod.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/metricchartpackage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/metricchartx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/modeldata/defaultclassmetrics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/modeldata/overview_metric_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/modeldata/packagedependency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/modeldata/summary_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/modeldata/sunburst_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/modeldata/table_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/reportforprint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/sunburst.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/htmlx/treemap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/html_report_mybooking/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/css/helptip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/css/light-bootstrap-dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/codemr-lg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/codemr-sm-32x32.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/codemr-sm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/default-avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/loading-bubbles.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/new_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/img/sidebar-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/js/bootstrap-checkbox-radio-switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/js/bootstrap-notify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/js/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/js/chartist.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/js/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/js/light-bootstrap-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_alerts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_checkbox-radio-switch.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_footers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_inputs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_sidebar-and-main-panel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_inputs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_labels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_morphing-buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_social-buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_transparency.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/lbd/mixins/_vendor-prefixes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/assets/sass/light-bootstrap-dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/css/barchartstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/css/graph.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/css/helptip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/css/legend.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/css/treemap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/css/vis.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/css/animation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/css/codemr-codes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/css/codemr-embedded.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/css/codemr-ie7-codes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/css/codemr-ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/css/codemr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/font/codemr.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/font/codemr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/font/codemr.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/font/codemr.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/font-codemr/font/codemr.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-300.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-700.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-700.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/fonts/robotofonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/img/eqGraphlegend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/img/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/circlepack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/d3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/d3.tip.v0.6.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/dependency_wheel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/donut3d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/eq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/metric_definitions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/metricchart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/sunburst.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/treemap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/vis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/vis_eq_cluster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/html/js/vis_eq_graph_base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/Xdonut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/circlepack.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/dependency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/donut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/donutcharts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/donutchartssimple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/lbd/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/lbd/graphs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/lbd/metricdescriptions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/lbd/notifications.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/lbd/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/lbd/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/metricchartmethod.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/metricchartpackage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/metricchartx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/modeldata/defaultclassmetrics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/modeldata/overview_metric_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/modeldata/packagedependency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/modeldata/summary_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/modeldata/sunburst_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/modeldata/table_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/reportforprint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/sunburst.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/htmlx/treemap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/main_report/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/html/workingsets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/mybooking-team-rocket.mdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/mybooking-team-rocket.qa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codemr/mybooking-team-rocket/mybooking-team-rocket.ws" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/accommodationReviews.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/brokerAccommodations.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/credentialsUser.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/customerReviews.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/userConfirmation.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/userMessages.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/AdminUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/BrokerUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/ConnectUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/CustomerUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/InboxUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/SignInUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/SignUpUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/UIMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/accommodationReviews.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/credentialsUser.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/customerReviews.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/userMessages.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/accommodations/AccommodationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/users/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/accommodations/Accommodation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Accommodation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Messenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Messenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/AccommodationReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccommodationReviews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/CredentialsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/CustomerReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CustomerReviews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Broker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +458,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -43,18 +483,22 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="2" />
-  </component>
   <component name="ProjectId" id="20qLvoPVyIZ6H79kAHYrtsVo6p6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -65,6 +509,13 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="database" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="accommodations" />
+      <recent name="users" />
     </key>
   </component>
   <component name="RunManager">
@@ -118,15 +569,159 @@
       <option name="project" value="LOCAL" />
       <updated>1636909838847</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-Base abstract class Database&#10;-A couple of database classes with querries&#10;-Code cleanup&#10;-Application class &#10;-Package restructure">
+      <created>1636969572422</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636969572422</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added License and updated README">
+      <created>1637594720584</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637594720585</updated>
+    </task>
+    <task id="LOCAL-00007" summary="-Added Javadoc to User&#10;-Deleted LoginForm">
+      <created>1637618036588</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637618036588</updated>
+    </task>
+    <task id="LOCAL-00008" summary="-Added Javadoc to User&#10;-Deleted LoginForm">
+      <created>1637695479524</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637695479524</updated>
+    </task>
+    <task id="LOCAL-00009" summary="-Added Javadoc to User&#10;-Deleted LoginForm">
+      <created>1637695553226</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637695553227</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Delete useless DatabaseType enum">
+      <created>1637696360934</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637696360934</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changed Credentials to a record">
+      <created>1637696383307</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637696383307</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added Javadoc">
+      <created>1637697075759</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697075759</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added Javadoc">
+      <created>1637697196891</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697196891</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changed Credentials from class to record">
+      <created>1637697226155</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697226155</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added Javadoc">
+      <created>1637697314390</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697314390</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Removed DatabaseType from Database,added Serialization">
+      <created>1637697357602</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697357602</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added Javadoc">
+      <created>1637697439056</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697439056</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added Javadoc">
+      <created>1637697477342</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697477342</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added Serialization and toString()">
+      <created>1637697505742</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697505742</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added Javadoc">
+      <created>1637697531560</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697531560</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added codemr to gitignore">
+      <created>1637697621846</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1637697621846</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Users and accommondation classes basic structure" />
     <MESSAGE value="Message and Messenger functioning" />
     <MESSAGE value="Project requirements added to repo" />
     <MESSAGE value="TimePeriod class,Reservation and Date control entities.Main with tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="TimePeriod class,Reservation and Date control entities.Main with tests" />
+    <MESSAGE value="-Base abstract class Database&#10;-A couple of database classes with querries&#10;-Code cleanup&#10;-Application class &#10;-Package restructure" />
+    <MESSAGE value="Added License and updated README" />
+    <MESSAGE value="-Added Javadoc to User&#10;-Deleted LoginForm" />
+    <MESSAGE value="Delete useless class&#10;Signed-off-by: Edward &lt;Edouardos@csd.auth.gr&gt;" />
+    <MESSAGE value="Fixed Serialazible not implemented&#10;&#10;Signed-off-by: Edward &lt;Edouardos@csd.auth.gr&gt;" />
+    <MESSAGE value="Delete useless DatabaseType enum" />
+    <MESSAGE value="Changed Credentials to a record" />
+    <MESSAGE value="Changed Credentials from class to record" />
+    <MESSAGE value="Removed DatabaseType from Database,added Serialization" />
+    <MESSAGE value="Added Serialization and toString()" />
+    <MESSAGE value="Added Javadoc" />
+    <MESSAGE value="Added codemr to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added codemr to gitignore" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
