@@ -3,20 +3,24 @@ package database;
 import accommodations.Accommodation;
 import communication.Review;
 
+import java.io.Serial;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class AccommodationReviews extends Database {
+    @Serial
+    private static final long serialVersionUID = 0;
     private final HashMap<Accommodation, ArrayList<Review>> accommodationReviews; // DB holding reviews a user writes
 
     public AccommodationReviews() {
-        super(DatabaseType.ACCOMMODATION_REVIEWS, "");
+        super("src/config/accommodationReviews.ser");
+        //noinspection Convert2Diamond
         accommodationReviews = new HashMap<Accommodation, ArrayList<Review>>();
     }
 
 
-    public void insertReviewToAccommodation(Review review, Accommodation accommodation) {
+    public void insertReviewToAccommodation(Accommodation accommodation, Review review) {
         if (accommodation == null || review == null)
             return;
         ArrayList<Review> reviewList = accommodationReviews.get(accommodation);
@@ -38,13 +42,10 @@ public class AccommodationReviews extends Database {
         accommodationReviews.get(accommodation).remove(review);
     }
 
-    @Override
-    public void write() {
 
-    }
-
-    @Override
-    public void read() {
-
+    public void dropAllReviewsFromAccommodation(Accommodation accommodation) {
+        if (accommodation == null)
+            return;
+        accommodationReviews.get(accommodation).clear();
     }
 }
