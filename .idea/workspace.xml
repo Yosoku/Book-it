@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="XMLS">
-      <changelist_data name="Edward Koulakidis" email="" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries">
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/accommodationReviews.ser" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/brokerAccommodations.ser" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/credentialsUser.ser" afterDir="false" />
@@ -20,16 +18,9 @@
       <change afterPath="$PROJECT_DIR$/src/UI/SignUpUI.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/UI/UIMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/accommodationReviews.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/credentialsUser.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/customerReviews.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/userMessages.ser" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/accommodations/AccommodationTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/users/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
@@ -39,7 +30,6 @@
       <change beforePath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/Messenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Messenger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccommodationReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccommodationReviews.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/CredentialsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/CustomerReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CustomerReviews.java" afterDir="false" />
@@ -292,7 +282,35 @@
       <option name="project" value="LOCAL" />
       <updated>1637697990955</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added *.ser files to repo">
+      <created>1637698100408</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1637698100408</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added production *.ser to .gitignore">
+      <created>1637698332071</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1637698332071</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added Serialization to class&#10;Added Filename for read/write&#10;Added new querry">
+      <created>1637698487249</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1637698487249</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries">
+      <created>1637698612905</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1637698612905</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,7 +343,11 @@
     <MESSAGE value="Added Javadoc" />
     <MESSAGE value="Added codemr to gitignore" />
     <MESSAGE value="XMLS" />
-    <option name="LAST_COMMIT_MESSAGE" value="XMLS" />
+    <MESSAGE value="Added *.ser files to repo" />
+    <MESSAGE value="Added production *.ser to .gitignore" />
+    <MESSAGE value="Added Serialization to class&#10;Added Filename for read/write&#10;Added new querry" />
+    <MESSAGE value="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
