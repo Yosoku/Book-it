@@ -22,9 +22,9 @@ public class UserConfirmations extends Database {
     }
 
     public void insertUserConfirmation(User user) {
-        if (user != null) {
-            this.userConfirmed.put(user, false);
-        }
+        if (user == null)
+            return;
+        userConfirmed.putIfAbsent(user, false);
     }
 
     public boolean selectUserConfirmation(User user) {
@@ -34,15 +34,15 @@ public class UserConfirmations extends Database {
     }
 
     public void dropUserConfirmation(User user) {
-        if (user != null) {
-            this.userConfirmed.remove(user);
-        }
+        if (user == null)
+            return;
+        this.userConfirmed.remove(user);
     }
 
     public void updateUserConfirmation(User user, boolean confirmed) {
-        if (user != null) {
-            this.userConfirmed.put(user, confirmed);
-        }
+        if (user == null)
+            return;
+        this.userConfirmed.put(user, confirmed);
     }
 
     public List<User> selectAllUsersWhereConfirmedIs(boolean confirmed) {
@@ -52,7 +52,6 @@ public class UserConfirmations extends Database {
                 temp.add(user);
             }
         }
-
         return temp;
     }
 

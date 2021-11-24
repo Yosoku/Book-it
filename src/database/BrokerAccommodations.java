@@ -4,20 +4,18 @@ import accommodations.Accommodation;
 import users.Broker;
 
 import java.io.Serial;
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+import java.util.HashSet;
 
-public class BrokerAccommodations extends Database implements Serializable {
+public class BrokerAccommodations extends Database {
     private int totalAccommodations;
     @Serial
     private static final long serialVersionUID = 0;
-    private final HashMap<Broker, ArrayList<Accommodation>> brokerProperties;
+    private final HashMap<Broker, HashSet<Accommodation>> brokerProperties;
 
     public BrokerAccommodations() {
         super("src/config/brokerAccommodations.ser");
-        brokerProperties = new HashMap<Broker, ArrayList<Accommodation>>();
+        brokerProperties = new HashMap<Broker, HashSet<Accommodation>>();
         totalAccommodations = 0;
     }
 
@@ -25,15 +23,15 @@ public class BrokerAccommodations extends Database implements Serializable {
     public void insertAccommodation(Broker broker, Accommodation accommodation) {
         if (broker == null || accommodation == null)
             return;
-        ArrayList<Accommodation> accommodationList = brokerProperties.get(broker);
+        HashSet<Accommodation> accommodationList = brokerProperties.get(broker);
         if (accommodationList == null)
-            accommodationList = new ArrayList<>();
+            accommodationList = new HashSet<Accommodation>();
         accommodation.setID(getNextID());
         accommodationList.add(accommodation);
         brokerProperties.put(broker, accommodationList);
     }
 
-    public ArrayList<Accommodation> selectAllAccommodationsFromBroker(Broker broker) {
+    public HashSet<Accommodation> selectAllAccommodationsFromBroker(Broker broker) {
         if (brokerProperties.containsKey(broker))
             return brokerProperties.get(broker);
         return null;
@@ -54,9 +52,9 @@ public class BrokerAccommodations extends Database implements Serializable {
     }
 
 
-    public ArrayList<Accommodation> selectAllAccommodations() {
-        ArrayList<Accommodation> temp = new ArrayList<Accommodation>();
-        for (List<Accommodation> list : brokerProperties.values()) {
+    public HashSet<Accommodation> selectAllAccommodations() {
+        HashSet<Accommodation> temp = new HashSet<Accommodation>();
+        for (HashSet<Accommodation> list : brokerProperties.values()) {
             temp.addAll(list);
         }
         return temp;
@@ -67,7 +65,7 @@ public class BrokerAccommodations extends Database implements Serializable {
     }
 
     public Accommodation selectAccommodationByID(int id) {
-        for (ArrayList<Accommodation> accommodations : brokerProperties.values())
+        for (HashSet<Accommodation> accommodations : brokerProperties.values())
             for (Accommodation accommodation : accommodations)
                 if (id == accommodation.getID())
                     return accommodation;
