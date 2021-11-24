@@ -1,3 +1,5 @@
+package application;
+
 import UI.*;
 import accommodations.Accommodation;
 import auth.Credentials;
@@ -7,7 +9,7 @@ import database.*;
 import users.*;
 
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
+import java.util.HashSet;
 
 
 public class Application {
@@ -20,15 +22,15 @@ public class Application {
     private CustomerReviews customerReviewsDatabase;
     private UserMessages userMessagesDatabase;
     private User currentUser;
-    @SuppressWarnings("FieldMayBeFinal") // jesus christ shut up intellij
     private ConnectUI connectUI;
 
     public Application() throws NoSuchAlgorithmException {
         initDatabases();
-        //loadData();
+        loadData();
         initAdmin();
         connectUI = new ConnectUI();
         run();
+
     }
 
     private void initAdmin() throws NoSuchAlgorithmException {
@@ -87,11 +89,12 @@ public class Application {
         System.out.println("Handling Broker requests:" + brokerUI.getRequest());
         switch (brokerUI.getRequest()) {
             case "view" -> {
-                ArrayList<Accommodation> accommodationList =
+                HashSet<Accommodation> accommodationList =
                         brokerAccommodationsDatabase.selectAllAccommodationsFromBroker((Broker) currentUser);
                 for (Accommodation accommodation : accommodationList) {
                     System.out.println(accommodation.toString());
                 }
+
             }
             case "add" -> {
                 Accommodation accommodation = brokerUI.addAccommodation();
@@ -117,6 +120,7 @@ public class Application {
                     //add removeall reservations
                     UI.LOG(UIMessage.ENTRY_DELETED);
                 }
+
             }
         }
 
