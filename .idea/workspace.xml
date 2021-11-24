@@ -1,40 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/accommodationReviews.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/brokerAccommodations.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/credentialsUser.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/customerReviews.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/userConfirmation.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/config/userMessages.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/AdminUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/BrokerUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/ConnectUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/CustomerUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/InboxUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/SignInUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/SignUpUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/UIMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/accommodations/AccommodationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/users/UserTest.java" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added application body">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accommodations/Accommodation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Accommodation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accommodations/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Messenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Messenger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/CredentialsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/CustomerReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CustomerReviews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/UserMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Broker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
