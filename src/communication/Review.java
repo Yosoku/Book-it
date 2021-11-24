@@ -1,12 +1,7 @@
 package communication;
 
-@SuppressWarnings("unused")
-public class Review {
-    private final int stars;
-    private final String description;
 
-
-
+public record Review(int stars, String description) {
     public int getStars() {
         return stars;
     }
