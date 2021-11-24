@@ -17,7 +17,6 @@ public abstract class Database implements Serializable {
     public void write() {
         try {
             File temp = new File(this.filename);
-            //noinspection ResultOfMethodCallIgnored
             temp.createNewFile(); // create file if not present
             FileOutputStream fileOut = new FileOutputStream(this.filename);
             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
@@ -33,7 +32,6 @@ public abstract class Database implements Serializable {
         Object obj = null;
         try {
             File temp = new File(this.filename);
-            //noinspection ResultOfMethodCallIgnored
             temp.createNewFile(); // create file if not present
             FileInputStream fileIn = new FileInputStream(this.filename);
             ObjectInputStream objectIn = new ObjectInputStream(fileIn);
