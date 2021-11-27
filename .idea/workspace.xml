@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Readded UserConfirmations">
-      <change afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added application package">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Messenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Messenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Accommodation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Accommodation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/accommodationReviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/accommodationReviews.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/credentialsUser.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/credentialsUser.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/customerReviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/customerReviews.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userMessages.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userMessages.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/AccommodationReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccommodationReviews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/CredentialsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Broker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +309,77 @@
       <option name="project" value="LOCAL" />
       <updated>1637750201049</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Simplify">
+      <created>1637750363827</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1637750363827</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Comment out addMessage">
+      <created>1637750380876</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1637750380876</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added suppressWarnings">
+      <created>1637750394867</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1637750394867</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Simplify">
+      <created>1637750405502</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1637750405502</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added Serial">
+      <created>1637758150806</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1637758150806</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Changed List to HashSet&#10;Code cleanup">
+      <created>1637758244261</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1637758244261</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Changed Review to a record">
+      <created>1637758460221</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1637758460221</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Removed noinspection">
+      <created>1637758810627</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1637758810627</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Removed comments">
+      <created>1637758830250</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1637758830250</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added application package">
+      <created>1637758848635</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1637758848635</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,13 +395,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Users and accommondation classes basic structure" />
-    <MESSAGE value="Message and Messenger functioning" />
-    <MESSAGE value="Project requirements added to repo" />
-    <MESSAGE value="TimePeriod class,Reservation and Date control entities.Main with tests" />
-    <MESSAGE value="-Base abstract class Database&#10;-A couple of database classes with querries&#10;-Code cleanup&#10;-Application class &#10;-Package restructure" />
-    <MESSAGE value="Added License and updated README" />
-    <MESSAGE value="-Added Javadoc to User&#10;-Deleted LoginForm" />
     <MESSAGE value="Delete useless class&#10;Signed-off-by: Edward &lt;Edouardos@csd.auth.gr&gt;" />
     <MESSAGE value="Fixed Serialazible not implemented&#10;&#10;Signed-off-by: Edward &lt;Edouardos@csd.auth.gr&gt;" />
     <MESSAGE value="Delete useless DatabaseType enum" />
@@ -329,7 +410,17 @@
     <MESSAGE value="Added Serialization to class&#10;Added Filename for read/write&#10;Added new querry" />
     <MESSAGE value="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries" />
     <MESSAGE value="Readded UserConfirmations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readded UserConfirmations" />
+    <MESSAGE value="Indentation" />
+    <MESSAGE value="Comment out addMessage" />
+    <MESSAGE value="Added suppressWarnings" />
+    <MESSAGE value="Simplify" />
+    <MESSAGE value="Added Serial" />
+    <MESSAGE value="Changed List to HashSet&#10;Code cleanup" />
+    <MESSAGE value="Changed Review to a record" />
+    <MESSAGE value="Removed noinspection" />
+    <MESSAGE value="Removed comments" />
+    <MESSAGE value="Added application package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added application package" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
