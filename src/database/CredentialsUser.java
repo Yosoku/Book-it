@@ -52,7 +52,6 @@ public class CredentialsUser extends Database {
         String hash = Encryption.SHA_512(credentials.toString()); //get credentials hash in a String format
         if (!users.containsKey(hash))
             users.put(hash, user);
-
     }
 
     /**

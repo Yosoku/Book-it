@@ -26,19 +26,24 @@ public class Application {
 
     public Application() throws NoSuchAlgorithmException {
         initDatabases();
-        loadData();
-        initAdmin();
         connectUI = new ConnectUI();
+        loadData();
         run();
+        writeData();
 
     }
 
     private void initAdmin() throws NoSuchAlgorithmException {
         Admin admin = new Admin(new Credentials("Edward", "password"),
                 "Edward", 23, "edouardos@csd.auth.gr", Gender.MALE, "6982093778");
-        userConfirmationsDatabase.insertUserConfirmation(admin);
-        userConfirmationsDatabase.updateUserConfirmation(admin, true);
-        credentialsUserDatabase.insertUser(admin.getCredentials(), admin);
+        if (credentialsUserDatabase.selectUser(admin.getCredentials()) == null) { //entry not found
+            userConfirmationsDatabase.insertUserConfirmation(admin);
+            userConfirmationsDatabase.updateUserConfirmation(admin);
+            credentialsUserDatabase.insertUser(admin.getCredentials(), admin);
+        }
+        Broker broker = new Broker(new Credentials("broker", "broker"), "broker", 23, "broker@csd.gr", Gender.MALE, "12", "ads");
+        Accommodation ac = new Accommodation(19, "", null, "", 2, true);
+        brokerAccommodationsDatabase.insertAccommodation(broker, ac);
     }
 
 
@@ -49,7 +54,7 @@ public class Application {
             connectUI.show();
             if (handleConnections(connectUI.getRequest())) {
                 //connection established
-                userConfirmationsDatabase.updateUserConfirmation(currentUser, true); // DELETE LATER
+                userConfirmationsDatabase.updateUserConfirmation(currentUser); // DELETE LATER
                 if (userConfirmationsDatabase.selectUserConfirmation(currentUser)) {
                     //User confirmed show options
                     handleUserRequests();
@@ -60,7 +65,6 @@ public class Application {
                 }
             }
         }
-        writeData();
         System.out.println("Credits");
     }
 
@@ -231,13 +235,29 @@ public class Application {
     }
 
 
-    private void loadData() {
-        accommodationReviewsDatabase = (AccommodationReviews) accommodationReviewsDatabase.read();
-        brokerAccommodationsDatabase = (BrokerAccommodations) brokerAccommodationsDatabase.read();
-        credentialsUserDatabase = (CredentialsUser) credentialsUserDatabase.read();
-        customerReviewsDatabase = (CustomerReviews) customerReviewsDatabase.read();
-        userConfirmationsDatabase = (UserConfirmations) userConfirmationsDatabase.read();
-        userMessagesDatabase = (UserMessages) userMessagesDatabase.read();
+    private void loadData() throws NoSuchAlgorithmException {
+
+        //null in case of EOF
+        Object temp = accommodationReviewsDatabase.read();
+        if (temp != null)
+            accommodationReviewsDatabase = (AccommodationReviews) temp;
+        temp = brokerAccommodationsDatabase.read();
+        if (temp != null)
+            brokerAccommodationsDatabase = (BrokerAccommodations) temp;
+        temp = credentialsUserDatabase.read();
+        if (temp != null)
+            credentialsUserDatabase = (CredentialsUser) temp;
+        temp = customerReviewsDatabase.read();
+        if (temp != null)
+            customerReviewsDatabase = (CustomerReviews) temp;
+        temp = userConfirmationsDatabase.read();
+        if (temp != null)
+            userConfirmationsDatabase = (UserConfirmations) temp;
+        temp = userMessagesDatabase.read();
+        if (temp != null)
+            userMessagesDatabase = (UserMessages) temp;
+        initAdmin();
+
     }
 
     private void writeData() {

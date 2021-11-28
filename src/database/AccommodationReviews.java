@@ -10,7 +10,7 @@ import java.util.HashSet;
 public class AccommodationReviews extends Database {
     @Serial
     private static final long serialVersionUID = 0;
-    private final HashMap<Accommodation, HashSet<Review>> accommodationReviews; // DB holding reviews a user writes
+    private final HashMap<Accommodation, HashSet<Review>> accommodationReviews;
 
     public AccommodationReviews() {
         super("src/config/accommodationReviews.ser");
@@ -46,4 +46,5 @@ public class AccommodationReviews extends Database {
             return;
         accommodationReviews.get(accommodation).clear();
     }
+
 }

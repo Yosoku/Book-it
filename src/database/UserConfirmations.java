@@ -75,20 +75,19 @@ public class UserConfirmations extends Database {
     public void dropUserConfirmation(User user) {
         if (user == null)
             return;
-        this.userConfirmed.remove(user);
+        userConfirmed.remove(user);
     }
 
     /**
      * A query for updating current Users in the Database. If any of the parameters is <b>null</b> the method will exit
      * without changing the Hashmap. Runs in O(1) time
      *
-     * @param user      The User to update from the map
-     * @param confirmed The new confirmation status
+     * @param user The User to update from the map
      */
-    public void updateUserConfirmation(User user, boolean confirmed) {
+    public void updateUserConfirmation(User user) {
         if (user == null)
             return;
-        this.userConfirmed.put(user, confirmed);
+        userConfirmed.putIfAbsent(user, true);
     }
 
     /**
@@ -102,7 +101,7 @@ public class UserConfirmations extends Database {
     public List<User> selectAllUsersWhereConfirmedIs(boolean confirmed) {
         List<User> temp = new ArrayList<User>();
         for (User user : this.userConfirmed.keySet()) {
-            if (this.userConfirmed.get(user) == confirmed) {
+            if (userConfirmed.get(user) == confirmed) {
                 temp.add(user);
             }
         }

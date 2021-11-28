@@ -1,12 +1,16 @@
 package accommodations;
 
 import javax.swing.*;
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeSet;
 
 
-public class Accommodation {
+public class Accommodation implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 0;
     private int ID;
     private int space; // square meters
     private String address;

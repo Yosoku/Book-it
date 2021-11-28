@@ -26,8 +26,8 @@ public class TimePeriod implements Comparable<TimePeriod> {
      * Returns an integer based on the timelinen between the periods considering *ONLY* the starting Date of each period
      *
      * @param other another TimePeriod object to compare
-     * @return -1 this.start<other.start
-     * 1 other.start>this.start
+     * @return -1 this.start other.start
+     * 1 other.start this.start
      * 0 this.start=other.start
      */
     @Override

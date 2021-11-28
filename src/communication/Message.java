@@ -50,6 +50,11 @@ public class Message implements Serializable {
         this.contents = contents;
     }
 
+    public void readMessage() {
+        setSeen(true);
+        System.out.println(contents);
+    }
+
     @Override
     public String toString() {
         return "Message{" +

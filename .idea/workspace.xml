@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added custom Serial">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Indents">
       <change afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/accommodations/Accommodation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Accommodation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/Encryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/Encryption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/Credentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/accommodationReviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/accommodationReviews.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/credentialsUser.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/credentialsUser.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/customerReviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/customerReviews.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/userMessages.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userMessages.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/AccommodationReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccommodationReviews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/CredentialsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Gender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
     </list>
@@ -432,7 +426,35 @@
       <option name="project" value="LOCAL" />
       <updated>1638129497345</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Added Javadoc">
+      <created>1638131341083</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1638131341083</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Corrected Javadoc">
+      <created>1638131352792</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1638131352792</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Corrected Javadoc">
+      <created>1638131368502</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1638131368502</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Indents">
+      <created>1638131438663</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1638131438663</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -448,9 +470,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Serialization and toString()" />
-    <MESSAGE value="Added Javadoc" />
-    <MESSAGE value="Added codemr to gitignore" />
     <MESSAGE value="XMLS" />
     <MESSAGE value="Added *.ser files to repo" />
     <MESSAGE value="Added production *.ser to .gitignore" />
@@ -473,8 +492,22 @@
     <MESSAGE value="Added custom serialVersion and finished javadoc" />
     <MESSAGE value="Added javadoc and code clean up" />
     <MESSAGE value="Added custom Serial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added custom Serial" />
+    <MESSAGE value="Added Javadoc" />
+    <MESSAGE value="Corrected Javadoc" />
+    <MESSAGE value="Indents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Indents" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/application/Application.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

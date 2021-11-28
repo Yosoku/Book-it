@@ -5,6 +5,7 @@ import communication.Message;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * <p>
@@ -104,6 +105,19 @@ public abstract class User implements Serializable {
         return message.getContents();
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return age == user.age && name.equals(user.name) && credentials.equals(user.credentials) && privilege == user.privilege && email.equals(user.email) && gender == user.gender && phone.equals(user.phone);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, credentials, privilege, email, gender, phone);
+    }
 
     @Serial
     private static final long serialVersionUID = 0;
