@@ -2,6 +2,8 @@ package users;
 
 import auth.Credentials;
 
+import java.io.Serial;
+
 /**
  * <p>
  * A Broker class representing a Broker in an application. The Broker class inherits from the abstract Class User
@@ -15,6 +17,8 @@ import auth.Credentials;
  */
 public class Broker extends User {
     private final String company;
+    @Serial
+    private static final long serialVersionUID = 0;
 
     public Broker(Credentials credentials, String name, int age, String email, Gender gender, String phone, String company) {
         super(credentials, name, age, email, gender, phone, Privilege.BROKER);
