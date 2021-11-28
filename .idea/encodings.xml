@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/config/accommodationReviews.ser" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/config/brokerAccommodations.ser" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/config/credentialsUser.ser" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/config/customerReviews.ser" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/config/userConfirmation.ser" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/config/userMessages.ser" charset="UTF-16" />
+  </component>
+</project>
