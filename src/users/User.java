@@ -25,8 +25,6 @@ import java.io.Serializable;
  */
 
 public abstract class User implements Serializable {
-
-
     /**
      * A basic constructor which takes the parameters below and initializes a User object
      * @param credentials A username/password combination
