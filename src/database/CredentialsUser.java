@@ -73,7 +73,7 @@ public class CredentialsUser extends Database {
     }
 
     /**
-     * A drop(delete) query for deleting entries in the map
+     * A drop(delete) query for deleting entries in the map. If the parameters are null the method doesn't change the map
      *
      * @param credentials The Users.Credentials we wish to delete
      * @throws NoSuchAlgorithmException Because of Encryption.SHA_512 the method throws NoSuchAlgorithmException
