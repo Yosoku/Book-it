@@ -67,9 +67,7 @@ public class BrokerAccommodations extends Database {
      * @return The Hashset of Accommodations mapped to the parameter broker,if present in the map, null otherwise
      */
     public HashSet<Accommodation> selectAllAccommodationsFromBroker(Broker broker) {
-        if (brokerProperties.containsKey(broker))
             return brokerProperties.get(broker);
-        return null;
     }
 
     /**

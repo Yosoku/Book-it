@@ -29,9 +29,7 @@ public class CustomerReviews extends Database {
     }
 
     public HashSet<Review> selectReviewFromUser(Customer customer) {
-        if (userReviews.containsKey(customer))
             return userReviews.get(customer);
-        return null;
     }
 
     public void dropReviewFromUser(Review review, Customer customer) {

@@ -50,8 +50,7 @@ public class CredentialsUser extends Database {
         if (user == null || credentials == null)
             return;
         String hash = Encryption.SHA_512(credentials.toString()); //get credentials hash in a String format
-        if (!users.containsKey(hash))
-            users.put(hash, user);
+        users.put(hash, user);
     }
 
     /**
@@ -66,9 +65,7 @@ public class CredentialsUser extends Database {
         if (credentials == null)
             return null;
         String hash = Encryption.SHA_512(credentials.toString());
-        if (users.containsKey(hash))
-            return users.get(hash);
-        return null;
+        return users.get(hash);
     }
 
     /**

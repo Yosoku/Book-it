@@ -28,9 +28,9 @@ import java.util.List;
  */
 
 public class UserConfirmations extends Database {
-    private HashMap<User, Boolean> userConfirmed;
     @Serial
     private static final long serialVersionUID = 0L;
+    private HashMap<User, Boolean> userConfirmed;
 
     /**
      * An initializer constructor used to initialize the map and call the Base class with the specified filename to store
@@ -50,7 +50,7 @@ public class UserConfirmations extends Database {
     public void insertUserConfirmation(User user) {
         if (user == null)
             return;
-        userConfirmed.putIfAbsent(user, false); // Users are initially inserted as false
+        userConfirmed.put(user, false); // Users are initially inserted as false
     }
 
     /**
@@ -87,7 +87,7 @@ public class UserConfirmations extends Database {
     public void updateUserConfirmation(User user) {
         if (user == null)
             return;
-        userConfirmed.putIfAbsent(user, true);
+        userConfirmed.put(user, true);
     }
 
     /**

@@ -29,9 +29,7 @@ public class AccommodationReviews extends Database {
     }
 
     public HashSet<Review> selectReviewFromAccommodation(Accommodation accommodation) {
-        if (accommodationReviews.containsKey(accommodation))
             return accommodationReviews.get(accommodation);
-        return null;
     }
 
     public void dropReviewFromAccommodation(Review review, Accommodation accommodation) {

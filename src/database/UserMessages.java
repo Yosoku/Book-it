@@ -9,9 +9,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class UserMessages extends Database {
-    private final HashMap<User, ArrayList<Message>> userInbox;
     @Serial
     private static final long serialVersionUID = 0;
+    private final HashMap<User, ArrayList<Message>> userInbox;
 
     public UserMessages() {
         super("src/config/userMessages.ser");
@@ -30,9 +30,7 @@ public class UserMessages extends Database {
     }
 
     public List<Message> selectMessageFromUser(User user) {
-        if (userInbox.containsKey(user))
-            return userInbox.get(user);
-        return null;
+        return userInbox.get(user);
     }
 
     public void dropMessageFromUser(User user, Message message) {

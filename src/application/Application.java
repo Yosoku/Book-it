@@ -36,14 +36,9 @@ public class Application {
     private void initAdmin() throws NoSuchAlgorithmException {
         Admin admin = new Admin(new Credentials("Edward", "password"),
                 "Edward", 23, "edouardos@csd.auth.gr", Gender.MALE, "6982093778");
-        if (credentialsUserDatabase.selectUser(admin.getCredentials()) == null) { //entry not found
-            userConfirmationsDatabase.insertUserConfirmation(admin);
-            userConfirmationsDatabase.updateUserConfirmation(admin);
-            credentialsUserDatabase.insertUser(admin.getCredentials(), admin);
-        }
-        Broker broker = new Broker(new Credentials("broker", "broker"), "broker", 23, "broker@csd.gr", Gender.MALE, "12", "ads");
-        Accommodation ac = new Accommodation(19, "", null, "", 2, true);
-        brokerAccommodationsDatabase.insertAccommodation(broker, ac);
+        userConfirmationsDatabase.insertUserConfirmation(admin);
+        userConfirmationsDatabase.updateUserConfirmation(admin);
+        credentialsUserDatabase.insertUser(admin.getCredentials(), admin);
     }
 
 
