@@ -2,6 +2,8 @@ package users;
 
 import auth.Credentials;
 
+import java.io.Serial;
+
 /**
  * <p>
  * A customer class representing a Customer in an application. The customer class inherits from the abstract Class User
@@ -14,6 +16,8 @@ import auth.Credentials;
  */
 
 public class Customer extends User {
+    @Serial
+    private static final long serialVersionUID = 0;
 
     public Customer(Credentials credentials, String name, int age, String email, Gender gender, String phone) {
         super(credentials, name, age, email, gender, phone, Privilege.CUSTOMER);
@@ -21,6 +25,7 @@ public class Customer extends User {
 
     /**
      * An override of toString() method useful for debugging/printing information
+     *
      * @return A String representation of a Customer instance
      */
     @Override
