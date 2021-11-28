@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added fix to Database holding duplicate values because of missing overrides equals/hashcode">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccommodationReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccommodationReviews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/CredentialsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/CustomerReviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CustomerReviews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/UserMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Message and Messenger functioning">
-      <created>1636791647704</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1636791647704</updated>
     </task>
     <task id="LOCAL-00003" summary="Project requirements added to repo">
       <created>1636792244872</created>
@@ -446,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638138307610</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)">
+      <created>1638139625603</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1638139625603</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +459,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added *.ser files to repo" />
     <MESSAGE value="Added production *.ser to .gitignore" />
     <MESSAGE value="Added Serialization to class&#10;Added Filename for read/write&#10;Added new querry" />
     <MESSAGE value="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries" />
@@ -487,7 +483,8 @@
     <MESSAGE value="Corrected Javadoc" />
     <MESSAGE value="Indents" />
     <MESSAGE value="Added fix to Database holding duplicate values because of missing overrides equals/hashcode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fix to Database holding duplicate values because of missing overrides equals/hashcode" />
+    <MESSAGE value="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

@@ -9,6 +9,7 @@ import database.*;
 import users.*;
 
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.HashSet;
 
 
@@ -34,11 +35,24 @@ public class Application {
     }
 
     private void initAdmin() throws NoSuchAlgorithmException {
-        Admin admin = new Admin(new Credentials("Edward", "password"),
+        Admin admin1 = new Admin(new Credentials("Edward", "password"),
                 "Edward", 23, "edouardos@csd.auth.gr", Gender.MALE, "6982093778");
-        userConfirmationsDatabase.insertUserConfirmation(admin);
-        userConfirmationsDatabase.updateUserConfirmation(admin);
-        credentialsUserDatabase.insertUser(admin.getCredentials(), admin);
+        ArrayList<Admin> list = new ArrayList<>();
+        list.add(admin1);
+        admin1 = new Admin(new Credentials("Meditskos", "securePassword1"),
+                "Georgios", 30, "gmeditsk@csd.auth.gr", Gender.MALE, "11888");
+        list.add(admin1);
+        admin1 = new Admin(new Credentials("Fwteinos", "securePassword2"),
+                "Fwteinos", 19, "foteinov@csd.auth.gr", Gender.MALE, "166");
+        list.add(admin1);
+        admin1 = new Admin(new Credentials("Tsoumakas", "polymorphism"),
+                "Grigorios", 40, "tsoumakas@csd.auth.gr", Gender.MALE, "00 1 650-506-7000");
+        list.add(admin1);
+        for (Admin admin : list) {
+            userConfirmationsDatabase.insertUserConfirmation(admin);
+            userConfirmationsDatabase.updateUserConfirmation(admin);
+            credentialsUserDatabase.insertUser(admin.getCredentials(), admin);
+        }
     }
 
 
