@@ -7,13 +7,13 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * <p>
- * A Credentials class representing credentials in an authentication process. It provides 2 final members (username/password)
- * and 2 getter methods for accessing said fields. It also provides a toString() override useful for printing the class
- * in a stream or hashing the contents of the class. The class is very similar to PasswordAuthentication
+ * An Encryption class useful for encrypting messages in an authentication process. It provides a static method for Encrypting
+ * a message using the SHA-512 algorithm via the MessageDigest class.
  * </p>
  *
  * @author Edward Koulakidis
- * @see java.net.PasswordAuthentication
+ * @see MessageDigest
+ * @see <a href="https://en.wikipedia.org/wiki/SHA-2">SHA-2</a>
  */
 public class Encryption {
     /**
