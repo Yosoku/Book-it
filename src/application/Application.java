@@ -39,10 +39,10 @@ public class Application {
                 "Edward", 23, "edouardos@csd.auth.gr", Gender.MALE, "6982093778");
         ArrayList<Admin> list = new ArrayList<>();
         list.add(admin1);
-        admin1 = new Admin(new Credentials("Meditskos", "securePassword1"),
+        admin1 = new Admin(new Credentials("Meditskos", "securePassword"),
                 "Georgios", 30, "gmeditsk@csd.auth.gr", Gender.MALE, "11888");
         list.add(admin1);
-        admin1 = new Admin(new Credentials("Fwteinos", "securePassword2"),
+        admin1 = new Admin(new Credentials("Fwteinos", "securePassword"),
                 "Fwteinos", 19, "foteinov@csd.auth.gr", Gender.MALE, "166");
         list.add(admin1);
         admin1 = new Admin(new Credentials("Tsoumakas", "polymorphism"),
