@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/accommodations/TimePeriodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/accommodations/TimePeriodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/auth/CredentialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/auth/CredentialsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/auth/EncryptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/auth/EncryptionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/communication/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/communication/ReviewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/database/BrokerAccommodationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/BrokerAccommodationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/database/CredentialsUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/CredentialsUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/database/CustomerReviewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/CustomerReviewsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/database/UserConfirmationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/UserConfirmationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/database/UserMessagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/UserMessagesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/users/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/AdminTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/users/GenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/GenderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/users/PrivilegeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/PrivilegeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
