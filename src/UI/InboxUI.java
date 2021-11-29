@@ -23,8 +23,7 @@ public class InboxUI extends UI {
                 if (ans == 'n' || ans == 'N')
                     return;
                 else {
-                    System.out.println(message.toString());
-                    message.setSeen(true);
+                    message.readMessage();
                 }
             }
         }
