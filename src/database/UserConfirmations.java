@@ -79,8 +79,8 @@ public class UserConfirmations extends Database {
     }
 
     /**
-     * A query for updating current Users in the Database. If any of the parameters is <b>null</b> the method will exit
-     * without changing the Hashmap. Runs in O(1) time
+     * A query for updating current Users in the Database and setting their confirmation to true. If the user parameter
+     * is <b>null</b> the method will exit without changing the Hashmap. Runs in O(1) time
      *
      * @param user The User to update from the map
      */

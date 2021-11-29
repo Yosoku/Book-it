@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/accommodations/TimePeriodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/accommodations/TimePeriodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/auth/CredentialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/auth/CredentialsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/auth/EncryptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/auth/EncryptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/communication/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/communication/ReviewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/BrokerAccommodationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/BrokerAccommodationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/CredentialsUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/CredentialsUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/CustomerReviewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/CustomerReviewsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/UserConfirmationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/UserConfirmationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/UserMessagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/database/UserMessagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/AdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/GenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/GenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/PrivilegeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/PrivilegeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +28,9 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Record" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -74,7 +84,10 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="accommodations" />
+      <recent name="auth" />
+      <recent name="communication" />
       <recent name="users" />
+      <recent name="database" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,13 +112,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Project requirements added to repo">
-      <created>1636792244872</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1636792244872</updated>
     </task>
     <task id="LOCAL-00004" summary="TimePeriod class,Reservation and Date control entities.Main with tests">
       <created>1636909838847</created>
@@ -443,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638139625603</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Changes in way Messages are read in InboxUI">
+      <created>1638185259272</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1638185259272</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +472,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added production *.ser to .gitignore" />
     <MESSAGE value="Added Serialization to class&#10;Added Filename for read/write&#10;Added new querry" />
     <MESSAGE value="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries" />
     <MESSAGE value="Readded UserConfirmations" />
@@ -484,7 +496,8 @@
     <MESSAGE value="Indents" />
     <MESSAGE value="Added fix to Database holding duplicate values because of missing overrides equals/hashcode" />
     <MESSAGE value="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)" />
+    <MESSAGE value="Changes in way Messages are read in InboxUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in way Messages are read in InboxUI" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
