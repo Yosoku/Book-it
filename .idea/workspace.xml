@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Fixed dependencies">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/AccommodationReviews.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/CredentialsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUserDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/CustomerReviews.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserMessagesDB.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +28,8 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -95,13 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00004" summary="TimePeriod class,Reservation and Date control entities.Main with tests">
-      <created>1636909838847</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1636909838847</updated>
     </task>
     <task id="LOCAL-00005" summary="-Base abstract class Database&#10;-A couple of database classes with querries&#10;-Code cleanup&#10;-Application class &#10;-Package restructure">
       <created>1636969572422</created>
@@ -439,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638185259272</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Fixed dependencies">
+      <created>1638212463600</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1638212463601</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -455,7 +470,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Serialization to class&#10;Added Filename for read/write&#10;Added new querry" />
     <MESSAGE value="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries" />
     <MESSAGE value="Readded UserConfirmations" />
     <MESSAGE value="Indentation" />
@@ -480,7 +494,8 @@
     <MESSAGE value="Added fix to Database holding duplicate values because of missing overrides equals/hashcode" />
     <MESSAGE value="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)" />
     <MESSAGE value="Changes in way Messages are read in InboxUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in way Messages are read in InboxUI" />
+    <MESSAGE value="Fixed dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed dependencies" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
