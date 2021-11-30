@@ -23,7 +23,7 @@ import java.util.HashSet;
  * @see Database
  */
 
-public class BrokerAccommodations extends Database {
+public class BrokerAccommodationsDB extends Database {
     private int totalAccommodations;
     @Serial
     private static final long serialVersionUID = 0;
@@ -33,7 +33,7 @@ public class BrokerAccommodations extends Database {
      * An initializer constructor used to initialize the map,set totalAccommodations to 0 and call the Base class with
      * the specified filename to store the map. <b>The Hashset of each Broker key gets initialized after the first entry</b>
      */
-    public BrokerAccommodations() {
+    public BrokerAccommodationsDB() {
         super("src/config/brokerAccommodations.ser");
         brokerProperties = new HashMap<Broker, HashSet<Accommodation>>();
         totalAccommodations = 0;

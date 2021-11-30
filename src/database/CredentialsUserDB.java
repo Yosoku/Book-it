@@ -24,7 +24,7 @@ import java.util.HashMap;
  */
 
 
-public class CredentialsUser extends Database {
+public class CredentialsUserDB extends Database {
     @Serial
     private static final long serialVersionUID = 0;
     private HashMap<String, User> users; //Mapping of hash(Credentials) -> User
@@ -33,7 +33,7 @@ public class CredentialsUser extends Database {
      * An initializer constructor used to initialize the map and call the Base class with the specified filename to store
      * the map
      */
-    public CredentialsUser() {
+    public CredentialsUserDB() {
         super("src/config/credentialsUser.ser");
         users = new HashMap<String, User>();
     }

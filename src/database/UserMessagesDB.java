@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class UserMessages extends Database {
+public class UserMessagesDB extends Database {
     @Serial
     private static final long serialVersionUID = 0;
     private final HashMap<User, ArrayList<Message>> userInbox;
 
-    public UserMessages() {
+    public UserMessagesDB() {
         super("src/config/userMessages.ser");
         userInbox = new HashMap<User, ArrayList<Message>>();
     }

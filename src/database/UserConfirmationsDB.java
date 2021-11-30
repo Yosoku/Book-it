@@ -27,7 +27,7 @@ import java.util.List;
  * @see Database
  */
 
-public class UserConfirmations extends Database {
+public class UserConfirmationsDB extends Database {
     @Serial
     private static final long serialVersionUID = 0L;
     private HashMap<User, Boolean> userConfirmed;
@@ -36,7 +36,7 @@ public class UserConfirmations extends Database {
      * An initializer constructor used to initialize the map and call the Base class with the specified filename to store
      * the map
      */
-    public UserConfirmations() {
+    public UserConfirmationsDB() {
         super("src/config/userConfirmation.ser");
         userConfirmed = new HashMap<User, Boolean>();
     }
