@@ -1,9 +1,6 @@
 package application;
 
-import database.BrokerAccommodationsDB;
-import database.CredentialsUserDB;
-import database.UserConfirmationsDB;
-import database.UserMessagesDB;
+import database.*;
 
 public class DatabaseAPI {
     private static BrokerAccommodationsDB brokerAccommodationsDatabase;
@@ -12,13 +9,15 @@ public class DatabaseAPI {
     private static CredentialsUserDB credentialsUserDatabase;
 
     private static UserMessagesDB userMessagesDatabase;
+    private static ReviewsDB reviewsDatabase;
+    private static ReservationsDB reservationDatabase;
 
 
     public DatabaseAPI() {
-
+        reservationDatabase = new ReservationsDB();
         brokerAccommodationsDatabase = new BrokerAccommodationsDB();
         credentialsUserDatabase = new CredentialsUserDB();
-
+        reviewsDatabase = new ReviewsDB();
         userConfirmationsDatabase = new UserConfirmationsDB();
         userMessagesDatabase = new UserMessagesDB();
     }
@@ -37,9 +36,16 @@ public class DatabaseAPI {
         return credentialsUserDatabase;
     }
 
+    public static ReservationsDB getReservationsDatabase() {
+        return reservationDatabase;
+    }
 
     public static UserMessagesDB getUserMessagesDatabase() {
         return userMessagesDatabase;
+    }
+
+    public static ReviewsDB getReviewsDatabase() {
+        return reviewsDatabase;
     }
 
 
