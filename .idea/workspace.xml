@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Dependencies">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Fixed config files">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/SignInUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/SignInUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/accommodationReviews.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/credentialsUser.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/customerReviews.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/userMessages.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReviewsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReviewsDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,20 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added Javadoc">
-      <created>1637697196891</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697196891</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Changed Credentials from class to record">
-      <created>1637697226155</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697226155</updated>
     </task>
     <task id="LOCAL-00015" summary="Added Javadoc">
       <created>1637697314390</created>
@@ -453,7 +434,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638265414455</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Fixed the regex to match usernames ending with digits">
+      <created>1638265761213</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265761213</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Fixed config files">
+      <created>1638265816074</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265816074</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -469,8 +464,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed Review to a record" />
-    <MESSAGE value="Removed noinspection" />
     <MESSAGE value="Removed comments" />
     <MESSAGE value="Added application package" />
     <MESSAGE value="Added javadoc to gitignore" />
@@ -494,7 +487,9 @@
     <MESSAGE value="Refactored code to match ReviewsDB" />
     <MESSAGE value="Added a User field" />
     <MESSAGE value="Dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dependencies" />
+    <MESSAGE value="Fixed the regex to match usernames ending with digits" />
+    <MESSAGE value="Fixed config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed config files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
