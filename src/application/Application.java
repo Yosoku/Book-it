@@ -6,7 +6,10 @@ import auth.Credentials;
 import communication.Message;
 import communication.Review;
 import database.*;
-import users.*;
+import users.Admin;
+import users.Broker;
+import users.Gender;
+import users.User;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
@@ -16,12 +19,11 @@ import java.util.HashSet;
 public class Application {
 
     boolean isRunning;
-    private BrokerAccommodations brokerAccommodationsDatabase;
-    private UserConfirmations userConfirmationsDatabase;
-    private AccommodationReviews accommodationReviewsDatabase;
-    private CredentialsUser credentialsUserDatabase;
-    private CustomerReviews customerReviewsDatabase;
-    private UserMessages userMessagesDatabase;
+    private BrokerAccommodationsDB brokerAccommodationsDatabase;
+    private UserConfirmationsDB userConfirmationsDatabase;
+    private CredentialsUserDB credentialsUserDatabase;
+    private UserMessagesDB userMessagesDatabase;
+    private ReviewsDB reviewsDatabase;
     private User currentUser;
     private ConnectUI connectUI;
 
@@ -80,7 +82,7 @@ public class Application {
     private void handleUserRequests() {
         switch (currentUser.getPrivilege()) {
             case CUSTOMER -> {
-                CustomerUI customerUI = new CustomerUI();
+                CustomerUI customerUI = new CustomerUI(currentUser);
                 customerUI.show();
                 handleCustomerRequests(customerUI);
             }
@@ -129,7 +131,7 @@ public class Application {
                     UI.LOG(UIMessage.ENTRY_NOT_FOUND);
                 } else {
                     brokerAccommodationsDatabase.dropAccommodation((Broker) currentUser, accommodation);
-                    accommodationReviewsDatabase.dropAllReviewsFromAccommodation(accommodation);
+                    //  accommodationReviewsDatabase.dropAllReviewsFromAccommodation(accommodation);
                     //add removeall reservations
                     UI.LOG(UIMessage.ENTRY_DELETED);
                 }
@@ -143,12 +145,12 @@ public class Application {
         System.out.println("Handling Customer requests: )" + customerUI.getRequest());
         switch (customerUI.getRequest()) {
             case "search" -> {
-                customerUI.searchAccommodations();
+                //customerUI.searchAccommodations();
                 System.out.println("search");
 
             }
             case "viewrev" -> {
-                for (Review review : customerReviewsDatabase.selectReviewFromUser((Customer) currentUser)) {
+                for (Review review : reviewsDatabase.selectReviewsByUser(currentUser)) {
                     System.out.println(review.toString());
                 }
 
@@ -165,8 +167,7 @@ public class Application {
                 accommodation = brokerAccommodationsDatabase.selectAccommodationByID(Integer.parseInt(temp));
                 if (accommodation != null) {
                     Review review = customerUI.addReview(accommodation);
-                    customerReviewsDatabase.insertReviewToUser((Customer) currentUser, review);
-                    accommodationReviewsDatabase.insertReviewToAccommodation(accommodation, review);
+                    reviewsDatabase.insertReview(review);
                 } else {
                     UI.LOG(UIMessage.ENTRY_NOT_FOUND);
                 }
@@ -234,12 +235,12 @@ public class Application {
 
     private void initDatabases() {
 
-        accommodationReviewsDatabase = new AccommodationReviews();
-        brokerAccommodationsDatabase = new BrokerAccommodations();
-        credentialsUserDatabase = new CredentialsUser();
-        customerReviewsDatabase = new CustomerReviews();
-        userConfirmationsDatabase = new UserConfirmations();
-        userMessagesDatabase = new UserMessages();
+
+        brokerAccommodationsDatabase = new BrokerAccommodationsDB();
+        credentialsUserDatabase = new CredentialsUserDB();
+        reviewsDatabase = new ReviewsDB();
+        userConfirmationsDatabase = new UserConfirmationsDB();
+        userMessagesDatabase = new UserMessagesDB();
 
     }
 
@@ -247,33 +248,30 @@ public class Application {
     private void loadData() throws NoSuchAlgorithmException {
 
         //null in case of EOF
-        Object temp = accommodationReviewsDatabase.read();
+        Object temp = brokerAccommodationsDatabase.read();
         if (temp != null)
-            accommodationReviewsDatabase = (AccommodationReviews) temp;
-        temp = brokerAccommodationsDatabase.read();
-        if (temp != null)
-            brokerAccommodationsDatabase = (BrokerAccommodations) temp;
+            brokerAccommodationsDatabase = (BrokerAccommodationsDB) temp;
         temp = credentialsUserDatabase.read();
         if (temp != null)
-            credentialsUserDatabase = (CredentialsUser) temp;
-        temp = customerReviewsDatabase.read();
-        if (temp != null)
-            customerReviewsDatabase = (CustomerReviews) temp;
+            credentialsUserDatabase = (CredentialsUserDB) temp;
+
         temp = userConfirmationsDatabase.read();
         if (temp != null)
-            userConfirmationsDatabase = (UserConfirmations) temp;
+            userConfirmationsDatabase = (UserConfirmationsDB) temp;
         temp = userMessagesDatabase.read();
         if (temp != null)
-            userMessagesDatabase = (UserMessages) temp;
+            userMessagesDatabase = (UserMessagesDB) temp;
+        temp = reviewsDatabase.read();
+        if (temp != null)
+            reviewsDatabase = (ReviewsDB) temp;
         initAdmin();
 
     }
 
     private void writeData() {
-        accommodationReviewsDatabase.write();
+        reviewsDatabase.write();
         brokerAccommodationsDatabase.write();
         credentialsUserDatabase.write();
-        customerReviewsDatabase.write();
         userConfirmationsDatabase.write();
         userMessagesDatabase.write();
     }
