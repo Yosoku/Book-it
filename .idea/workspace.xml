@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added Javadoc">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added Handler class to lower coupling and complexity">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BrokerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BrokerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Accommodation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Accommodation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReservationCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReviewsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReviewsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/AdminTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +35,11 @@
         <option value="Edward Koulakidis" />
         <option value="Edward" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
@@ -101,41 +114,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Removed DatabaseType from Database,added Serialization">
-      <created>1637697357602</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697357602</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Added Javadoc">
-      <created>1637697439056</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697439056</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Added Javadoc">
-      <created>1637697477342</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697477342</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Added Serialization and toString()">
-      <created>1637697505742</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697505742</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Added Javadoc">
-      <created>1637697531560</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697531560</updated>
     </task>
     <task id="LOCAL-00021" summary="Added codemr to gitignore">
       <created>1637697621846</created>
@@ -445,7 +423,42 @@
       <option name="project" value="LOCAL" />
       <updated>1638271655233</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Updated configs">
+      <created>1638272098612</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1638272098612</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Added an API for Databases">
+      <created>1638307716394</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1638307716394</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Added Reservation and Reviews Databases">
+      <created>1638307922183</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1638307922183</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Added Reservations Database">
+      <created>1638308183042</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1638308183043</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Added Handler class to lower coupling and complexity">
+      <created>1638310145733</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1638310145733</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -453,7 +466,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="handler" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -461,11 +486,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed comments" />
-    <MESSAGE value="Added application package" />
-    <MESSAGE value="Added javadoc to gitignore" />
-    <MESSAGE value="Added javadoc toString() and custom serialVersion" />
-    <MESSAGE value="Added custom serialVersion" />
     <MESSAGE value="Added custom serialVersion and finished javadoc" />
     <MESSAGE value="Added javadoc and code clean up" />
     <MESSAGE value="Added custom Serial" />
@@ -486,7 +506,12 @@
     <MESSAGE value="Fixed the regex to match usernames ending with digits" />
     <MESSAGE value="Fixed config files" />
     <MESSAGE value="Added Javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Javadoc" />
+    <MESSAGE value="Updated configs" />
+    <MESSAGE value="Added an API for Databases" />
+    <MESSAGE value="Added Reservation and Reviews Databases" />
+    <MESSAGE value="Added Reservations Database" />
+    <MESSAGE value="Added Handler class to lower coupling and complexity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Handler class to lower coupling and complexity" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

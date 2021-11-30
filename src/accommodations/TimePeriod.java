@@ -2,11 +2,7 @@ package accommodations;
 
 import java.time.LocalDateTime;
 
-public class TimePeriod implements Comparable<TimePeriod> {
-
-    private final LocalDateTime start;
-    private final LocalDateTime end;
-
+public record TimePeriod(LocalDateTime start, LocalDateTime end) implements Comparable<TimePeriod> {
 
     public TimePeriod(LocalDateTime start, LocalDateTime end) {
         if (start.isBefore(end)) { //normal
@@ -51,14 +47,6 @@ public class TimePeriod implements Comparable<TimePeriod> {
             // ---(-[--)-]
             return start.isBefore(other.end);
         }
-    }
-
-    public LocalDateTime getStart() {
-        return start;
-    }
-
-    public LocalDateTime getEnd() {
-        return end;
     }
 
     @Override

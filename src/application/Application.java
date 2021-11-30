@@ -1,61 +1,29 @@
 package application;
 
-import UI.*;
-import accommodations.Accommodation;
-import auth.Credentials;
-import communication.Message;
-import communication.Review;
-import database.*;
-import users.Admin;
-import users.Broker;
-import users.Gender;
+import UI.ConnectUI;
+import UI.InboxUI;
+import UI.UI;
+import UI.UIMessage;
 import users.User;
 
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.HashSet;
 
 
 public class Application {
-
     boolean isRunning;
-    private BrokerAccommodationsDB brokerAccommodationsDatabase;
-    private UserConfirmationsDB userConfirmationsDatabase;
-    private CredentialsUserDB credentialsUserDatabase;
-    private UserMessagesDB userMessagesDatabase;
-    private ReviewsDB reviewsDatabase;
+    DatabaseAPI databaseAPI;
+    private Handler requestHandler;
     private User currentUser;
     private ConnectUI connectUI;
 
     public Application() throws NoSuchAlgorithmException {
-        initDatabases();
+        databaseAPI = new DatabaseAPI();
+        requestHandler = new Handler();
         connectUI = new ConnectUI();
-        loadData();
         run();
-        writeData();
-
+        DatabaseAPI.writeData();
     }
 
-    private void initAdmin() throws NoSuchAlgorithmException {
-        Admin admin1 = new Admin(new Credentials("Edward", "password"),
-                "Edward", 23, "edouardos@csd.auth.gr", Gender.MALE, "6982093778");
-        ArrayList<Admin> list = new ArrayList<>();
-        list.add(admin1);
-        admin1 = new Admin(new Credentials("Meditskos", "securePassword"),
-                "Georgios", 30, "gmeditsk@csd.auth.gr", Gender.MALE, "11888");
-        list.add(admin1);
-        admin1 = new Admin(new Credentials("Fwteinos", "securePassword"),
-                "Fwteinos", 19, "foteinov@csd.auth.gr", Gender.MALE, "166");
-        list.add(admin1);
-        admin1 = new Admin(new Credentials("Tsoumakas", "polymorphism"),
-                "Grigorios", 40, "tsoumakas@csd.auth.gr", Gender.MALE, "00 1 650-506-7000");
-        list.add(admin1);
-        for (Admin admin : list) {
-            userConfirmationsDatabase.insertUserConfirmation(admin);
-            userConfirmationsDatabase.updateUserConfirmation(admin);
-            credentialsUserDatabase.insertUser(admin.getCredentials(), admin);
-        }
-    }
 
 
     private void run() throws NoSuchAlgorithmException {
@@ -63,15 +31,16 @@ public class Application {
         System.out.println("Welcome UI");
         while (isRunning) {
             connectUI.show();
-            if (handleConnections(connectUI.getRequest())) {
+            if (requestHandler.handleConnectionRequests(connectUI.getRequest())) {
                 //connection established
-                userConfirmationsDatabase.updateUserConfirmation(currentUser); // DELETE LATER
-                if (userConfirmationsDatabase.selectUserConfirmation(currentUser)) {
+                currentUser = requestHandler.getCurrentUser();
+                DatabaseAPI.getUserConfirmationsDatabase().updateUserConfirmation(currentUser); // DELETE LATER
+                if (DatabaseAPI.getUserConfirmationsDatabase().selectUserConfirmation(currentUser)) {
                     //User confirmed show options
-                    handleUserRequests();
+                    requestHandler.handleUserRequests();
                 } else {
                     UI.LOG(UIMessage.CONFIRMATION_FAILED);
-                    InboxUI inboxUI = new InboxUI(userMessagesDatabase.selectMessageFromUser(currentUser));
+                    InboxUI inboxUI = new InboxUI(DatabaseAPI.getUserMessagesDatabase().selectMessageFromUser(currentUser));
                     inboxUI.show();
                 }
             }
@@ -79,201 +48,6 @@ public class Application {
         System.out.println("Credits");
     }
 
-    private void handleUserRequests() {
-        switch (currentUser.getPrivilege()) {
-            case CUSTOMER -> {
-                CustomerUI customerUI = new CustomerUI(currentUser);
-                customerUI.show();
-                handleCustomerRequests(customerUI);
-            }
-            case BROKER -> {
-                BrokerUI brokerUI = new BrokerUI();
-                brokerUI.show();
-                handleBrokerRequests(brokerUI);
 
-            }
-            case ADMIN -> {
-                AdminUI adminUI = new AdminUI();
-                adminUI.show();
-                handleAdminRequests(adminUI);
-            }
-        }
-    }
-
-    private void handleBrokerRequests(BrokerUI brokerUI) {
-        System.out.println("Handling Broker requests:" + brokerUI.getRequest());
-        switch (brokerUI.getRequest()) {
-            case "view" -> {
-                HashSet<Accommodation> accommodationList =
-                        brokerAccommodationsDatabase.selectAllAccommodationsFromBroker((Broker) currentUser);
-                for (Accommodation accommodation : accommodationList) {
-                    System.out.println(accommodation.toString());
-                }
-
-            }
-            case "add" -> {
-                Accommodation accommodation = brokerUI.addAccommodation();
-                brokerAccommodationsDatabase.insertAccommodation((Broker) currentUser, accommodation);
-            }
-            case "edit" -> {
-                int id = Integer.parseInt(brokerUI.getInput("Enter the id of the Accommodation you wish to edit", "^[1-9][0-9]*$"));
-                Accommodation accommodation = brokerAccommodationsDatabase.selectAccommodationByID((Broker) currentUser, id);
-                if (accommodation == null) {
-                    UI.LOG(UIMessage.ENTRY_NOT_FOUND);
-                } else {
-                    brokerUI.editAccommodation(accommodation);
-                }
-            }
-            case "delete" -> {
-                int id = Integer.parseInt(brokerUI.getInput("Enter the ID of the Accommodation you wish to delete", "^[1-9][0-9]*$"));
-                Accommodation accommodation = brokerAccommodationsDatabase.selectAccommodationByID((Broker) currentUser, id);
-                if (accommodation == null) {
-                    UI.LOG(UIMessage.ENTRY_NOT_FOUND);
-                } else {
-                    brokerAccommodationsDatabase.dropAccommodation((Broker) currentUser, accommodation);
-                    //  accommodationReviewsDatabase.dropAllReviewsFromAccommodation(accommodation);
-                    //add removeall reservations
-                    UI.LOG(UIMessage.ENTRY_DELETED);
-                }
-
-            }
-        }
-
-    }
-
-    private void handleCustomerRequests(CustomerUI customerUI) {
-        System.out.println("Handling Customer requests: )" + customerUI.getRequest());
-        switch (customerUI.getRequest()) {
-            case "search" -> {
-                //customerUI.searchAccommodations();
-                System.out.println("search");
-
-            }
-            case "viewrev" -> {
-                for (Review review : reviewsDatabase.selectReviewsByUser(currentUser)) {
-                    System.out.println(review.toString());
-                }
-
-            }
-            case "viewres" -> {
-
-            }
-            case "addrev" -> {
-                Accommodation accommodation;
-                for (Accommodation accommodation1 : brokerAccommodationsDatabase.selectAllAccommodations()) {
-                    System.out.println(accommodation1.toString());
-                }
-                String temp = customerUI.getInput("Enter the id of the accommodation you wish to review", "^[1-9][0-9]*$");
-                accommodation = brokerAccommodationsDatabase.selectAccommodationByID(Integer.parseInt(temp));
-                if (accommodation != null) {
-                    Review review = customerUI.addReview(accommodation);
-                    reviewsDatabase.insertReview(review);
-                } else {
-                    UI.LOG(UIMessage.ENTRY_NOT_FOUND);
-                }
-            }
-
-        }
-    }
-
-    private void handleAdminRequests(AdminUI adminUI) {
-        System.out.println("Handling Admin requests:" + adminUI.getRequest());
-        switch (adminUI.getRequest()) {
-            case "confirm" -> {
-                String confirmationMessage = "Hello reply to this email to confirm your account";
-                for (User user : userConfirmationsDatabase.selectAllUsersWhereConfirmedIs(false)) {
-                    System.out.println("Send confirmation message to user " + user.toString() + "\ny/n");
-                    char ans = adminUI.getInput("y/n", "y|Y|N|n").toLowerCase().charAt(0);
-                    if (ans == 'y')
-                        userMessagesDatabase.insertMessageToUser(user, new Message(currentUser, user, confirmationMessage));
-                }
-            }
-            case "stats" -> {
-                System.out.println("Total number of users : " + userConfirmationsDatabase.selectAllUsers().size());
-                System.out.println("Total number of accommodations : " + brokerAccommodationsDatabase.selectAllAccommodations().size());
-            }
-
-        }
-    }
-
-    private boolean handleConnections(String request) throws NoSuchAlgorithmException {
-        switch (request) {
-            case "signin" -> {
-                SignInUI signin = new SignInUI();
-                signin.show();
-                String[] request1 = signin.getRequest().split("\\s");
-                Credentials credentials = new Credentials(request1[0], request1[1]);
-                currentUser = credentialsUserDatabase.selectUser(credentials);
-                if (currentUser == null) {
-                    UI.LOG(UIMessage.SIGN_IN_FAILED);
-                    return false;
-                } else {
-                    UI.LOG(UIMessage.SIGN_IN_SUCCESS);
-                    return true;
-                }
-            }
-            case "signup" -> {
-                SignUpUI signup = new SignUpUI();
-                signup.show();
-                currentUser = signup.getNewUser();
-                if (credentialsUserDatabase.selectUser(currentUser.getCredentials()) != null) { // duplicate credentials
-                    UI.LOG(UIMessage.SIGN_UP_FAILED);
-                    return false;
-                } else {
-                    UI.LOG(UIMessage.SIGN_UP_SUCCESS);
-                    credentialsUserDatabase.insertUser(currentUser.getCredentials(), currentUser);
-                    userConfirmationsDatabase.insertUserConfirmation(currentUser);
-                    return true;
-                }
-            }
-            case "quit" -> isRunning = false;
-        }
-        System.out.println("wtf");
-        return false;
-
-    }
-
-    private void initDatabases() {
-
-
-        brokerAccommodationsDatabase = new BrokerAccommodationsDB();
-        credentialsUserDatabase = new CredentialsUserDB();
-        reviewsDatabase = new ReviewsDB();
-        userConfirmationsDatabase = new UserConfirmationsDB();
-        userMessagesDatabase = new UserMessagesDB();
-
-    }
-
-
-    private void loadData() throws NoSuchAlgorithmException {
-
-        //null in case of EOF
-        Object temp = brokerAccommodationsDatabase.read();
-        if (temp != null)
-            brokerAccommodationsDatabase = (BrokerAccommodationsDB) temp;
-        temp = credentialsUserDatabase.read();
-        if (temp != null)
-            credentialsUserDatabase = (CredentialsUserDB) temp;
-
-        temp = userConfirmationsDatabase.read();
-        if (temp != null)
-            userConfirmationsDatabase = (UserConfirmationsDB) temp;
-        temp = userMessagesDatabase.read();
-        if (temp != null)
-            userMessagesDatabase = (UserMessagesDB) temp;
-        temp = reviewsDatabase.read();
-        if (temp != null)
-            reviewsDatabase = (ReviewsDB) temp;
-        initAdmin();
-
-    }
-
-    private void writeData() {
-        reviewsDatabase.write();
-        brokerAccommodationsDatabase.write();
-        credentialsUserDatabase.write();
-        userConfirmationsDatabase.write();
-        userMessagesDatabase.write();
-    }
 
 }

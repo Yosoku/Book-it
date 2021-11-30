@@ -1,10 +1,10 @@
 package users;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class AdminTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testToString() {
     }
 }

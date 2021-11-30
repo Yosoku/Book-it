@@ -3,7 +3,6 @@ package accommodations;
 import javax.swing.*;
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -17,31 +16,30 @@ public class Accommodation implements Serializable {
     private List<ImageIcon> images;
     private String description;    //Brief description of the accommodation
     private int price; // Price per night
-    private boolean available; // Availability of the accommodation depending on renovations etc
-    private final List<Reservation> reservations;
-    private final TreeSet<TimePeriod> calendar;
+    private TreeSet<TimePeriod> calendar;
 
 
-
-
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
-
-    public Accommodation(int space, String address, List<ImageIcon> images, String description,
-                         int price, boolean available) {
+    public Accommodation(int space, String address, List<ImageIcon> images, String description, int price) {
         this.space = space;
         this.address = address;
         this.images = images;
         this.description = description;
         this.price = price;
-        this.available = available;
-        reservations = new ArrayList<Reservation>();
         calendar = new TreeSet<TimePeriod>();
+    }
+
+
+    @Override
+    public String toString() {
+        return "Accommodation{" +
+                "ID=" + ID +
+                ", space=" + space +
+                ", address='" + address + '\'' +
+                ", images=" + images +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", calendar=" + calendar +
+                '}';
     }
 
     //========================== Getters & Setters =====================================================================
@@ -64,21 +62,6 @@ public class Accommodation implements Serializable {
 
     public List<ImageIcon> getImages() {
         return images;
-    }
-
-    @Override
-    public String toString() {
-        return "Accommodation{" +
-                "ID=" + ID +
-                ", space=" + space +
-                ", address='" + address + '\'' +
-                ", images=" + images +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-                ", available=" + available +
-                ", reservations=" + reservations +
-                ", calendar=" + calendar +
-                '}';
     }
 
     public void setImages(List<ImageIcon> images) {
@@ -110,23 +93,17 @@ public class Accommodation implements Serializable {
     }
 
 
-    public List<Reservation> getReservations() {
-        return reservations;
+    public void addToCalendar(TimePeriod timePeriod) {
+        if (timePeriod == null)
+            return;
+        calendar.add(timePeriod);
     }
 
-    //==================================================================================================================
-
-    public void addReservation(Reservation newReservation) {
-        if (newReservation != null) {
-            reservations.add(newReservation);
-            calendar.add(newReservation.getPeriod());
-        }
+    public void removeFromCalendar(TimePeriod timePeriod) {
+        if (timePeriod == null)
+            return;
+        calendar.remove(timePeriod);
     }
-
-    public void removeReservation(Reservation delReservation) {
-        reservations.remove(delReservation);
-    }
-
 
     /**
      * isOccupied is a method that helps with reservations and gives a higher level interface for users. Occupation is
@@ -136,16 +113,16 @@ public class Accommodation implements Serializable {
      * @param period the time period we wish to check if the accommodation is free to reserve
      * @return true if the accommodation is reserved for the time period @param,false otherwise
      */
-    public boolean isOccupied(TimePeriod period) {
+    public boolean isAvailable(TimePeriod period) {
         TimePeriod temp = calendar.floor(period); // temp.start<=period.start
 
         if (temp == null) {
             if (calendar.isEmpty())
-                return false;
+                return !false;
         } else {
-            return period.intersects(temp);
+            return !period.intersects(temp);
         }
-        return false;
+        return !false;
     }
 
 }

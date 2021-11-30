@@ -69,8 +69,7 @@ public class ReviewsDB extends Database {
     }
 
     /**
-     * A query for selecting Reviews by a specific Accommodation.
-     * returns the Hashset of Accommodations,null otherwise. Runs in O(r) time where r = Number of reviews
+     * A query for selecting Reviews by a specific Accommodation. Runs in O(r) time where r = Number of reviews
      *
      * @param accommodation The Accommodation instance used to Query the HashSet
      * @return An ArrayList of all the Reviews written on accommodation. If the accommodation arguement is null the method

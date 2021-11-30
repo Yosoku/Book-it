@@ -1,7 +1,6 @@
 package UI;
 
 import accommodations.Accommodation;
-import communication.Review;
 
 public class BrokerUI extends UI {
 
@@ -17,8 +16,7 @@ public class BrokerUI extends UI {
         String address = getInput("What is the exact address of the accommodation?", "");
         int price = Integer.parseInt(getInput("What is the price in Euros per night?", "^[1-9][0-9]*$"));
         String description = getInput("Add a small description for your accommodation!", "");
-        boolean available = Boolean.parseBoolean(getInput("Is it available for rent? You can change this later", "true|false"));
-        return new Accommodation(sqm, address, null, description, price, available);
+        return new Accommodation(sqm, address, null, description, price);
     }
 
     public void editAccommodation(Accommodation accommodation) {
@@ -42,15 +40,10 @@ public class BrokerUI extends UI {
                 "(y|n|Y|N)").toLowerCase().charAt(0);
         if (ans == 'y')
             accommodation.setDescription(getInput("Add new description", ""));
-
-        ans = getInput("Would you like to edit the availability of the accommodation? y/n",
-                "(y|n|Y|N)").toLowerCase().charAt(0);
-        if (ans == 'y')
-            accommodation.setAvailable(Boolean.parseBoolean(getInput("Add new availability true/false", "true|false")));
-
         ans = getInput("Would you like to add images? y/n", "y|Y|n|N").toLowerCase().charAt(0);
         if (ans == 'y') {
             //addImages();
+            System.out.println("Adding images");
         }
     }
 }
