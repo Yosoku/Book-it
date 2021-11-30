@@ -23,8 +23,8 @@ Note that the Credentials below are case __SENSITIVE__
 | Admin                 | Username    | Password        | Email                  |
 | :---                  |    :----:   |          ---:   | ---:                   |   
 | Edward Koulakidis     | Edward      | securePassword  | edouardos@csd.auth.gr  |   
-| Georgios Meditskos    | Meditskos   | securePassword1 | -                      |
-| Fwteinos Wawaroutas   | Fwteinos    | securePassword2 | foteinov@csd.auth.gr   |
+| Georgios Meditskos    | Meditskos   | securePassword | -                      |
+| Fwteinos Wawaroutas   | Fwteinos    | securePassword | foteinov@csd.auth.gr   |
 | Grigorios Tsoumakas   | Tsoumakas   | polymorphism    | -                      |
 
 ![](https://cdn.vox-cdn.com/thumbor/Ffrvj4ltYfBKJni5dvdYaaGrGP4=/0x0:1432x1080/920x613/filters:focal(616x165:844x393):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64687982/chrome_2019_07_08_14_17_05.0.jpg)
