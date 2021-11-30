@@ -1,66 +1,63 @@
 package application;
 
-import database.*;
+import database.BrokerAccommodationsDB;
+import database.CredentialsUserDB;
+import database.UserConfirmationsDB;
+import database.UserMessagesDB;
 
 public class DatabaseAPI {
-    private static BrokerAccommodations brokerAccommodationsDatabase;
-    private static UserConfirmations userConfirmationsDatabase;
-    private static AccommodationReviews accommodationReviewsDatabase;
-    private static CredentialsUser credentialsUserDatabase;
-    private static CustomerReviews customerReviewsDatabase;
-    private static UserMessages userMessagesDatabase;
+    private static BrokerAccommodationsDB brokerAccommodationsDatabase;
+    private static UserConfirmationsDB userConfirmationsDatabase;
+
+    private static CredentialsUserDB credentialsUserDatabase;
+
+    private static UserMessagesDB userMessagesDatabase;
 
 
     public DatabaseAPI() {
-        accommodationReviewsDatabase = new AccommodationReviews();
-        brokerAccommodationsDatabase = new BrokerAccommodations();
-        credentialsUserDatabase = new CredentialsUser();
-        customerReviewsDatabase = new CustomerReviews();
-        userConfirmationsDatabase = new UserConfirmations();
-        userMessagesDatabase = new UserMessages();
+
+        brokerAccommodationsDatabase = new BrokerAccommodationsDB();
+        credentialsUserDatabase = new CredentialsUserDB();
+
+        userConfirmationsDatabase = new UserConfirmationsDB();
+        userMessagesDatabase = new UserMessagesDB();
     }
 
 
-    public static BrokerAccommodations getBrokerAccommodationsDatabase() {
+    public static BrokerAccommodationsDB getBrokerAccommodationsDatabase() {
         return brokerAccommodationsDatabase;
     }
 
-    public static UserConfirmations getUserConfirmationsDatabase() {
+    public static UserConfirmationsDB getUserConfirmationsDatabase() {
         return userConfirmationsDatabase;
     }
 
-    public static AccommodationReviews getAccommodationReviewsDatabase() {
-        return accommodationReviewsDatabase;
-    }
 
-    public static CredentialsUser getCredentialsUserDatabase() {
+    public static CredentialsUserDB getCredentialsUserDatabase() {
         return credentialsUserDatabase;
     }
 
-    public static CustomerReviews getCustomerReviewsDatabase() {
-        return customerReviewsDatabase;
-    }
 
-    public static UserMessages getUserMessagesDatabase() {
+    public static UserMessagesDB getUserMessagesDatabase() {
         return userMessagesDatabase;
     }
 
 
     private void loadData() {
-        accommodationReviewsDatabase = (AccommodationReviews) accommodationReviewsDatabase.read();
-        brokerAccommodationsDatabase = (BrokerAccommodations) brokerAccommodationsDatabase.read();
-        credentialsUserDatabase = (CredentialsUser) credentialsUserDatabase.read();
-        customerReviewsDatabase = (CustomerReviews) customerReviewsDatabase.read();
-        userConfirmationsDatabase = (UserConfirmations) userConfirmationsDatabase.read();
-        userMessagesDatabase = (UserMessages) userMessagesDatabase.read();
+
+        brokerAccommodationsDatabase = (BrokerAccommodationsDB) brokerAccommodationsDatabase.read();
+        credentialsUserDatabase = (CredentialsUserDB) credentialsUserDatabase.read();
+
+        userConfirmationsDatabase = (UserConfirmationsDB) userConfirmationsDatabase.read();
+        userMessagesDatabase = (UserMessagesDB) userMessagesDatabase.read();
     }
 
 
     private void writeData() {
-        accommodationReviewsDatabase.write();
+
         brokerAccommodationsDatabase.write();
         credentialsUserDatabase.write();
-        customerReviewsDatabase.write();
+
         userConfirmationsDatabase.write();
         userMessagesDatabase.write();
     }
