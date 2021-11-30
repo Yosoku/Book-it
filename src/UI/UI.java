@@ -1,7 +1,5 @@
 package UI;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -12,7 +10,7 @@ public abstract class UI {
     protected String request;
     public abstract void show();
 
-    //TODO maybe split in to Log UI and UserUI
+
     public String getInput(String message, String regex) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher;
