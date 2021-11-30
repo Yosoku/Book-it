@@ -21,12 +21,11 @@ public class Application {
         requestHandler = new Handler();
         connectUI = new ConnectUI();
         run();
-        DatabaseAPI.writeData();
     }
 
 
-
     private void run() throws NoSuchAlgorithmException {
+        DatabaseAPI.loadData();
         isRunning = true;
         System.out.println("Welcome UI");
         while (isRunning) {
@@ -38,16 +37,17 @@ public class Application {
                 if (DatabaseAPI.getUserConfirmationsDatabase().selectUserConfirmation(currentUser)) {
                     //User confirmed show options
                     requestHandler.handleUserRequests();
+
                 } else {
                     UI.LOG(UIMessage.CONFIRMATION_FAILED);
                     InboxUI inboxUI = new InboxUI(DatabaseAPI.getUserMessagesDatabase().selectMessageFromUser(currentUser));
                     inboxUI.show();
                 }
             }
+            isRunning = !requestHandler.quit;
         }
+        DatabaseAPI.writeData();
         System.out.println("Credits");
     }
-
-
 
 }

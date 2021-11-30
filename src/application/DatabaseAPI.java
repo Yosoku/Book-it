@@ -3,29 +3,17 @@ package application;
 import database.*;
 
 public class DatabaseAPI {
-    private static BrokerAccommodationsDB brokerAccommodationsDatabase;
-    private static CredentialsUserDB credentialsUserDatabase;
-    private static ReservationsDB reservationDatabase;
-    private static ReviewsDB reviewsDatabase;
-    private static UserConfirmationsDB userConfirmationsDatabase;
-    private static UserMessagesDB userMessagesDatabase;
-
-
-    public DatabaseAPI() {
-        brokerAccommodationsDatabase = new BrokerAccommodationsDB();
-        credentialsUserDatabase = new CredentialsUserDB();
-        reservationDatabase = new ReservationsDB();
-        reviewsDatabase = new ReviewsDB();
-        userConfirmationsDatabase = new UserConfirmationsDB();
-        userMessagesDatabase = new UserMessagesDB();
-        loadData();
-    }
+    private static BrokerAccommodationsDB brokerAccommodationsDatabase = new BrokerAccommodationsDB();
+    private static CredentialsUserDB credentialsUserDatabase = new CredentialsUserDB();
+    private static ReservationsDB reservationDatabase = new ReservationsDB();
+    private static ReviewsDB reviewsDatabase = new ReviewsDB();
+    private static UserConfirmationsDB userConfirmationsDatabase = new UserConfirmationsDB();
+    private static UserMessagesDB userMessagesDatabase = new UserMessagesDB();
 
 
     public static BrokerAccommodationsDB getBrokerAccommodationsDatabase() {
         return brokerAccommodationsDatabase;
     }
-
 
     public static CredentialsUserDB getCredentialsUserDatabase() {
         return credentialsUserDatabase;
@@ -48,14 +36,25 @@ public class DatabaseAPI {
     }
 
 
-    private void loadData() {
-
-        brokerAccommodationsDatabase = (BrokerAccommodationsDB) brokerAccommodationsDatabase.read();
-        credentialsUserDatabase = (CredentialsUserDB) credentialsUserDatabase.read();
-        reviewsDatabase = (ReviewsDB) reviewsDatabase.read();
-        reservationDatabase = (ReservationsDB) reservationDatabase.read();
-        userConfirmationsDatabase = (UserConfirmationsDB) userConfirmationsDatabase.read();
-        userMessagesDatabase = (UserMessagesDB) userMessagesDatabase.read();
+    public static void loadData() {
+        Object temp = brokerAccommodationsDatabase.read();
+        if (temp != null)
+            brokerAccommodationsDatabase = (BrokerAccommodationsDB) temp;
+        temp = credentialsUserDatabase.read();
+        if (temp != null)
+            credentialsUserDatabase = (CredentialsUserDB) temp;
+        temp = reservationDatabase.read();
+        if (temp != null)
+            reservationDatabase = (ReservationsDB) temp;
+        temp = reviewsDatabase.read();
+        if (temp != null)
+            reviewsDatabase = (ReviewsDB) temp;
+        temp = userConfirmationsDatabase.read();
+        if (temp != null)
+            userConfirmationsDatabase = (UserConfirmationsDB) temp;
+        temp = userMessagesDatabase.read();
+        if (temp != null)
+            userMessagesDatabase = (UserMessagesDB) temp;
     }
 
 

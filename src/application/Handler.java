@@ -13,7 +13,7 @@ import java.util.HashSet;
 
 public class Handler {
     private User currentUser = null;
-
+    public boolean quit;
 
     public boolean handleConnectionRequests(String request) throws NoSuchAlgorithmException {
         switch (request) {
@@ -45,6 +45,7 @@ public class Handler {
                     return true;
                 }
             }
+            case "quit" -> quit = true;
         }
         System.out.println("wtf");
         return false;
@@ -171,5 +172,6 @@ public class Handler {
 
         }
     }
+
 
 }
