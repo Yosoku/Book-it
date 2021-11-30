@@ -20,7 +20,7 @@ import java.io.*;
  * @see java.io.Serializable
  * @see ObjectInputStream
  * @see ObjectOutputStream
- * @see CredentialsUser
+ * @see CredentialsUserDB
  */
 
 public abstract class Database implements Serializable {

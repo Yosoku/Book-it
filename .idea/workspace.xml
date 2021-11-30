@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Fixed dependencies">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Dependencies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/SignInUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/SignInUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccommodationReviews.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/CredentialsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUserDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/CustomerReviews.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/accommodationReviews.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/credentialsUser.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/customerReviews.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userMessages.ser" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/UserMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserMessagesDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +46,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/application/Application.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="20qLvoPVyIZ6H79kAHYrtsVo6p6" />
   <component name="ProjectViewState">
@@ -110,62 +109,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00005" summary="-Base abstract class Database&#10;-A couple of database classes with querries&#10;-Code cleanup&#10;-Application class &#10;-Package restructure">
-      <created>1636969572422</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1636969572422</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added License and updated README">
-      <created>1637594720584</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1637594720585</updated>
-    </task>
-    <task id="LOCAL-00007" summary="-Added Javadoc to User&#10;-Deleted LoginForm">
-      <created>1637618036588</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1637618036588</updated>
-    </task>
-    <task id="LOCAL-00008" summary="-Added Javadoc to User&#10;-Deleted LoginForm">
-      <created>1637695479524</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1637695479524</updated>
-    </task>
-    <task id="LOCAL-00009" summary="-Added Javadoc to User&#10;-Deleted LoginForm">
-      <created>1637695553226</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1637695553227</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Delete useless DatabaseType enum">
-      <created>1637696360934</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1637696360934</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Changed Credentials to a record">
-      <created>1637696383307</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1637696383307</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added Javadoc">
-      <created>1637697075759</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697075759</updated>
     </task>
     <task id="LOCAL-00013" summary="Added Javadoc">
       <created>1637697196891</created>
@@ -454,7 +397,63 @@
       <option name="project" value="LOCAL" />
       <updated>1638212463601</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Added User and Accommodation to Review record and made it Serializable">
+      <created>1638265200283</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265200283</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Removed TODO">
+      <created>1638265218747</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265218747</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Renamed to nameDB">
+      <created>1638265273495</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265273495</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Deleted,replaced with ReviewsDB">
+      <created>1638265292558</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265292558</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Replacement of old reviews DB">
+      <created>1638265311372</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265311372</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Refactored code to match ReviewsDB">
+      <created>1638265358758</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265358758</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Added a User field">
+      <created>1638265400827</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265400827</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Dependencies">
+      <created>1638265414455</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1638265414455</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -470,14 +469,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries" />
-    <MESSAGE value="Readded UserConfirmations" />
-    <MESSAGE value="Indentation" />
-    <MESSAGE value="Comment out addMessage" />
-    <MESSAGE value="Added suppressWarnings" />
-    <MESSAGE value="Simplify" />
-    <MESSAGE value="Added Serial" />
-    <MESSAGE value="Changed List to HashSet&#10;Code cleanup" />
     <MESSAGE value="Changed Review to a record" />
     <MESSAGE value="Removed noinspection" />
     <MESSAGE value="Removed comments" />
@@ -495,7 +486,15 @@
     <MESSAGE value="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)" />
     <MESSAGE value="Changes in way Messages are read in InboxUI" />
     <MESSAGE value="Fixed dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed dependencies" />
+    <MESSAGE value="Added User and Accommodation to Review record and made it Serializable" />
+    <MESSAGE value="Removed TODO" />
+    <MESSAGE value="Renamed to nameDB" />
+    <MESSAGE value="Deleted,replaced with ReviewsDB" />
+    <MESSAGE value="Replacement of old reviews DB" />
+    <MESSAGE value="Refactored code to match ReviewsDB" />
+    <MESSAGE value="Added a User field" />
+    <MESSAGE value="Dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dependencies" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
