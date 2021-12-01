@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added Handler class to lower coupling and complexity">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/reviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/reviews.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +14,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Record" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -78,7 +75,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -120,13 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Added codemr to gitignore">
-      <created>1637697621846</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697621846</updated>
     </task>
     <task id="LOCAL-00022" summary="XMLS">
       <created>1637697990955</created>
@@ -464,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638310145733</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Refactor">
+      <created>1638312569391</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1638312569391</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -492,7 +489,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added custom serialVersion and finished javadoc" />
     <MESSAGE value="Added javadoc and code clean up" />
     <MESSAGE value="Added custom Serial" />
     <MESSAGE value="Corrected Javadoc" />
@@ -517,7 +513,8 @@
     <MESSAGE value="Added Reservation and Reviews Databases" />
     <MESSAGE value="Added Reservations Database" />
     <MESSAGE value="Added Handler class to lower coupling and complexity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Handler class to lower coupling and complexity" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

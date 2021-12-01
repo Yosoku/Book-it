@@ -12,13 +12,13 @@ import java.security.NoSuchAlgorithmException;
 public class Application {
     boolean isRunning;
     DatabaseAPI databaseAPI;
-    private Handler requestHandler;
+    private Server requestHandler;
     private User currentUser;
     private ConnectUI connectUI;
 
     public Application() throws NoSuchAlgorithmException {
         databaseAPI = new DatabaseAPI();
-        requestHandler = new Handler();
+        requestHandler = new Server();
         connectUI = new ConnectUI();
         run();
     }
