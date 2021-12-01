@@ -1,14 +1,24 @@
 package UI;
 
 import accommodations.Accommodation;
+import users.User;
 
 public class BrokerUI extends UI {
+    private User broker;
+
+    public BrokerUI(User broker) {
+        this.broker = broker;
+        System.out.println("Welcome back " + broker.getName() + ",how would you like to proceed?");
+
+    }
 
     @Override
     public void show() {
-        System.out.println("Welcome back User,how would you like to proceed?\nAdd new Accommodation(add)\n" +
-                "Edit already existing Accommodation(edit)\nDelete already existing Accommodation(delete)");
-        request = getInput("Enter add/edit/delete", "(add|edit|delete|view)");
+
+        System.out.println("\nAdd new Accommodation(add)\n" +
+                "Edit already existing Accommodation(edit)\nDelete already existing Accommodation(delete)\nSign out(signout)");
+        request = getInput("Enter add/edit/delete", "(add|edit|delete|view|signout)");
+
     }
 
     public Accommodation addAccommodation() {

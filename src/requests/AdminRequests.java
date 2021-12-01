@@ -11,30 +11,33 @@ public class AdminRequests implements Handler {
     private Admin admin;
 
     public AdminRequests(Admin admin) {
-        ui = new AdminUI();
+        ui = new AdminUI(admin);
         this.admin = admin;
-        ui.show();
+
     }
 
     @Override
     public void handleRequests() {
-        System.out.println("Handling Admin requests:" + ui.getRequest());
-        switch (ui.getRequest()) {
-            case "confirm" -> {
-                String confirmationMessage = "Hello reply to this email to confirm your account";
-                for (User user : DatabaseAPI.getUserConfirmationsDatabase().selectAllUsersWhereConfirmedIs(false)) {
-                    System.out.println("Send confirmation message to user " + user.toString() + "\ny/n");
-                    char ans = ui.getInput("y/n", "y|Y|N|n").toLowerCase().charAt(0);
-                    if (ans == 'y')
-                        DatabaseAPI.getUserMessagesDatabase().insertMessageToUser(user, new Message(admin, user, confirmationMessage));
+        boolean quit = false;
+        while (!quit) {
+            ui.show();
+            switch (ui.getRequest()) {
+                case "confirm" -> {
+                    String confirmationMessage = "Hello reply to this email to confirm your account";
+                    for (User user : DatabaseAPI.getUserConfirmationsDatabase().selectAllUsersWhereConfirmedIs(false)) {
+                        System.out.println("Send confirmation message to user " + user.toString() + "\ny/n");
+                        char ans = ui.getInput("y/n", "y|Y|N|n").toLowerCase().charAt(0);
+                        if (ans == 'y')
+                            DatabaseAPI.getUserMessagesDatabase().insertMessageToUser(user, new Message(admin, user, confirmationMessage));
+                    }
                 }
-            }
-            case "stats" -> {
-                System.out.println("Total number of users : " + DatabaseAPI.getUserConfirmationsDatabase().selectAllUsers().size());
-                System.out.println("Total number of accommodations : " + DatabaseAPI.getBrokerAccommodationsDatabase().selectAllAccommodations().size());
-            }
+                case "stats" -> {
+                    System.out.println("Total number of users : " + DatabaseAPI.getUserConfirmationsDatabase().selectAllUsers().size());
+                    System.out.println("Total number of accommodations : " + DatabaseAPI.getBrokerAccommodationsDatabase().selectAllAccommodations().size());
+                }
+                case "signout" -> quit = true;
 
+            }
         }
-
     }
 }

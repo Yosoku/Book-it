@@ -19,7 +19,6 @@ import java.security.NoSuchAlgorithmException;
 public class Server {
     private User currentUser = null;
     public boolean quit;
-    private Handler handler;
 
     public boolean handleConnectionRequests(String request) throws NoSuchAlgorithmException {
         switch (request) {
@@ -51,14 +50,14 @@ public class Server {
                     return true;
                 }
             }
-            case "quit" -> quit = true;
         }
-        System.out.println("wtf");
+        //request = quit
         return false;
     }
 
 
     public void handleUserRequests() {
+        Handler handler;
         switch (currentUser.getPrivilege()) {
             case CUSTOMER -> {
                 handler = new CustomerRequests((Customer) currentUser);

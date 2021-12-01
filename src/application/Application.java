@@ -30,21 +30,20 @@ public class Application {
         System.out.println("Welcome UI");
         while (isRunning) {
             connectUI.show();
+            isRunning = !connectUI.getRequest().equals("quit");
             if (requestHandler.handleConnectionRequests(connectUI.getRequest())) {
                 //connection established
                 currentUser = requestHandler.getCurrentUser();
-                DatabaseAPI.getUserConfirmationsDatabase().updateUserConfirmation(currentUser); // DELETE LATER
                 if (DatabaseAPI.getUserConfirmationsDatabase().selectUserConfirmation(currentUser)) {
                     //User confirmed show options
                     requestHandler.handleUserRequests();
-
                 } else {
                     UI.LOG(UIMessage.CONFIRMATION_FAILED);
                     InboxUI inboxUI = new InboxUI(DatabaseAPI.getUserMessagesDatabase().selectMessageFromUser(currentUser));
                     inboxUI.show();
                 }
             }
-            isRunning = !requestHandler.quit;
+
         }
         DatabaseAPI.writeData();
         System.out.println("Credits");

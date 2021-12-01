@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Refactor">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added Separate Request Handlers for each type of user">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/AdminUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BrokerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BrokerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomerUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/credentialsUser.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/credentialsUser.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/AdminRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/BrokerRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/CustomerRequests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,13 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00022" summary="XMLS">
-      <created>1637697990955</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1637697990955</updated>
     </task>
     <task id="LOCAL-00023" summary="Added *.ser files to repo">
       <created>1637698100408</created>
@@ -461,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638312569391</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Added Separate Request Handlers for each type of user">
+      <created>1638348444651</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1638348444652</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,7 +497,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added javadoc and code clean up" />
     <MESSAGE value="Added custom Serial" />
     <MESSAGE value="Corrected Javadoc" />
     <MESSAGE value="Indents" />
@@ -514,7 +521,8 @@
     <MESSAGE value="Added Reservations Database" />
     <MESSAGE value="Added Handler class to lower coupling and complexity" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="Added Separate Request Handlers for each type of user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Separate Request Handlers for each type of user" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
