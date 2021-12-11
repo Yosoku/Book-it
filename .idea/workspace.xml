@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added Separate Request Handlers for each type of user">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="some visual stuff">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Datasets/USA_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/USA_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/dathensroads.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/enron-email-dataset-QueryResult.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/greekcities.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/redditUsernames.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/usersDataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/README/AdminSignin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/README/Register.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/README/Register2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/README/Users.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21,_12_30_π_μ__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21,_12_31_π_μ__[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21__12_30_____Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21__12_31_____Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/AdminUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/BrokerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BrokerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/InboxUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InboxUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/credentialsUser.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/credentialsUser.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReservationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReservationsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReviewsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReviewsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/AdminRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/BrokerRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/CustomerRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,14 +82,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/accommodations/Accommodation.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/application/Application.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/UI/BrokerUI.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/database/ReviewsDB.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/application/DatabaseAPI.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/accommodations/Reservation.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/database/ReviewsDB.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/application/Application.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/accommodations/TimePeriod.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/accommodations/Reservation.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/accommodations/Accommodation.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/UI/BrokerUI.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20qLvoPVyIZ6H79kAHYrtsVo6p6" />
   <component name="ProjectViewState">
@@ -75,6 +103,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -83,13 +112,20 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Datasets" />
+      <recent name="$PROJECT_DIR$/src/data" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -125,146 +161,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Added *.ser files to repo">
-      <created>1637698100408</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1637698100408</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Added production *.ser to .gitignore">
-      <created>1637698332071</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1637698332071</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Added Serialization to class&#10;Added Filename for read/write&#10;Added new querry">
-      <created>1637698487249</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1637698487249</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Added Serialization to class&#10;Added new member variable&#10;Added Filename for read/write&#10;Added new queries">
-      <created>1637698612905</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1637698612905</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Readded UserConfirmations">
-      <created>1637750201049</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1637750201049</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Simplify">
-      <created>1637750363827</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1637750363827</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Comment out addMessage">
-      <created>1637750380876</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1637750380876</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Added suppressWarnings">
-      <created>1637750394867</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1637750394867</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Simplify">
-      <created>1637750405502</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1637750405502</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Added Serial">
-      <created>1637758150806</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1637758150806</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Changed List to HashSet&#10;Code cleanup">
-      <created>1637758244261</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1637758244261</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Changed Review to a record">
-      <created>1637758460221</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1637758460221</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Removed noinspection">
-      <created>1637758810627</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1637758810627</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Removed comments">
-      <created>1637758830250</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1637758830250</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Added application package">
-      <created>1637758848635</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1637758848635</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Added javadoc to gitignore">
-      <created>1638040726696</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1638040726696</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Added javadoc toString() and custom serialVersion">
-      <created>1638129277219</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1638129277219</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Added custom serialVersion">
-      <created>1638129297352</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1638129297352</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Added custom serialVersion and finished javadoc">
-      <created>1638129383192</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1638129383192</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Added javadoc and code clean up">
-      <created>1638129401910</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1638129401911</updated>
     </task>
     <task id="LOCAL-00043" summary="Added javadoc and code clean up">
       <created>1638129419895</created>
@@ -469,7 +365,147 @@
       <option name="project" value="LOCAL" />
       <updated>1638348444652</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Refactoring and cleanup">
+      <created>1638351164264</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1638351164265</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Dataset containing Full names,Phones,Emails &#10;Used in creating users">
+      <created>1639222990930</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1639222990930</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Dataset containing usernames on Reddit.Used in creating users">
+      <created>1639223194462</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223194462</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Dataset containing all the Greek Cities.Used in creating accommodations">
+      <created>1639223279799</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223279799</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Dataset containing some Athens roads(addresses),used in creating accommodations">
+      <created>1639223310254</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223310254</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Dataset containing emails.Used in creating Users">
+      <created>1639223398958</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223398958</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Class used to parse Datasets and create random fake accommodations">
+      <created>1639223448810</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223448810</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Class used to parse Datasets and create random fake Users">
+      <created>1639223463231</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223463231</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Added TODO.txt to .gitignore">
+      <created>1639223915224</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223915224</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Updated config files with new Users and Accommodations">
+      <created>1639223981633</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223981633</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Updated config files with new Users and Accommodations">
+      <created>1639223996955</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223996955</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Added a City field in Accommodation to support more versatile queries based on Location">
+      <created>1639224291797</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224291797</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Added a Welcome greeting UI for highe quality user experience">
+      <created>1639224360366</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224360367</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Added 2 new Messages for Unavailable features and a Loading message">
+      <created>1639224457762</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224457762</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Fixed a bug where a SignUp UI was transforming Brokers to Customers">
+      <created>1639224519979</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224519979</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Changed equals to be case-insensitive">
+      <created>1639224710774</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224710774</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Added Accommodation in toString and changed getname to print the user instance">
+      <created>1639224820369</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224820369</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Added city to input when adding Accommodations and some visual stuff">
+      <created>1639224889404</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224889404</updated>
+    </task>
+    <task id="LOCAL-00090" summary="some visual stuff">
+      <created>1639224906111</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224906111</updated>
+    </task>
+    <task id="LOCAL-00091" summary="some visual stuff">
+      <created>1639224936425</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1639224936425</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,33 +533,53 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added custom Serial" />
-    <MESSAGE value="Corrected Javadoc" />
-    <MESSAGE value="Indents" />
-    <MESSAGE value="Added fix to Database holding duplicate values because of missing overrides equals/hashcode" />
-    <MESSAGE value="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)" />
-    <MESSAGE value="Changes in way Messages are read in InboxUI" />
-    <MESSAGE value="Fixed dependencies" />
-    <MESSAGE value="Added User and Accommodation to Review record and made it Serializable" />
-    <MESSAGE value="Removed TODO" />
-    <MESSAGE value="Renamed to nameDB" />
-    <MESSAGE value="Deleted,replaced with ReviewsDB" />
-    <MESSAGE value="Replacement of old reviews DB" />
-    <MESSAGE value="Refactored code to match ReviewsDB" />
-    <MESSAGE value="Added a User field" />
-    <MESSAGE value="Dependencies" />
-    <MESSAGE value="Fixed the regex to match usernames ending with digits" />
-    <MESSAGE value="Fixed config files" />
-    <MESSAGE value="Added Javadoc" />
-    <MESSAGE value="Updated configs" />
     <MESSAGE value="Added an API for Databases" />
     <MESSAGE value="Added Reservation and Reviews Databases" />
     <MESSAGE value="Added Reservations Database" />
     <MESSAGE value="Added Handler class to lower coupling and complexity" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Added Separate Request Handlers for each type of user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Separate Request Handlers for each type of user" />
+    <MESSAGE value="Refactoring and cleanup" />
+    <MESSAGE value="Dataset containing Full names,Phones,Emails &#10;Used in creating users" />
+    <MESSAGE value="Dataset containing username/passwpod hashes and information about facebook users. Information drawn was fullnames and genders" />
+    <MESSAGE value="Dataset containing usernames on Reddit.Used in creating users" />
+    <MESSAGE value="Dataset containing all the Greek Cities.Used in creating accommodations" />
+    <MESSAGE value="Dataset containing some Athens roads(addresses),used in creating accommodations" />
+    <MESSAGE value="Dataset containing emails.Used in creating Users" />
+    <MESSAGE value="Class used to parse Datasets and create random fake accommodations" />
+    <MESSAGE value="Class used to parse Datasets and create random fake Users" />
+    <MESSAGE value="Added TODO.txt to .gitignore" />
+    <MESSAGE value="Updated config files with new Users and Accommodations" />
+    <MESSAGE value="Added a City field in Accommodation to support more versatile queries based on Location" />
+    <MESSAGE value="Added a Welcome greeting UI for highe quality user experience" />
+    <MESSAGE value="Added 2 new Messages for Unavailable features and a Loading message" />
+    <MESSAGE value="Fixed a bug where a SignUp UI was transforming Brokers to Customers" />
+    <MESSAGE value="Changed equals to be case-insensitive" />
+    <MESSAGE value="Added Accommodation in toString and changed getname to print the user instance" />
+    <MESSAGE value="Added city to input when adding Accommodations and some visual stuff" />
+    <MESSAGE value="some visual stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="some visual stuff" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/requests/CustomerRequests.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Datasets/AccommodationGenerator.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
