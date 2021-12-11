@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Datasets/USA_01.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/USA_01.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/dathensroads.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/enron-email-dataset-QueryResult.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/greekcities.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/redditUsernames.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/usersDataset.csv" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/InboxUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InboxUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/AdminRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/BrokerRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/CustomerRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Added fix to Database holding duplicate values because of missing overrides equals/hashcode">
-      <created>1638138307609</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1638138307610</updated>
     </task>
     <task id="LOCAL-00051" summary="Removed the 15.000.000 redundant checks for duplicate values in a Hashmap(lol)">
       <created>1638139625603</created>
@@ -485,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639225248931</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="xml">
+      <created>1639227610855</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1639227610855</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,7 +496,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactoring and cleanup" />
     <MESSAGE value="Dataset containing Full names,Phones,Emails &#10;Used in creating users" />
     <MESSAGE value="Dataset containing username/passwpod hashes and information about facebook users. Information drawn was fullnames and genders" />
     <MESSAGE value="Dataset containing usernames on Reddit.Used in creating users" />
@@ -538,18 +520,14 @@
     <MESSAGE value="Profanity filter TODO" />
     <MESSAGE value="Xml and patch files" />
     <MESSAGE value="Refactor for readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor for readability" />
+    <MESSAGE value="xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="xml" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/requests/CustomerRequests.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Datasets/AccommodationGenerator.java</url>
           <line>52</line>
