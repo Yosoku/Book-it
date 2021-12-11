@@ -31,7 +31,7 @@ public class Customer extends User {
     @Override
     public String toString() {
         return "Customer{" +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", age=" + age +
                 ", username='" + credentials.username() + '\'' +
                 ", password='" + credentials.password() + '\'' +
