@@ -5,17 +5,23 @@ import users.User;
 import java.io.Serializable;
 
 public class Message implements Serializable {
-    private User sender;
-    private User receiver;
-    private String contents;
+    private final User sender;
+    private final User receiver;
+    private final String subject;
+    private final String contents;
     private boolean seen;
+    public static final String auth = "Authemtication email";
 
-
-    public Message(User sender, User receiver, String contents) {
+    public Message(User sender, User receiver, String subject, String contents) {
         this.sender = sender;
         this.receiver = receiver;
+        this.subject = subject;
         this.contents = contents;
         seen = false;
+    }
+
+    public String getSubject() {
+        return subject;
     }
 
     public boolean isSeen() {
@@ -30,25 +36,16 @@ public class Message implements Serializable {
         return sender;
     }
 
-    public void setSender(User sender) {
-        this.sender = sender;
-    }
 
     public User getReceiver() {
         return receiver;
     }
 
-    public void setReceiver(User receiver) {
-        this.receiver = receiver;
-    }
 
     public String getContents() {
         return contents;
     }
 
-    public void setContents(String contents) {
-        this.contents = contents;
-    }
 
     public void readMessage() {
         setSeen(true);

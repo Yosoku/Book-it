@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="some visual stuff">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Refactor for readability">
       <change afterPath="$PROJECT_DIR$/Datasets/USA_01.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/USA_01.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/dathensroads.csv" afterDir="false" />
@@ -10,31 +9,14 @@
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/greekcities.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/redditUsernames.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/usersDataset.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/README/AdminSignin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/README/Register.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/README/Register2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/README/Users.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21,_12_30_π_μ__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21,_12_31_π_μ__[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21__12_30_____Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21__12_31_____Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/AdminUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/InboxUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InboxUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/ReservationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReservationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/ReviewsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReviewsDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/AdminRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/BrokerRequests.java" afterDir="false" />
@@ -161,55 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Added javadoc and code clean up">
-      <created>1638129419895</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1638129419895</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Added javadoc and code clean up">
-      <created>1638129478369</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1638129478369</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Added custom Serial">
-      <created>1638129497345</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1638129497345</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Added Javadoc">
-      <created>1638131341083</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1638131341083</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Corrected Javadoc">
-      <created>1638131352792</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1638131352792</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Corrected Javadoc">
-      <created>1638131368502</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1638131368502</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Indents">
-      <created>1638131438663</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1638131438663</updated>
     </task>
     <task id="LOCAL-00050" summary="Added fix to Database holding duplicate values because of missing overrides equals/hashcode">
       <created>1638138307609</created>
@@ -505,7 +438,56 @@
       <option name="project" value="LOCAL" />
       <updated>1639224936425</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Xml and patch updates">
+      <created>1639225011415</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1639225011415</updated>
+    </task>
+    <task id="LOCAL-00093" summary="PNG used in README">
+      <created>1639225053539</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1639225053539</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Added delete queries">
+      <created>1639225094063</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1639225094063</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Added delete queries">
+      <created>1639225106016</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1639225106016</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Profanity filter TODO">
+      <created>1639225135131</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1639225135131</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Xml and patch files">
+      <created>1639225155311</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1639225155311</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Refactor for readability">
+      <created>1639225248931</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1639225248931</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -533,12 +515,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added an API for Databases" />
-    <MESSAGE value="Added Reservation and Reviews Databases" />
-    <MESSAGE value="Added Reservations Database" />
-    <MESSAGE value="Added Handler class to lower coupling and complexity" />
-    <MESSAGE value="Refactor" />
-    <MESSAGE value="Added Separate Request Handlers for each type of user" />
     <MESSAGE value="Refactoring and cleanup" />
     <MESSAGE value="Dataset containing Full names,Phones,Emails &#10;Used in creating users" />
     <MESSAGE value="Dataset containing username/passwpod hashes and information about facebook users. Information drawn was fullnames and genders" />
@@ -558,7 +534,13 @@
     <MESSAGE value="Added Accommodation in toString and changed getname to print the user instance" />
     <MESSAGE value="Added city to input when adding Accommodations and some visual stuff" />
     <MESSAGE value="some visual stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="some visual stuff" />
+    <MESSAGE value="Xml and patch updates" />
+    <MESSAGE value="PNG used in README" />
+    <MESSAGE value="Added delete queries" />
+    <MESSAGE value="Profanity filter TODO" />
+    <MESSAGE value="Xml and patch files" />
+    <MESSAGE value="Refactor for readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor for readability" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
