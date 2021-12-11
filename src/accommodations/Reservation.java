@@ -14,7 +14,8 @@ public record Reservation(User user, Accommodation accommodation, TimePeriod per
     @Override
     public String toString() {
         return "Reservation{" +
-                "user=" + user.getName() +
+                "user=" + user +
+                ", accommodation=" + accommodation +
                 ", period=" + period +
                 ", comments='" + comments + '\'' +
                 '}';
