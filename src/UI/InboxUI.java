@@ -1,19 +1,21 @@
 package UI;
 
+import application.DatabaseAPI;
 import communication.Message;
+import users.User;
 
 import java.util.List;
 
 public class InboxUI extends UI {
-    private List<Message> inbox;
+    private User user;
 
-    public InboxUI(List<Message> inbox) {
-        this.inbox = inbox;
+    public InboxUI(User user) {
+        this.user = user;
     }
 
     @Override
     public void show() {
-
+        List<Message> inbox = DatabaseAPI.getUserMessagesDatabase().selectMessageFromUser(user);
         if (inbox == null) {
             System.out.println("Your inbox is empty");
         } else {
@@ -24,6 +26,8 @@ public class InboxUI extends UI {
                     return;
                 else {
                     message.readMessage();
+                    if (Message.auth.equals(message.getSubject()))
+                        DatabaseAPI.getUserConfirmationsDatabase().updateUserConfirmation(user);
                 }
             }
         }
