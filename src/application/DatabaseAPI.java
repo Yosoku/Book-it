@@ -1,42 +1,21 @@
 package application;
 
+import UI.UI;
+import UI.UIMessage;
 import database.*;
 
 public class DatabaseAPI {
-    private static BrokerAccommodationsDB brokerAccommodationsDatabase = new BrokerAccommodationsDB();
-    private static CredentialsUserDB credentialsUserDatabase = new CredentialsUserDB();
-    private static ReservationsDB reservationDatabase = new ReservationsDB();
-    private static ReviewsDB reviewsDatabase = new ReviewsDB();
-    private static UserConfirmationsDB userConfirmationsDatabase = new UserConfirmationsDB();
-    private static UserMessagesDB userMessagesDatabase = new UserMessagesDB();
-
-
-    public static BrokerAccommodationsDB getBrokerAccommodationsDatabase() {
-        return brokerAccommodationsDatabase;
-    }
-
-    public static CredentialsUserDB getCredentialsUserDatabase() {
-        return credentialsUserDatabase;
-    }
-
-    public static ReservationsDB getReservationsDatabase() {
-        return reservationDatabase;
-    }
-
-    public static ReviewsDB getReviewsDatabase() {
-        return reviewsDatabase;
-    }
-
-    public static UserConfirmationsDB getUserConfirmationsDatabase() {
-        return userConfirmationsDatabase;
-    }
-
-    public static UserMessagesDB getUserMessagesDatabase() {
-        return userMessagesDatabase;
-    }
+    public static BrokerAccommodationsDB brokerAccommodationsDatabase = new BrokerAccommodationsDB();
+    public static CredentialsUserDB credentialsUserDatabase = new CredentialsUserDB();
+    public static ReservationsDB reservationDatabase = new ReservationsDB();
+    public static ReviewsDB reviewsDatabase = new ReviewsDB();
+    public static UserConfirmationsDB userConfirmationsDatabase = new UserConfirmationsDB();
+    public static UserMessagesDB userMessagesDatabase = new UserMessagesDB();
+    public static AccommodationsCalendarDB accommodationsCalendarDatabase = new AccommodationsCalendarDB();
 
 
     public static void loadData() {
+        UI.LOG(UIMessage.LOADING);
         Object temp = brokerAccommodationsDatabase.read();
         if (temp != null)
             brokerAccommodationsDatabase = (BrokerAccommodationsDB) temp;
