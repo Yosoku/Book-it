@@ -6,6 +6,7 @@ import users.Broker;
 import java.io.Serial;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Objects;
 
 
 /**
@@ -24,10 +25,10 @@ import java.util.HashSet;
  */
 
 public class BrokerAccommodationsDB extends Database {
-    private int totalAccommodations;
     @Serial
     private static final long serialVersionUID = 0;
     private final HashMap<Broker, HashSet<Accommodation>> brokerProperties;
+    private int totalAccommodations;
 
     /**
      * An initializer constructor used to initialize the map,set totalAccommodations to 0 and call the Base class with
@@ -67,7 +68,7 @@ public class BrokerAccommodationsDB extends Database {
      * @return The Hashset of Accommodations mapped to the parameter broker,if present in the map, null otherwise
      */
     public HashSet<Accommodation> selectAllAccommodationsFromBroker(Broker broker) {
-            return brokerProperties.get(broker);
+        return brokerProperties.get(broker);
     }
 
     /**
@@ -81,6 +82,7 @@ public class BrokerAccommodationsDB extends Database {
         if (broker == null || accommodation == null)
             return;
         brokerProperties.get(broker).remove(accommodation);
+        totalAccommodations--;
     }
 
     /**
@@ -106,10 +108,9 @@ public class BrokerAccommodationsDB extends Database {
      * @return Returns a Hashset with all the Accommodations registered in the map
      */
     public HashSet<Accommodation> selectAllAccommodations() {
-        HashSet<Accommodation> temp = new HashSet<Accommodation>();
-        for (HashSet<Accommodation> list : brokerProperties.values()) {
-            temp.addAll(list);
-        }
+        HashSet<Accommodation> temp = new HashSet<>();
+        for (HashSet<Accommodation> ac : brokerProperties.values())
+            temp.addAll(ac);
         return temp;
     }
 
@@ -143,9 +144,57 @@ public class BrokerAccommodationsDB extends Database {
      * @return Returns an Accommodation if the ID matches any ID in the map,null otherwise
      */
     public Accommodation selectAccommodationByID(Broker broker, int id) {
+        if (brokerProperties.get(broker) == null)
+            return null;
         for (Accommodation accommodation : brokerProperties.get(broker))
             if (id == accommodation.getID())
                 return accommodation;
         return null;
+    }
+
+    public HashSet<Accommodation> selectAccommodationsBySpace(int low, int high) {
+        HashSet<Accommodation> values = new HashSet<>();
+        if (low >= high)
+            return values;
+        for (Accommodation accommodation : selectAllAccommodations()) {
+            if (accommodation.getSpace() > low && accommodation.getSpace() < high)
+                values.add(accommodation);
+        }
+        return values;
+    }
+
+
+    public HashSet<Accommodation> selectAccommodationsByPrice(int low, int high) {
+        HashSet<Accommodation> values = new HashSet<>();
+        if (low >= high)
+            return values;
+        for (Accommodation accommodation : selectAllAccommodations()) {
+            if (accommodation.getPrice() > low && accommodation.getPrice() < high)
+                values.add(accommodation);
+        }
+        return values;
+    }
+
+
+    public HashSet<Accommodation> selectAccommodationsBySpaceAndPrice(int lowSpace, int highSpace, int lowPrice, int highPrice) {
+        HashSet<Accommodation> values = new HashSet<>();
+        if (lowSpace >= highSpace || lowPrice >= highPrice)
+            return values;
+        for (Accommodation ac : selectAllAccommodations()) {
+            if (ac.getSpace() >= lowSpace && ac.getSpace() <= highSpace && ac.getPrice() >= lowPrice && ac.getPrice() <= highPrice)
+                values.add(ac);
+        }
+        return values;
+    }
+
+    public HashSet<Accommodation> selectAccommodationsByCity(String city) {
+        HashSet<Accommodation> values = new HashSet<>();
+        if (Objects.equals(city, ""))
+            return values;
+        for (Accommodation accommodation : selectAllAccommodations()) {
+            if (accommodation.getCity().equals(city))
+                values.add(accommodation);
+        }
+        return values;
     }
 }
