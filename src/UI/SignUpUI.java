@@ -3,11 +3,6 @@ package UI;
 import auth.Credentials;
 import users.*;
 
-import javax.security.auth.login.CredentialException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.Scanner;
-
 public class SignUpUI extends UI{
     private User newUser;
     public SignUpUI() {
@@ -33,18 +28,20 @@ public class SignUpUI extends UI{
                 "|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])\n" +
                 "|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:" +
                         "[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]" +
-                "|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])");   //Don't hate the player,hate the game
+                        "|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])");   //Don't hate the player,hate the game
         String phone =
-                getInput("Enter a 10 digit number which will be used as your contact phone","^\\d{10}$");
+                getInput("Enter a 10 digit number which will be used as your contact phone", "^\\d{10}$");
         Privilege privilege = Privilege.getPrivileges(
                 getInput("Are you a Broker or a customer?Enter either broker or customer lowercase",
-                "(customer|broker)"));
+                        "(customer|broker)"));
         Gender gender =
                 Gender.getGender(getInput("Are you a Male or Female? Enter either male or female lowercase",
-                "(female|male)"));
+                        "(female|male)"));
 
-        if(privilege.toString().equals("broker")) newUser =  new Broker(credentials,name,age,email,gender,phone,"da");
-        newUser = new Customer(credentials,name,age,email,gender,phone);
+        if (privilege.toString().equals("broker"))
+            newUser = new Broker(credentials, name, age, email, gender, phone, "");
+        else
+            newUser = new Customer(credentials, name, age, email, gender, phone);
 
     }
 
