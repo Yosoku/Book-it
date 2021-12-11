@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Refactor for readability">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Datasets/USA_01.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/USA_01.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/dathensroads.csv" afterDir="false" />
@@ -9,11 +9,9 @@
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/greekcities.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/redditUsernames.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/usersDataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/InboxUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InboxUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
