@@ -14,19 +14,21 @@ public class BrokerUI extends UI {
 
     @Override
     public void show() {
-
-        System.out.println("\nAdd new Accommodation(add)\n" +
-                "Edit already existing Accommodation(edit)\nDelete already existing Accommodation(delete)\nSign out(signout)");
-        request = getInput("Enter add/edit/delete", "(add|edit|delete|view|signout)");
+        System.out.println("\n---Options---");
+        System.out.println("\n>View all Accommodations(view)\n>Add new Accommodation(add)\n" +
+                ">Edit already existing Accommodation(edit)\n>Delete already existing Accommodation(delete)\n" +
+                ">Sign out(signout)");
+        request = getInput("Enter view/add/edit/delete/signout", "(view|add|edit|delete|signout)");
 
     }
 
     public Accommodation addAccommodation() {
         int sqm = Integer.parseInt(getInput("How many square meters is the Accommodation you wish to add?", "^[1-9][0-9]*$"));
-        String address = getInput("What is the exact address of the accommodation?", "");
+        String city = getInput("In which city is the Accommodation located", "^[a-zA-Z]+(?:[\\s-][a-zA-Z]+)*$");
+        String address = getInput("What is the exact address of the accommodation?", ".+");
         int price = Integer.parseInt(getInput("What is the price in Euros per night?", "^[1-9][0-9]*$"));
-        String description = getInput("Add a small description for your accommodation!", "");
-        return new Accommodation(sqm, address, null, description, price);
+        String description = getInput("Add a small description for your accommodation!", ".+");
+        return new Accommodation(sqm, city, address, null, description, price);
     }
 
     public void editAccommodation(Accommodation accommodation) {
