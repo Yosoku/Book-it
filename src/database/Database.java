@@ -56,6 +56,7 @@ public abstract class Database implements Serializable {
             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
             objectOut.writeObject(this);
             objectOut.close();
+            fileOut.close();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -77,6 +78,7 @@ public abstract class Database implements Serializable {
             ObjectInputStream objectIn = new ObjectInputStream(fileIn);
             obj = objectIn.readObject();
             objectIn.close();
+            fileIn.close();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
