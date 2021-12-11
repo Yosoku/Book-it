@@ -8,9 +8,12 @@ public enum UIMessage {
     CONFIRMATION_FAILED("Your account has not been confirmed yet." +
             " You will be redirected to your inbox to look for a confirmation email."),
     ENTRY_NOT_FOUND("Entry was not found. Perhaps double check if the parameters were correct?"),
-    ENTRY_DELETED("Entry was deleted succesfully");
+    ENTRY_DELETED("Entry was deleted succesfully"),
+    LOADING("The application is loading,please wait..."),
+    FEATURE_UNAVAILABLE("This feature is being currently developed");
     public String message;
-    UIMessage(String message){
+
+    UIMessage(String message) {
         this.message = message;
     }
 
