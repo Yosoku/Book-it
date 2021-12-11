@@ -5,3 +5,4 @@ codemr/*
 out/production/MyBooking/config/*.ser
 javadoc/
 .vscode/
+TODO.txt
