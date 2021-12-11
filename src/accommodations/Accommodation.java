@@ -12,6 +12,7 @@ public class Accommodation implements Serializable {
     private static final long serialVersionUID = 0;
     private int ID;
     private int space; // square meters
+    private String city;
     private String address;
     private List<ImageIcon> images;
     private String description;    //Brief description of the accommodation
@@ -19,21 +20,12 @@ public class Accommodation implements Serializable {
     private TreeSet<TimePeriod> calendar;
 
 
-    public Accommodation(int space, String address, List<ImageIcon> images, String description, int price) {
-        this.space = space;
-        this.address = address;
-        this.images = images;
-        this.description = description;
-        this.price = price;
-        calendar = new TreeSet<TimePeriod>();
-    }
-
-
     @Override
     public String toString() {
         return "Accommodation{" +
                 "ID=" + ID +
                 ", space=" + space +
+                ", city='" + city + '\'' +
                 ", address='" + address + '\'' +
                 ", images=" + images +
                 ", description='" + description + '\'' +
@@ -41,6 +33,25 @@ public class Accommodation implements Serializable {
                 ", calendar=" + calendar +
                 '}';
     }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public Accommodation(int space, String city, String address, List<ImageIcon> images, String description, int price) {
+        this.space = space;
+        this.city = city;
+        this.address = address;
+        this.images = images;
+        this.description = description;
+        this.price = price;
+        calendar = new TreeSet<TimePeriod>();
+    }
+
 
     //========================== Getters & Setters =====================================================================
     public int getSpace() {
@@ -113,6 +124,7 @@ public class Accommodation implements Serializable {
      * @param period the time period we wish to check if the accommodation is free to reserve
      * @return true if the accommodation is reserved for the time period @param,false otherwise
      */
+    //TODO check conditions
     public boolean isAvailable(TimePeriod period) {
         TimePeriod temp = calendar.floor(period); // temp.start<=period.start
 
