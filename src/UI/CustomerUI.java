@@ -14,8 +14,9 @@ public class CustomerUI extends UI {
 
     @Override
     public void show() {
-        System.out.println("\nView reservations(viewres)\nView reviews(viewrev)\nSearch Accommodations(search)" +
-                "\nSign out(signout)");
+        System.out.println("\n---Options---");
+        System.out.println("\n>View reservations(viewres)\n>View reviews(viewrev)\n>Search Accommodations(search)" +
+                "\n>Sign out(signout)");
         request = getInput("Enter viewres/viewrev/search/signout", "(signout|search|viewrev|viewres)");
 
     }
