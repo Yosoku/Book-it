@@ -13,9 +13,9 @@ public class AdminUI extends UI {
 
     @Override
     public void show() {
-        System.out.println("Welcome Admin\nHow would you like to proceed?");
-        System.out.println("Confirm new Users(confirm)\nView statistics(stats)\nSign out(signout)");
-        request = getInput("Enter confirm/stats", "(confirm|stats|signout)");
+        System.out.println("\n---Options---");
+        System.out.println(">Confirm new Users(confirm)\n>View statistics(stats)\n>Sign out(signout)");
+        request = getInput("Enter confirm/stats/signout", "(confirm|stats|signout)");
     }
 
 
