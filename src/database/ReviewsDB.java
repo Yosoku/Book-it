@@ -124,4 +124,16 @@ public class ReviewsDB extends Database {
         }
         return temp;
     }
+
+    public void dropAllReviewsByAccommodation(Accommodation accommodation) {
+        if (accommodation == null)
+            return;
+        selectReviewsByAccommodation(accommodation).clear();
+    }
+
+    public void dropAllReviewsByUser(User user) {
+        if (user == null)
+            return;
+        selectReviewsByUser(user).clear();
+    }
 }
