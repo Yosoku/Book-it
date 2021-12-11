@@ -114,10 +114,6 @@ public class UserConfirmationsDB extends Database {
      * @return Returns an ArrayList with all the Users registered in the map regardless of confirmation status
      */
     public ArrayList<User> selectAllUsers() {
-        for (User user : userConfirmed.keySet()) {
-            System.out.println(user.toString());
-            System.out.println(userConfirmed.get(user));
-        }
         return new ArrayList<>(userConfirmed.keySet());
     }
 }
