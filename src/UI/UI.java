@@ -31,6 +31,7 @@ public abstract class UI {
         System.out.println(errorMessage.getMessage());
     }
 
+    //TODO Expand with dictionary file
     protected String profanityFilter(String message){
         String filterRegex = "(fuck|faggot|nigger|ass|asshole|kill|holocaust|hitler|ISIS|bomb|cunt|terrorism)";
         return message.replaceAll(filterRegex,"****");
