@@ -70,5 +70,17 @@ public class ReservationsDB extends Database {
         return temp;
     }
 
+    public void dropAllReservationsByAccommodation(Accommodation accommodation) {
+        if (accommodation == null)
+            return;
+        selectReservationsByAccommodation(accommodation).clear();
+    }
+
+    public void dropAllReservationsByUser(User user) {
+        if (user == null)
+            return;
+        selectReservationsByUser(user).clear();
+    }
+
 
 }
