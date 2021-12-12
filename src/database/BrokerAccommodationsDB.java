@@ -1,6 +1,7 @@
 package database;
 
 import accommodations.Accommodation;
+import application.DatabaseAPI;
 import users.Broker;
 
 import java.io.Serial;
@@ -68,7 +69,7 @@ public class BrokerAccommodationsDB extends Database {
      * @return The Hashset of Accommodations mapped to the parameter broker,if present in the map, null otherwise
      */
     public HashSet<Accommodation> selectAllAccommodationsFromBroker(Broker broker) {
-        return brokerProperties.get(broker);
+        return brokerProperties.get(broker) == null ? new HashSet<Accommodation>() : brokerProperties.get(broker);
     }
 
     /**
@@ -196,5 +197,16 @@ public class BrokerAccommodationsDB extends Database {
                 values.add(accommodation);
         }
         return values;
+    }
+
+    public HashSet<Accommodation> selectAllAccommodationsWithReservations(Broker broker) {
+        HashSet<Accommodation> all = new HashSet<Accommodation>();
+        if (broker == null)
+            return all;
+        for (Accommodation accommodation : brokerProperties.get(broker)) {
+            if (!DatabaseAPI.reservationDatabase.selectReservationsByAccommodation(accommodation).isEmpty())
+                all.add(accommodation);
+        }
+        return all;
     }
 }
