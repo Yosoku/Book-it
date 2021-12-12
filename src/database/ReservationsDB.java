@@ -2,6 +2,8 @@ package database;
 
 import accommodations.Accommodation;
 import accommodations.Reservation;
+import application.DatabaseAPI;
+import users.Broker;
 import users.User;
 
 import java.io.Serial;
@@ -82,5 +84,15 @@ public class ReservationsDB extends Database {
         selectReservationsByUser(user).clear();
     }
 
+    public HashSet<Reservation> selectAllReservationsByBroker(Broker broker) {
+        HashSet<Reservation> reservations = new HashSet<Reservation>();
+        if (broker == null)
+            return reservations;
+        for (Accommodation accommodation :
+                DatabaseAPI.brokerAccommodationsDatabase.selectAllAccommodationsFromBroker(broker)) {
+            reservations.addAll(selectReservationsByAccommodation(accommodation));
+        }
+        return reservations;
+    }
 
 }
