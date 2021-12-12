@@ -12,9 +12,13 @@ public abstract class UI {
 
 
     public String getInput(String message, String regex) {
+        Scanner scanner = new Scanner(System.in);
+        if (regex.equals("")) {
+            System.out.println(message);
+            return scanner.nextLine();
+        }
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher;
-        Scanner scanner = new Scanner(System.in);
         String input;
         do {
             System.out.println(message);
