@@ -1,6 +1,5 @@
 package communication;
 
-
 import accommodations.Accommodation;
 import users.User;
 
@@ -9,6 +8,9 @@ import java.io.Serializable;
 
 public record Review(int stars, String description, User user,
                      Accommodation accommodation) implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 0;
+
     public Review(int stars, String description, User user, Accommodation accommodation) {
         this.description = description;
         this.user = user;
@@ -27,7 +29,4 @@ public record Review(int stars, String description, User user,
                 ", accommodation=" + accommodation +
                 '}';
     }
-
-    @Serial
-    private static final long serialVersionUID = 0;
 }
