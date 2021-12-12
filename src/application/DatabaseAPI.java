@@ -16,7 +16,10 @@ public class DatabaseAPI {
 
     public static void loadData() {
         UI.LOG(UIMessage.LOADING);
-        Object temp = brokerAccommodationsDatabase.read();
+        Object temp = accommodationsCalendarDatabase.read();
+        if (temp != null)
+            accommodationsCalendarDatabase = (AccommodationsCalendarDB) temp;
+        temp = brokerAccommodationsDatabase.read();
         if (temp != null)
             brokerAccommodationsDatabase = (BrokerAccommodationsDB) temp;
         temp = credentialsUserDatabase.read();
@@ -38,6 +41,8 @@ public class DatabaseAPI {
 
 
     public static void writeData() {
+        UI.LOG(UIMessage.SAVING);
+        accommodationsCalendarDatabase.write();
         brokerAccommodationsDatabase.write();
         credentialsUserDatabase.write();
         reservationDatabase.write();
