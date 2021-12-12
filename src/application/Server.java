@@ -14,13 +14,23 @@ import users.Broker;
 import users.Customer;
 import users.User;
 
-import java.security.NoSuchAlgorithmException;
-
+/**
+ * A class representing the Server Side in the Booking Application.The server is responsible for receiving the requests
+ * and pointing them to the appropriate Handler for each request. It provides information about the current user and a method
+ * for establishing a connection
+ *
+ * @author Edward Koulakidis
+ */
 public class Server {
-    private User currentUser = null;
     public boolean quit;
+    private User currentUser = null;
 
-    public boolean handleConnectionRequests(String request) throws NoSuchAlgorithmException {
+    /**
+     * Method for establishing a connection to the Server
+     * @param request The request to handle,can be either 'signin','signup' or 'signout'
+     * @return true if a connection has been established,false otherwise
+     */
+    public boolean handleConnectionRequests(String request) {
         switch (request) {
             case "signin" -> {
                 SignInUI signin = new SignInUI();
@@ -51,11 +61,13 @@ public class Server {
                 }
             }
         }
-        //request = quit
         return false;
     }
 
 
+    /**
+     * The method responsible for pointing requests to their appropriate Handler e.g. Customer Handler,Broker Handler etc
+     */
     public void handleUserRequests() {
         Handler handler;
         switch (currentUser.getPrivilege()) {
@@ -74,6 +86,12 @@ public class Server {
         }
     }
 
+    /**
+     * Method for getting information about the user currently making requests. If the return value is null it means that
+     * either a connection failed to establish,or the request to establish a connection has not been made yet
+     *
+     * @return The current user talking to the Server
+     */
     public User getCurrentUser() {
         return currentUser;
     }

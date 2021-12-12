@@ -6,13 +6,27 @@ import users.User;
 
 import java.util.List;
 
+/**
+ * An Inbox User Interface class to represent an Inbox
+ *
+ * @author Fwteinos Wawaroutas
+ */
 public class InboxUI extends UI {
     private User user;
 
+
+    /**
+     * Initializer constructor
+     * @param user The current Customer
+     */
     public InboxUI(User user) {
         this.user = user;
     }
 
+
+    /**
+     * Method to show different options to read an Inbox
+     */
     @Override
     public void show() {
         List<Message> inbox = DatabaseAPI.userMessagesDatabase.selectMessageFromUser(user);

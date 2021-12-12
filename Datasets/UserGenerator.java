@@ -6,7 +6,6 @@ import users.Gender;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -15,13 +14,23 @@ import java.util.Random;
 import java.util.Scanner;
 
 
+/**
+ * A class used for generating Users by parsing 3 datasets of Usernames,Genders and Emails.
+ * It provides a method for creating a desired amount of Users
+ *
+ * @author Edward Koulakidis
+ * @see AccommodationGenerator
+ */
 public class UserGenerator {
     Random rand;
-    private ArrayList<String> usernames;
-    private ArrayList<String> fullnames;
-    private ArrayList<Gender> genders;
-    private ArrayList<String> emails;
+    private ArrayList<String> usernames; //List to store usernames
+    private ArrayList<String> fullnames; //List to store fullnames
+    private ArrayList<Gender> genders; // List to store Genders
+    private ArrayList<String> emails; // List to store emails
 
+    /**
+     * Constructor initializes the fields and parses the Datasets to prepare for a createUsers call
+     */
     public UserGenerator() {
         emails = new ArrayList<>();
         rand = new Random();
@@ -35,6 +44,9 @@ public class UserGenerator {
 
     }
 
+    /**
+     * Method to parse the email Dataset and store it in emails field
+     */
     private void parseEmails() {
         String filename = "Datasets/enron-email-dataset-QueryResult.csv";
         Scanner scanner;
@@ -56,6 +68,9 @@ public class UserGenerator {
     }
 
 
+    /**
+     * Method to parse the username Dataset and store it in usernames field
+     */
     public void parseReddit() {
         String filename = "Datasets/redditUsernames.csv";
         Scanner scanner;
@@ -72,7 +87,15 @@ public class UserGenerator {
         }
     }
 
-    public void createUsers(int number) throws NoSuchAlgorithmException {
+    /**
+     * The method used for generating Users. It generates Users of unique usernames and emails by using 2 HashSets at O(1)
+     * read complexity because of the very low chances (1 in 466.560.000 for duplicate emails).
+     * The passwords,phones,ages and some emails(if taken) are generated at Random. The method makes an API call to
+     * write directly to the Database and store any changes.
+     *
+     * @param number Number of users to generate
+     */
+    public void createUsers(int number) {
         HashSet<String> usernameTaken = new HashSet<>();
         HashSet<String> emailTaken = new HashSet<>();
         for (int i = 0; i < number; i++) {
@@ -104,6 +127,11 @@ public class UserGenerator {
         DatabaseAPI.writeData();
     }
 
+    /**
+     * Method for generating a random phone number Murrica style
+     *
+     * @return A Murrican phone number
+     */
     private String getPhone() {
         int num1 = (rand.nextInt(7) + 1) * 100 + (rand.nextInt(8) * 10) + rand.nextInt(8);
         int num2 = rand.nextInt(743);
@@ -116,6 +144,11 @@ public class UserGenerator {
     }
 
 
+    /**
+     * Method for generating a random password from the basic ASCII table excluding special chars
+     *
+     * @return a password
+     */
     private String getRandomPassword() {
         // ASCII range – alphanumeric (0-9, a-z, A-Z)
         final String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -132,6 +165,9 @@ public class UserGenerator {
     }
 
 
+    /**
+     * Method for parsing a Dataset containing information about facebook Users and storing it in fullnames and Genders
+     */
     public void parseFacebook() {
         String filename = "Datasets/USA_01.csv";
         Scanner scanner;
@@ -163,6 +199,12 @@ public class UserGenerator {
         }
     }
 
+    /**
+     * This method takes an email and edits by changing domain and country.
+     *
+     * @param email The email to edit
+     * @return an edited email
+     */
     public String getDomain(String email) {
         String[] domains = {"hotmail", "yahoo", "outlook", "gmail", "Mail", "Zoho"};
         String[] countries = {"gr", "uk", "com", "as", "ger", "swe", "bg"};

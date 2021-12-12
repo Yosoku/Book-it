@@ -1,12 +1,9 @@
-
 import application.Application;
-
-import java.security.NoSuchAlgorithmException;
 
 
 public class Main {
 
-    public static void main(String[] args) throws NoSuchAlgorithmException {
+    public static void main(String[] args) {
         Application application = new Application(true);
     }
 }

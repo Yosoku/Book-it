@@ -125,12 +125,23 @@ public class ReviewsDB extends Database {
         return temp;
     }
 
+    /**
+     * A query for deleting all Reviews from an Accommodation Instance . Runs in O(n) time
+     *
+     * @param accommodation The accommodation to delete all reviews from
+     */
     public void dropAllReviewsByAccommodation(Accommodation accommodation) {
         if (accommodation == null)
             return;
         selectReviewsByAccommodation(accommodation).clear();
     }
 
+
+    /**
+     * A query for deleting all Reviews from a User Instance. Runs in O(n) time
+     *
+     * @param user The User to delete all reviews from
+     */
     public void dropAllReviewsByUser(User user) {
         if (user == null)
             return;

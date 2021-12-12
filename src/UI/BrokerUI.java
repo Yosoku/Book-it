@@ -4,9 +4,19 @@ import accommodations.Accommodation;
 import application.Application;
 import users.User;
 
+/**
+ * A User Interface class shown to Users with Broker privileges
+ *
+ * @author Fwteinos Wawaroutas
+ */
 public class BrokerUI extends UI {
     private User broker;
 
+
+    /**
+     * Initializer constructor
+     * @param broker The current broker
+     */
     public BrokerUI(User broker) {
         this.broker = broker;
         Application.sleepFor(1);
@@ -14,6 +24,9 @@ public class BrokerUI extends UI {
         Application.sleepFor(1);
     }
 
+    /**
+     * Method that prints all available options to the current User
+     */
     @Override
     public void show() {
         System.out.println("\n---Options---");
@@ -24,6 +37,10 @@ public class BrokerUI extends UI {
 
     }
 
+    /**
+     * Method to Enter a new Accommodation by parsing user input
+     * @return a new accommodation
+     */
     public Accommodation addAccommodation() {
         int sqm = Integer.parseInt(getInput("How many square meters is the Accommodation you wish to add?", "^[1-9][0-9]*$"));
         String city = getInput("In which city is the Accommodation located", "^[a-zA-Z]+(?:[\\s-][a-zA-Z]+)*$");
@@ -33,6 +50,9 @@ public class BrokerUI extends UI {
         return new Accommodation(sqm, city, address, null, description, price);
     }
 
+    /**
+     * Method to Edit an existing Accommodation by parsing user input
+     */
     public void editAccommodation(Accommodation accommodation) {
         char ans;
         ans = getInput("Would you like to edit the square meters of the accommodation? y/n",

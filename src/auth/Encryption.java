@@ -22,11 +22,15 @@ public class Encryption {
      *
      * @param input the input string to hash
      * @return A string representation of the hash produced by SHA-512
-     * @throws NoSuchAlgorithmException This exception will never reach,but semantics
      * @see auth.Credentials
      */
-    public static String SHA_512(String input) throws NoSuchAlgorithmException {
-        MessageDigest messageDigest = MessageDigest.getInstance("SHA-512");
+    public static String SHA_512(String input) {
+        MessageDigest messageDigest = null;
+        try {
+            messageDigest = MessageDigest.getInstance("SHA-512");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
         byte[] bytes = input.getBytes(StandardCharsets.UTF_8);
         messageDigest.update(bytes);
         bytes = messageDigest.digest();

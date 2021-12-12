@@ -3,7 +3,12 @@ package communication;
 import users.User;
 
 import java.io.Serializable;
-
+/**
+ * A class representing a Message instace with information about the Sender,Receiver,the subject and the contents of Message
+ * The class also implements the Serializable interface for storing in files
+ *
+ * @author Edward Koulakidis
+ */
 public class Message implements Serializable {
     private final User sender;
     private final User receiver;
@@ -20,6 +25,7 @@ public class Message implements Serializable {
         seen = false;
     }
 
+    //==================================================Getters & Setters ==============================================
     public String getSubject() {
         return subject;
     }
@@ -46,12 +52,19 @@ public class Message implements Serializable {
         return contents;
     }
 
-
+    /**
+     * Reading the message simply prints the contents to the console and sets seen to true
+     */
     public void readMessage() {
         setSeen(true);
         System.out.println(contents);
     }
 
+    /**
+     * Useful for printing to the user and also debugging
+     *
+     * @return a string representation of the Message instance
+     */
     @Override
     public String toString() {
         return "Message{" +

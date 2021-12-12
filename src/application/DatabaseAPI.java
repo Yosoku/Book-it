@@ -4,6 +4,12 @@ import UI.UI;
 import UI.UIMessage;
 import database.*;
 
+/**
+ * An class representing an API to the Booking Clone Database. Provides 2 methods for reading and writing the whole Database
+ * to files
+ *
+ * @author Edward Koulakidis
+ */
 public class DatabaseAPI {
     public static BrokerAccommodationsDB brokerAccommodationsDatabase = new BrokerAccommodationsDB();
     public static CredentialsUserDB credentialsUserDatabase = new CredentialsUserDB();
@@ -14,6 +20,9 @@ public class DatabaseAPI {
     public static AccommodationsCalendarDB accommodationsCalendarDatabase = new AccommodationsCalendarDB();
 
 
+    /**
+     * Loads every Database in the member fields
+     */
     public static void loadData() {
         UI.LOG(UIMessage.LOADING);
         Object temp = accommodationsCalendarDatabase.read();
@@ -40,6 +49,9 @@ public class DatabaseAPI {
     }
 
 
+    /**
+     * Writes every Database to their respective files
+     */
     public static void writeData() {
         UI.LOG(UIMessage.SAVING);
         accommodationsCalendarDatabase.write();

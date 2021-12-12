@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="XML and patch files">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="XML stuff">
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/dathensroads.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/enron-email-dataset-QueryResult.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/greekcities.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/redditUsernames.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/usersDataset.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/AccommodationGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/AccommodationGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/UserGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/UserGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/AdminUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BrokerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BrokerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/ConnectUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/ConnectUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/InboxUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InboxUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/SignInUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/SignInUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/SignUpUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/SignUpUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UIMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UIMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/WelcomeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/WelcomeUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Accommodation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Accommodation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/Encryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/Encryption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Messenger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/AccommodationsCalendarDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccommodationsCalendarDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/CredentialsUserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/CredentialsUserDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReservationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReservationsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReviewsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReviewsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserMessagesDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/UserMessagesDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/AdminRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/BrokerRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/CustomerRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,34 +161,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Dataset containing Full names,Phones,Emails &#10;Used in creating users">
-      <created>1639222990930</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1639222990930</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Dataset containing usernames on Reddit.Used in creating users">
-      <created>1639223194462</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1639223194462</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Dataset containing all the Greek Cities.Used in creating accommodations">
-      <created>1639223279799</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1639223279799</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Dataset containing some Athens roads(addresses),used in creating accommodations">
-      <created>1639223310254</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1639223310254</updated>
     </task>
     <task id="LOCAL-00077" summary="Dataset containing emails.Used in creating Users">
       <created>1639223398958</created>
@@ -469,7 +477,35 @@
       <option name="project" value="LOCAL" />
       <updated>1639306867678</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Updated README">
+      <created>1639308569145</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1639308569146</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Updated README">
+      <created>1639308602548</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1639308602548</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Png used in README">
+      <created>1639308619782</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1639308619782</updated>
+    </task>
+    <task id="LOCAL-00125" summary="XML stuff">
+      <created>1639308630659</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1639308630659</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,9 +533,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PNG used in README" />
-    <MESSAGE value="Added delete queries" />
-    <MESSAGE value="Profanity filter TODO" />
     <MESSAGE value="Xml and patch files" />
     <MESSAGE value="Refactor for readability" />
     <MESSAGE value="xml" />
@@ -522,20 +555,12 @@
     <MESSAGE value="-Make class serializable" />
     <MESSAGE value="-New accommodaitonCalendarDatabase&#10;-Useful for checking an Accommodations calendar&#10;and making reservations" />
     <MESSAGE value="XML and patch files" />
-    <option name="LAST_COMMIT_MESSAGE" value="XML and patch files" />
+    <MESSAGE value="Updated README" />
+    <MESSAGE value="Png used in README" />
+    <MESSAGE value="XML stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML stuff" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Datasets/AccommodationGenerator.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

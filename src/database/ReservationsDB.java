@@ -84,6 +84,13 @@ public class ReservationsDB extends Database {
         selectReservationsByUser(user).clear();
     }
 
+    /**
+     * A query for selecting all Reservations in all the Accommodations owned by a specific Broker
+     * returns the Hashset of Reservations,an empty HashSet otherwise. Runs in O(1) time
+     *
+     * @param broker The broker key used to query the Hashmap
+     * @return The Hashset of Reservations related to the broker instance
+     */
     public HashSet<Reservation> selectAllReservationsByBroker(Broker broker) {
         HashSet<Reservation> reservations = new HashSet<Reservation>();
         if (broker == null)

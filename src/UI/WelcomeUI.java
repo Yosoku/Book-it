@@ -2,7 +2,13 @@ package UI;
 
 import application.Application;
 
+/**
+ * class to show the welcome UI to the user
+ */
 public class WelcomeUI extends UI {
+    /**
+     * shows the ui
+     */
     @Override
     public void show() {
         int readDelay = 2;

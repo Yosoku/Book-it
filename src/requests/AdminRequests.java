@@ -9,16 +9,29 @@ import users.User;
 
 import java.util.List;
 
+/**
+ * A class representing a Request Handler for Administrator Requests. It holds information about the current Admin making
+ * requests and a Admin User Interface instance
+ *
+ * @author Edward Koulakidis
+ */
 public class AdminRequests implements Handler {
     private AdminUI ui;
     private Admin admin;
 
+    /**
+     * Initializer constructor
+     *
+     * @param admin The Admin making requests
+     */
     public AdminRequests(Admin admin) {
         ui = new AdminUI(admin);
         this.admin = admin;
-
     }
 
+    /**
+     * The main method for handling Admin requests. It handles requests for viewing stats and confirming Users
+     */
     @Override
     public void handleRequests() {
         boolean quit = false;

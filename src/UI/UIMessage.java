@@ -1,5 +1,10 @@
 package UI;
 
+/**
+ * An enum for printing different messages to the console
+ *
+ * @author Fwteinos Wawaroutas
+ */
 public enum UIMessage {
     SIGN_IN_SUCCESS("You have successfully logged in!"),
     SIGN_IN_FAILED("Oops,that's not a match"),

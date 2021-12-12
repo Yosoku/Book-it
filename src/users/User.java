@@ -1,7 +1,6 @@
 package users;
 
 import auth.Credentials;
-import communication.Message;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -26,15 +25,26 @@ import java.util.Objects;
  */
 
 public abstract class User implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 0;
+    protected final Privilege privilege;
+    protected String name;
+    protected int age;
+    protected Credentials credentials;
+    protected String email;
+    protected Gender gender;
+    protected String phone;
+
     /**
      * A basic constructor which takes the parameters below and initializes a User object
+     *
      * @param credentials A username/password combination
-     * @param name The users name
-     * @param age The users age
-     * @param email The users email
-     * @param gender The users gender
-     * @param phone The users phone number
-     * @param privilege The users privilege(Customer/Admin/Broker)
+     * @param name        The users name
+     * @param age         The users age
+     * @param email       The users email
+     * @param gender      The users gender
+     * @param phone       The users phone number
+     * @param privilege   The users privilege(Customer/Admin/Broker)
      * @see Credentials
      * @see Privilege
      */
@@ -48,9 +58,7 @@ public abstract class User implements Serializable {
         this.privilege = privilege;
     }
 
-
     //=========================== Getters & Setters ====================================================================
-
     public String getName() {
         return name;
     }
@@ -99,13 +107,6 @@ public abstract class User implements Serializable {
         this.phone = phone;
     }
 
-
-    public String readMessage(Message message) {
-        message.setSeen(true);
-        return message.getContents();
-    }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -118,14 +119,4 @@ public abstract class User implements Serializable {
     public int hashCode() {
         return Objects.hash(name, age, credentials, privilege, email, gender, phone);
     }
-
-    @Serial
-    private static final long serialVersionUID = 0;
-    protected String name;
-    protected int age;
-    protected Credentials credentials;
-    protected final Privilege privilege;
-    protected String email;
-    protected Gender gender;
-    protected String phone;
 }

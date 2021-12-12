@@ -3,10 +3,17 @@ package application;
 import UI.*;
 import users.User;
 
-import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeUnit;
 
-
+/**
+ * A class representing the main Application in Booking clone. The class uses a Server for handling requests and making
+ * calls to the DatabaseAPI. It holds information about the currentUser using the Application.
+ *
+ * @author Edward Koulakidis
+ * @see Server
+ * @see requests.Handler
+ * @see DatabaseAPI
+ */
 public class Application {
     private static boolean sleep;
     boolean isRunning;
@@ -14,7 +21,12 @@ public class Application {
     private User currentUser;
     private ConnectUI connectUI;
 
-    public Application(boolean sleep) throws NoSuchAlgorithmException {
+    /**
+     * Initializer Constructor to start the Server and the connect UI
+     * @param sleep if true,the application will sleep between messages for higher quality user experience.
+     * Its reccommended to turn off during debugging
+     */
+    public Application(boolean sleep) {
         requestHandler = new Server();
         this.sleep = sleep;
         connectUI = new ConnectUI();
@@ -22,7 +34,11 @@ public class Application {
     }
 
 
-    private void run() throws NoSuchAlgorithmException {
+    /**
+     * The main application loop. It makes an API call to Load the Database when run,and write the Database when exited
+     * The server handles the rest
+     */
+    private void run() {
         DatabaseAPI.loadData();
         isRunning = true;
         new WelcomeUI().show();

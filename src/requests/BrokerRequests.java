@@ -15,15 +15,31 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * A class representing a Request Handler for Broker Requests. It holds information about the current Broker making
+ * requests and a Broker User Interface instance
+ *
+ * @author Edward Koulakidis
+ */
+
 public class BrokerRequests implements Handler {
     private Broker broker;
     private BrokerUI ui;
 
+    /**
+     * Initializer constructor
+     *
+     * @param broker The broker making requests
+     */
     public BrokerRequests(Broker broker) {
         ui = new BrokerUI(broker);
         this.broker = broker;
     }
 
+    /**
+     * The main method for handling Broker requests. It handles requests for viewing all accommodations,reservations
+     * Adding/removing/edtting accommodations
+     */
     @Override
     public void handleRequests() {
         boolean quit = false;

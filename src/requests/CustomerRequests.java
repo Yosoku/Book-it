@@ -1,6 +1,7 @@
 package requests;
 
 import UI.CustomerUI;
+import UI.InboxUI;
 import UI.UI;
 import UI.UIMessage;
 import accommodations.Accommodation;
@@ -17,16 +18,32 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+
+/**
+ * A class representing a Request Handler for Customer Requests. It holds information about the current Customer making
+ * requests and a Customer User Interface instance
+ *
+ * @author Edward Koulakidis
+ */
 public class CustomerRequests implements Handler {
     private CustomerUI ui;
     private Customer customer;
 
+    /**
+     * Initializer constructor
+     *
+     * @param customer The customer making requests
+     */
     public CustomerRequests(Customer customer) {
         ui = new CustomerUI(customer);
         this.customer = customer;
 
     }
 
+    /**
+     * The main method for handling Customer requests. It handle requests for viewing/adding reservations and reviews,
+     * searching accommodations and viewing messages
+     */
     @Override
     public void handleRequests() {
         boolean quit = false;
@@ -110,12 +127,20 @@ public class CustomerRequests implements Handler {
                     }
                     Application.sleepFor(2);
                 }
+                case "inbox" -> {
+                    InboxUI inbox = new InboxUI(customer);
+                    inbox.show();
+                }
                 case "signout" -> quit = true;
             }
         }
     }
 
-    //Java is so fucking bad
+    /**
+     * Method for parsing a Date. Since Java is a terrible languange its needed
+     *
+     * @return a LocalDateTime object by user input
+     */
     private LocalDateTime parseDate() {
 
         String[] temp = ui.getInput("Insert date in form of dd-mm-yyyy",
@@ -132,9 +157,12 @@ public class CustomerRequests implements Handler {
         return LocalDateTime.of(year, month, day, hour, minute);
     }
 
+    /**
+     * Method for searching accommodations with different filters
+     */
     private void searchAccommodations() {
-        System.out.println("Please enter the filters to search by price/space/both or all to view all Accommodations");
-        String ans = ui.getInput("Enter price/space/both/all", "price|space|both|all");
+        System.out.println("Please enter the filters to search by city/price/space/both or all to view all Accommodations");
+        String ans = ui.getInput("Enter price/space/both/city/all", "city|price|space|both|all");
         HashSet<Accommodation> found = new HashSet<Accommodation>();
         switch (ans) {
             case "all" -> found = DatabaseAPI.brokerAccommodationsDatabase.selectAllAccommodations();
@@ -155,6 +183,10 @@ public class CustomerRequests implements Handler {
                 int lowSpace = Integer.parseInt(ui.getInput("Enter the lower space limit", "\\d+"));
                 int highSpace = Integer.parseInt(ui.getInput("Enter the upper space limit", "\\d+"));
                 found.addAll(DatabaseAPI.brokerAccommodationsDatabase.selectAccommodationsBySpace(lowSpace, highSpace));
+            }
+            case "city" -> {
+                String city = ui.getInput("Enter the city", "");
+                found = DatabaseAPI.brokerAccommodationsDatabase.selectAccommodationsByCity(city);
             }
         }
         if (found.isEmpty())

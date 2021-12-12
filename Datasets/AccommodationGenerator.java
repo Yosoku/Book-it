@@ -1,5 +1,3 @@
-
-
 import accommodations.Accommodation;
 import application.DatabaseAPI;
 import users.Broker;
@@ -13,12 +11,22 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * A class used for generating Accommodations by parsing 2 datasets of Roads and Cities
+ * It provides a method for creating a desired amount of Accommodations
+ *
+ * @author Edward Koulakidis
+ * @see UserGenerator
+ */
 public class AccommodationGenerator {
-    ArrayList<String> cities = new ArrayList<>();
-    private ArrayList<String> roads = new ArrayList<>();
+    private ArrayList<String> cities = new ArrayList<>(); //List to store cities
+    private ArrayList<String> roads = new ArrayList<>(); // List to store roads
 
 
-    public void parseCity() {
+    /**
+     * Method for parsing the cities dataset stored in greekcities.csv and storing it in cities field
+     */
+    private void parseCity() {
         String filename = "Datasets/greekcities.csv";
         Scanner scanner;
         try {
@@ -34,6 +42,9 @@ public class AccommodationGenerator {
         }
     }
 
+    /**
+     * Method for parsing the roads dataset stored in dathensroads.csv and storing it in roads field
+     */
     public void parseRoads() {
         String filename = "Datasets/dathensroads.csv";
         Scanner scanner;
@@ -49,6 +60,12 @@ public class AccommodationGenerator {
         }
     }
 
+    /**
+     * Method for generating Accommodations. If cities or road is empty it runs the parse needed. Space and price are
+     * generated at Random values and Descriptions are left empty. The broker who owns the accommodation is selected at
+     * random as well. This method makes an API call to write the Data to the Database directly
+     * @param numberOfAccommodations The number of Accommodations to generate
+     */
     public void generateAccommodations(int numberOfAccommodations) {
         DatabaseAPI.loadData();
         Random random = new Random();

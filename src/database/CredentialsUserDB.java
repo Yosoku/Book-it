@@ -5,7 +5,6 @@ import auth.Encryption;
 import users.User;
 
 import java.io.Serial;
-import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
 
@@ -44,9 +43,8 @@ public class CredentialsUserDB extends Database {
      *
      * @param credentials the users credentials
      * @param user        A user instance
-     * @throws NoSuchAlgorithmException Because of Encryption.SHA_512 the method throws NoSuchAlgorithmException
      */
-    public void insertUser(Credentials credentials, User user) throws NoSuchAlgorithmException {
+    public void insertUser(Credentials credentials, User user) {
         if (user == null || credentials == null)
             return;
         String hash = Encryption.SHA_512(credentials.toString()); //get credentials hash in a String format
@@ -59,9 +57,8 @@ public class CredentialsUserDB extends Database {
      *
      * @param credentials The credentials used to query the Hashmap
      * @return The User mapped to the parameter credentials,if present in the map, null otherwise
-     * @throws NoSuchAlgorithmException Because of Encryption.SHA_512 the method throws NoSuchAlgorithmException
      */
-    public User selectUser(Credentials credentials) throws NoSuchAlgorithmException {
+    public User selectUser(Credentials credentials) {
         if (credentials == null)
             return null;
         String hash = Encryption.SHA_512(credentials.toString());
@@ -72,9 +69,8 @@ public class CredentialsUserDB extends Database {
      * A drop(delete) query for deleting entries in the map. If the parameters are null the method doesn't change the map
      *
      * @param credentials The Users.Credentials we wish to delete
-     * @throws NoSuchAlgorithmException Because of Encryption.SHA_512 the method throws NoSuchAlgorithmException
      */
-    public void dropUser(Credentials credentials) throws NoSuchAlgorithmException {
+    public void dropUser(Credentials credentials) {
         if (credentials == null)
             return;
         String hash = Encryption.SHA_512(credentials.toString());
@@ -87,9 +83,8 @@ public class CredentialsUserDB extends Database {
      * dropUser(Credentials)
      *
      * @param user The User we wish to delete from the map
-     * @throws NoSuchAlgorithmException Because of Encryption.SHA_512 the method throws NoSuchAlgorithmException
      */
-    public void dropUser(User user) throws NoSuchAlgorithmException {
+    public void dropUser(User user) {
         if (user == null)
             return;
         dropUser(user.getCredentials());
