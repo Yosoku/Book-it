@@ -1,8 +1,12 @@
 package accommodations;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public record TimePeriod(LocalDateTime start, LocalDateTime end) implements Comparable<TimePeriod> {
+public record TimePeriod(LocalDateTime start, LocalDateTime end) implements Serializable, Comparable<TimePeriod> {
+    @Serial
+    private static long SerialVersionUID = 0;
 
     public TimePeriod(LocalDateTime start, LocalDateTime end) {
         if (start.isBefore(end)) { //normal
