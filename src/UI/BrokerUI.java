@@ -1,6 +1,7 @@
 package UI;
 
 import accommodations.Accommodation;
+import application.Application;
 import users.User;
 
 public class BrokerUI extends UI {
@@ -8,8 +9,9 @@ public class BrokerUI extends UI {
 
     public BrokerUI(User broker) {
         this.broker = broker;
+        Application.sleepFor(1);
         System.out.println("Welcome back " + broker.getName() + ",how would you like to proceed?");
-
+        Application.sleepFor(1);
     }
 
     @Override
@@ -17,8 +19,8 @@ public class BrokerUI extends UI {
         System.out.println("\n---Options---");
         System.out.println("\n>View all Accommodations(view)\n>Add new Accommodation(add)\n" +
                 ">Edit already existing Accommodation(edit)\n>Delete already existing Accommodation(delete)\n" +
-                ">Sign out(signout)");
-        request = getInput("Enter view/add/edit/delete/signout", "(view|add|edit|delete|signout)");
+                ">View all reservations(viewres)\n>Sign out(signout)");
+        request = getInput("Enter view/add/edit/delete/viewres/signout", "(view|add|edit|delete|signout|viewres)");
 
     }
 
@@ -55,7 +57,7 @@ public class BrokerUI extends UI {
         ans = getInput("Would you like to add images? y/n", "y|Y|n|N").toLowerCase().charAt(0);
         if (ans == 'y') {
             //addImages();
-            System.out.println("Adding images");
+            UI.LOG(UIMessage.FEATURE_UNAVAILABLE);
         }
     }
 }

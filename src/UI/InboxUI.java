@@ -15,7 +15,7 @@ public class InboxUI extends UI {
 
     @Override
     public void show() {
-        List<Message> inbox = DatabaseAPI.getUserMessagesDatabase().selectMessageFromUser(user);
+        List<Message> inbox = DatabaseAPI.userMessagesDatabase.selectMessageFromUser(user);
         if (inbox == null) {
             System.out.println("Your inbox is empty");
         } else {
@@ -27,7 +27,7 @@ public class InboxUI extends UI {
                 else {
                     message.readMessage();
                     if (Message.auth.equals(message.getSubject()))
-                        DatabaseAPI.getUserConfirmationsDatabase().updateUserConfirmation(user);
+                        DatabaseAPI.userConfirmationsDatabase.updateUserConfirmation(user);
                 }
             }
         }

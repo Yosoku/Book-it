@@ -1,5 +1,6 @@
 package UI;
 
+import application.Application;
 import users.User;
 
 public class AdminUI extends UI {
@@ -7,8 +8,9 @@ public class AdminUI extends UI {
 
     public AdminUI(User admin) {
         this.admin = admin;
+        Application.sleepFor(1);
         System.out.println("Welcome back " + admin.getName() + ",how would you like to proceed?");
-
+        Application.sleepFor(1);
     }
 
     @Override
