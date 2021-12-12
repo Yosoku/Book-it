@@ -1,6 +1,7 @@
 package requests;
 
 import UI.AdminUI;
+import UI.InboxUI;
 import application.Application;
 import application.DatabaseAPI;
 import communication.Message;
@@ -65,6 +66,10 @@ public class AdminRequests implements Handler {
                     System.out.println("Total number of users : " + DatabaseAPI.userConfirmationsDatabase.selectAllUsers().size());
                     System.out.println("Total number of accommodations : " + DatabaseAPI.brokerAccommodationsDatabase.selectAllAccommodations().size());
                     Application.sleepFor(3);
+                }
+                case "inbox" -> {
+                    InboxUI inbox = new InboxUI(admin);
+                    inbox.show();
                 }
                 case "signout" -> quit = true;
 

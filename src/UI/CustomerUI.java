@@ -18,7 +18,7 @@ public class CustomerUI extends UI {
      * @param customer The current Customer
      */
     public CustomerUI(User customer) {
-        customer = customer;
+        this.customer = customer;
         Application.sleepFor(1);
         System.out.println("Welcome back " + customer.getName() + ",how would you like to proceed?");
         Application.sleepFor(1);
@@ -31,9 +31,9 @@ public class CustomerUI extends UI {
     public void show() {
         System.out.println("\n---Options---");
         System.out.println("\n>View reservations(viewres)\n>View reviews(viewrev)\n>Search Accommodations(search)" +
-                "\n>Make reservation(addres)\n>Make review(addrev)\n>Sign out(signout)");
-        request = getInput("Enter viewres/viewrev/search/addres/addrev/signout",
-                "(signout|search|viewrev|viewres|addrev|addres)");
+                "\n>Make reservation(addres)\n>Make review(addrev)\n>Check Inbox(inbox)\n>Sign out(signout)");
+        request = getInput("Enter viewres/viewrev/search/addres/addrev/inbox/signout",
+                "(signout|search|viewrev|viewres|addrev|addres|inbox)");
 
     }
 

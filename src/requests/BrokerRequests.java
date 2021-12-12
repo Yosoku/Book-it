@@ -1,6 +1,7 @@
 package requests;
 
 import UI.BrokerUI;
+import UI.InboxUI;
 import UI.UI;
 import UI.UIMessage;
 import accommodations.Accommodation;
@@ -99,6 +100,10 @@ public class BrokerRequests implements Handler {
                     else
                         reservations.forEach(System.out::println);
                     Application.sleepFor(2);
+                }
+                case "inbox" -> {
+                    InboxUI inbox = new InboxUI(broker);
+                    inbox.show();
                 }
 
                 case "signout" -> quit = true;

@@ -87,6 +87,19 @@ public abstract class User implements Serializable {
         return email;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return age == user.age && privilege == user.privilege && Objects.equals(name, user.name) && Objects.equals(credentials, user.credentials) && Objects.equals(email, user.email) && gender == user.gender && Objects.equals(phone, user.phone);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(privilege, name, age, credentials, email, gender, phone);
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
@@ -107,16 +120,4 @@ public abstract class User implements Serializable {
         this.phone = phone;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return age == user.age && name.equals(user.name) && credentials.equals(user.credentials) && privilege == user.privilege && email.equals(user.email) && gender == user.gender && phone.equals(user.phone);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, age, credentials, privilege, email, gender, phone);
-    }
 }

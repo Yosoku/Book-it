@@ -45,8 +45,10 @@ public class ReviewsDB extends Database {
      * @param newReview The new Review to insert in the HashSet
      */
     public void insertReview(Review newReview) {
-        if (newReview == null)
+        if (newReview == null) {
+            System.out.println("review was null");
             return;
+        }
         reviews.add(newReview);
     }
 
@@ -59,10 +61,13 @@ public class ReviewsDB extends Database {
      */
     public ArrayList<Review> selectReviewsByUser(User user) {
         ArrayList<Review> temp = new ArrayList<Review>();
-        if (user == null)
+        if (user == null) {
+            System.out.println("Select reviews User is null");
             return temp;
+        }
         for (Review review : reviews) {
-            if (review.user().equals(user))
+            System.out.println(review);
+            if (review.user() == user)
                 temp.add(review);
         }
         return temp;
@@ -80,7 +85,7 @@ public class ReviewsDB extends Database {
         if (accommodation == null)
             return temp;
         for (Review review : reviews) {
-            if (review.accommodation().equals(accommodation))
+            if (review.accommodation() == accommodation)
                 temp.add(review);
         }
         return temp;

@@ -17,6 +17,7 @@ public class InboxUI extends UI {
 
     /**
      * Initializer constructor
+     *
      * @param user The current Customer
      */
     public InboxUI(User user) {
@@ -24,6 +25,7 @@ public class InboxUI extends UI {
     }
 
 
+    //TODO add send message
     /**
      * Method to show different options to read an Inbox
      */

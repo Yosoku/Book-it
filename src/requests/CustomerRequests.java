@@ -117,7 +117,6 @@ public class CustomerRequests implements Handler {
                             }
                         });
                         if (unique.get()) {
-
                             Review review = ui.addReview(accommodation);
                             DatabaseAPI.reviewsDatabase.insertReview(review);
                             System.out.println("Review added succesfully");

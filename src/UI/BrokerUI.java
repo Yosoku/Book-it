@@ -32,8 +32,8 @@ public class BrokerUI extends UI {
         System.out.println("\n---Options---");
         System.out.println("\n>View all Accommodations(view)\n>Add new Accommodation(add)\n" +
                 ">Edit already existing Accommodation(edit)\n>Delete already existing Accommodation(delete)\n" +
-                ">View all reservations(viewres)\n>Sign out(signout)");
-        request = getInput("Enter view/add/edit/delete/viewres/signout", "(view|add|edit|delete|signout|viewres)");
+                ">View all reservations(viewres)\n>View Inbox\n>Sign out(signout)");
+        request = getInput("Enter view/add/edit/delete/viewres/inbox/signout", "(inbox|view|add|edit|delete|signout|viewres)");
 
     }
 
