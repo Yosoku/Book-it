@@ -1,24 +1,22 @@
 package application;
 
-import UI.ConnectUI;
-import UI.InboxUI;
-import UI.UI;
-import UI.UIMessage;
+import UI.*;
 import users.User;
 
 import java.security.NoSuchAlgorithmException;
+import java.util.concurrent.TimeUnit;
 
 
 public class Application {
+    private static boolean sleep;
     boolean isRunning;
-    DatabaseAPI databaseAPI;
     private Server requestHandler;
     private User currentUser;
     private ConnectUI connectUI;
 
-    public Application() throws NoSuchAlgorithmException {
-        databaseAPI = new DatabaseAPI();
+    public Application(boolean sleep) throws NoSuchAlgorithmException {
         requestHandler = new Server();
+        this.sleep = sleep;
         connectUI = new ConnectUI();
         run();
     }
@@ -27,19 +25,19 @@ public class Application {
     private void run() throws NoSuchAlgorithmException {
         DatabaseAPI.loadData();
         isRunning = true;
-        System.out.println("Welcome UI");
+        new WelcomeUI().show();
         while (isRunning) {
             connectUI.show();
             isRunning = !connectUI.getRequest().equals("quit");
             if (requestHandler.handleConnectionRequests(connectUI.getRequest())) {
                 //connection established
                 currentUser = requestHandler.getCurrentUser();
-                if (DatabaseAPI.getUserConfirmationsDatabase().selectUserConfirmation(currentUser)) {
+                if (DatabaseAPI.userConfirmationsDatabase.selectUserConfirmation(currentUser)) {
                     //User confirmed show options
                     requestHandler.handleUserRequests();
                 } else {
                     UI.LOG(UIMessage.CONFIRMATION_FAILED);
-                    InboxUI inboxUI = new InboxUI(DatabaseAPI.getUserMessagesDatabase().selectMessageFromUser(currentUser));
+                    InboxUI inboxUI = new InboxUI(currentUser);
                     inboxUI.show();
                 }
             }
@@ -49,4 +47,20 @@ public class Application {
         System.out.println("Credits");
     }
 
+    /**
+     * A method for sleeping/pausing running of the application. Useful in CLI for high quality user experience. A static
+     * boolean is used to avoid sleeping when debugging
+     *
+     * @param seconds How many seconds to sleep for
+     */
+    public static void sleepFor(int seconds) {
+        if (!sleep)
+            return;
+        else
+            try {
+                TimeUnit.SECONDS.sleep(seconds);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+    }
 }
