@@ -27,7 +27,7 @@ public class Server {
                 signin.show();
                 String[] request1 = signin.getRequest().split("\\s");
                 Credentials credentials = new Credentials(request1[0], request1[1]);
-                currentUser = DatabaseAPI.getCredentialsUserDatabase().selectUser(credentials);
+                currentUser = DatabaseAPI.credentialsUserDatabase.selectUser(credentials);
                 if (currentUser == null) {
                     UI.LOG(UIMessage.SIGN_IN_FAILED);
                     return false;
@@ -40,13 +40,13 @@ public class Server {
                 SignUpUI signup = new SignUpUI();
                 signup.show();
                 currentUser = signup.getNewUser();
-                if (DatabaseAPI.getCredentialsUserDatabase().selectUser(currentUser.getCredentials()) != null) { // duplicate credentials
+                if (DatabaseAPI.credentialsUserDatabase.selectUser(currentUser.getCredentials()) != null) { // duplicate credentials
                     UI.LOG(UIMessage.SIGN_UP_FAILED);
                     return false;
                 } else {
                     UI.LOG(UIMessage.SIGN_UP_SUCCESS);
-                    DatabaseAPI.getCredentialsUserDatabase().insertUser(currentUser.getCredentials(), currentUser);
-                    DatabaseAPI.getUserConfirmationsDatabase().insertUserConfirmation(currentUser);
+                    DatabaseAPI.credentialsUserDatabase.insertUser(currentUser.getCredentials(), currentUser);
+                    DatabaseAPI.userConfirmationsDatabase.insertUserConfirmation(currentUser);
                     return true;
                 }
             }
