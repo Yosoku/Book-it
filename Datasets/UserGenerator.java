@@ -92,12 +92,12 @@ public class UserGenerator {
             Credentials credentials = new Credentials(username, getRandomPassword());
             if (rand.nextInt(100) > 50) {
                 Broker broker = new Broker(credentials, fullname, rand.nextInt(60) + 18, email, gender, getPhone(), "");
-                DatabaseAPI.getUserConfirmationsDatabase().insertUserConfirmation(broker);
-                DatabaseAPI.getCredentialsUserDatabase().insertUser(broker.getCredentials(), broker);
+                DatabaseAPI.userConfirmationsDatabase.insertUserConfirmation(broker);
+                DatabaseAPI.credentialsUserDatabase.insertUser(broker.getCredentials(), broker);
             } else {
                 Customer customer = new Customer(credentials, fullname, rand.nextInt(60) + 18, email, gender, getPhone());
-                DatabaseAPI.getUserConfirmationsDatabase().insertUserConfirmation(customer);
-                DatabaseAPI.getCredentialsUserDatabase().insertUser(customer.getCredentials(), customer);
+                DatabaseAPI.userConfirmationsDatabase.insertUserConfirmation(customer);
+                DatabaseAPI.credentialsUserDatabase.insertUser(customer.getCredentials(), customer);
             }
 
         }
