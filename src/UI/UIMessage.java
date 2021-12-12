@@ -10,7 +10,8 @@ public enum UIMessage {
     ENTRY_NOT_FOUND("Entry was not found. Perhaps double check if the parameters were correct?"),
     ENTRY_DELETED("Entry was deleted succesfully"),
     LOADING("The application is loading,please wait..."),
-    FEATURE_UNAVAILABLE("This feature is being currently developed");
+    FEATURE_UNAVAILABLE("This feature is being currently developed"),
+    SAVING("The application is saving all progress. Please don't exit this window");
     public String message;
 
     UIMessage(String message) {
