@@ -127,14 +127,13 @@ public class Accommodation implements Serializable {
     //TODO check conditions
     public boolean isAvailable(TimePeriod period) {
         TimePeriod temp = calendar.floor(period); // temp.start<=period.start
-
         if (temp == null) {
             if (calendar.isEmpty())
-                return !false;
+                return true;
         } else {
             return !period.intersects(temp);
         }
-        return !false;
+        return true;
     }
 
 }
