@@ -62,11 +62,11 @@ public class AccommodationGenerator {
             int space = random.nextInt(500) + 20;
             int price = (int) (space * random.nextFloat() * .5f + 20);
             Accommodation accommodation = new Accommodation(space, city, address, null, "", price);
-            List<User> users = DatabaseAPI.getUserConfirmationsDatabase().selectAllUsers();
+            List<User> users = DatabaseAPI.userConfirmationsDatabase.selectAllUsers();
             User broker = users.get(random.nextInt(users.size()));
             while (broker.getPrivilege() != Privilege.BROKER)
                 broker = users.get(random.nextInt(users.size()));
-            DatabaseAPI.getBrokerAccommodationsDatabase().insertAccommodation((Broker) broker, accommodation);
+            DatabaseAPI.brokerAccommodationsDatabase.insertAccommodation((Broker) broker, accommodation);
         }
         DatabaseAPI.writeData();
     }
