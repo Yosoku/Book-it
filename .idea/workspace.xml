@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Updated config files">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/AccommodationsCalendarDB.java" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="XML and patch files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/UIMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UIMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/DatabaseAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/reviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/reviews.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/ReservationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReservationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/CustomerRequests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,104 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Refactored code to match ReviewsDB">
-      <created>1638265358758</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1638265358758</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Added a User field">
-      <created>1638265400827</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1638265400827</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Dependencies">
-      <created>1638265414455</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1638265414455</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Fixed the regex to match usernames ending with digits">
-      <created>1638265761213</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1638265761213</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Fixed config files">
-      <created>1638265816074</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1638265816074</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Added Javadoc">
-      <created>1638271655233</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1638271655233</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Updated configs">
-      <created>1638272098612</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1638272098612</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Added an API for Databases">
-      <created>1638307716394</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1638307716394</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Added Reservation and Reviews Databases">
-      <created>1638307922183</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1638307922183</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Added Reservations Database">
-      <created>1638308183042</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1638308183043</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Added Handler class to lower coupling and complexity">
-      <created>1638310145733</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1638310145733</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Refactor">
-      <created>1638312569391</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1638312569391</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Added Separate Request Handlers for each type of user">
-      <created>1638348444651</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1638348444652</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Refactoring and cleanup">
-      <created>1638351164264</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1638351164265</updated>
     </task>
     <task id="LOCAL-00073" summary="Dataset containing Full names,Phones,Emails &#10;Used in creating users">
       <created>1639222990930</created>
@@ -484,7 +371,105 @@
       <option name="project" value="LOCAL" />
       <updated>1639306396201</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Changes to API calls">
+      <created>1639306439302</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306439302</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Added Saving logging">
+      <created>1639306453857</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306453857</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Added case for empty regex accepting any input.Useful in input of descriptions comments etc">
+      <created>1639306491262</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306491262</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Added query for selecting reservations by broker">
+      <created>1639306532399</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306532399</updated>
+    </task>
+    <task id="LOCAL-00112" summary="-Added a Make Reservation Functionality&#10;-New parseDate method to take controlled input of dates and time&#10;-Changed make review to accept only unique reviews">
+      <created>1639306597505</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306597505</updated>
+    </task>
+    <task id="LOCAL-00113" summary="-Added AccommodationsCalendarDB to load/write">
+      <created>1639306622947</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306622947</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Added query to select all accommodations with active reservations">
+      <created>1639306649666</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306649666</updated>
+    </task>
+    <task id="LOCAL-00115" summary="-Updated config files">
+      <created>1639306668197</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306668197</updated>
+    </task>
+    <task id="LOCAL-00116" summary="-Added sleepFor method and a static boolean sleep to help with visual experience and debugging">
+      <created>1639306710818</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306710818</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Refactoring">
+      <created>1639306757475</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306757475</updated>
+    </task>
+    <task id="LOCAL-00118" summary="-Updated config files">
+      <created>1639306766663</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306766663</updated>
+    </task>
+    <task id="LOCAL-00119" summary="-Make class serializable">
+      <created>1639306814599</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306814599</updated>
+    </task>
+    <task id="LOCAL-00120" summary="-New accommodaitonCalendarDatabase&#10;-Useful for checking an Accommodations calendar&#10;and making reservations">
+      <created>1639306856879</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306856879</updated>
+    </task>
+    <task id="LOCAL-00121" summary="XML and patch files">
+      <created>1639306867678</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1639306867678</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -512,19 +497,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Class used to parse Datasets and create random fake accommodations" />
-    <MESSAGE value="Class used to parse Datasets and create random fake Users" />
-    <MESSAGE value="Added TODO.txt to .gitignore" />
-    <MESSAGE value="Updated config files with new Users and Accommodations" />
-    <MESSAGE value="Added a City field in Accommodation to support more versatile queries based on Location" />
-    <MESSAGE value="Added a Welcome greeting UI for highe quality user experience" />
-    <MESSAGE value="Added 2 new Messages for Unavailable features and a Loading message" />
-    <MESSAGE value="Fixed a bug where a SignUp UI was transforming Brokers to Customers" />
-    <MESSAGE value="Changed equals to be case-insensitive" />
-    <MESSAGE value="Added Accommodation in toString and changed getname to print the user instance" />
-    <MESSAGE value="Added city to input when adding Accommodations and some visual stuff" />
-    <MESSAGE value="some visual stuff" />
-    <MESSAGE value="Xml and patch updates" />
     <MESSAGE value="PNG used in README" />
     <MESSAGE value="Added delete queries" />
     <MESSAGE value="Profanity filter TODO" />
@@ -537,7 +509,20 @@
     <MESSAGE value="-sleep added for better visual experience&#10;-View reservation functionality" />
     <MESSAGE value="-sleep added for better visual experience" />
     <MESSAGE value="Updated config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated config files" />
+    <MESSAGE value="Changes to API calls" />
+    <MESSAGE value="Added Saving logging" />
+    <MESSAGE value="Added case for empty regex accepting any input.Useful in input of descriptions comments etc" />
+    <MESSAGE value="Added query for selecting reservations by broker" />
+    <MESSAGE value="-Added a Make Reservation Functionality&#10;-New parseDate method to take controlled input of dates and time&#10;-Changed make review to accept only unique reviews" />
+    <MESSAGE value="-Added AccommodationsCalendarDB to load/write" />
+    <MESSAGE value="Added query to select all accommodations with active reservations" />
+    <MESSAGE value="-Added sleepFor method and a static boolean sleep to help with visual experience and debugging" />
+    <MESSAGE value="Refactoring" />
+    <MESSAGE value="-Updated config files" />
+    <MESSAGE value="-Make class serializable" />
+    <MESSAGE value="-New accommodaitonCalendarDatabase&#10;-Useful for checking an Accommodations calendar&#10;and making reservations" />
+    <MESSAGE value="XML and patch files" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML and patch files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
