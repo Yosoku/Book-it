@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="javadoc">
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/dathensroads.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/enron-email-dataset-QueryResult.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/greekcities.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/usersDataset.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21__12_31_____Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_12_21__12_31_____Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/AdminUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/BrokerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BrokerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/accommodationsCalendar.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/accommodationsCalendar.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/reservations.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/reviews.ser" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/userMessages.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userMessages.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/ReviewsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/ReviewsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/AdminRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/BrokerRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests/CustomerRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +55,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/application/DatabaseAPI.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/database/ReviewsDB.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/UI/BrokerUI.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/application/Application.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/accommodations/TimePeriod.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/accommodations/Reservation.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/accommodations/Accommodation.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/UI/BrokerUI.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/accommodations/TimePeriod.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/database/ReviewsDB.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="20qLvoPVyIZ6H79kAHYrtsVo6p6" />
   <component name="ProjectViewState">
@@ -88,12 +81,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/jdk-17.0.1/bin/java.exe" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -118,7 +111,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MyBooking" />
       <method v="2">
@@ -127,7 +120,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -511,7 +503,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor for readability" />
