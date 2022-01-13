@@ -4,6 +4,7 @@ import accommodations.Accommodation;
 import application.DatabaseAPI;
 import users.Broker;
 
+import javax.swing.*;
 import java.io.Serial;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -59,6 +60,19 @@ public class BrokerAccommodationsDB extends Database {
         accommodation.setID(getNextID());
         accommodationList.add(accommodation);
         brokerProperties.put(broker, accommodationList);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -84,6 +98,19 @@ public class BrokerAccommodationsDB extends Database {
             return;
         brokerProperties.get(broker).remove(accommodation);
         totalAccommodations--;
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -99,6 +126,19 @@ public class BrokerAccommodationsDB extends Database {
             return;
         brokerProperties.get(broker).remove(oldAccommodation);
         brokerProperties.get(broker).add(newAccommodation);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
 
@@ -195,6 +235,15 @@ public class BrokerAccommodationsDB extends Database {
         for (Accommodation accommodation : selectAllAccommodations()) {
             if (accommodation.getCity().equals(city))
                 values.add(accommodation);
+        }
+        return values;
+    }
+
+    public HashSet<Accommodation> selectAccommodationsBySpaceAndPriceAndCity(String city, int highSpace, int highPrice) {
+        HashSet<Accommodation> values = new HashSet<>();
+        for (Accommodation ac : selectAllAccommodations()) {
+            if (ac.getSpace() <= highSpace && ac.getPrice() <= highPrice && Objects.equals(city, ac.getCity()))
+                values.add(ac);
         }
         return values;
     }
