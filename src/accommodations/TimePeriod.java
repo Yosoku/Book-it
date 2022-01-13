@@ -71,6 +71,15 @@ public record TimePeriod(LocalDateTime start, LocalDateTime end) implements Seri
     }
 
     /**
+     * Calculates and returns the number of days in a TimePeriod. E.g. 1/1/2022 - 2/1/2022 has 2 days in it
+     *
+     * @return the number of days in TimePeriod
+     */
+    public int getNumberOfDays() {
+        return end.getDayOfMonth() - start.getDayOfMonth() + 1;
+    }
+
+    /**
      * Although the class allows for a TimePeriod instance having start==date,this method provides a way to detect and
      * delete any invalid TimePeriods
      *
@@ -87,9 +96,6 @@ public record TimePeriod(LocalDateTime start, LocalDateTime end) implements Seri
      */
     @Override
     public String toString() {
-        return "TimePeriod{" +
-                "start=" + start +
-                ", end=" + end +
-                '}';
+        return start + " till " + end;
     }
 }
