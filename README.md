@@ -43,26 +43,6 @@ Note that the Credentials below are case __SENSITIVE__
 
 `git clone https://github.com/auth-csd-oop-2021/mybooking-team-rocket.git`
 
-#### Register a new Account
-
-![](res/README/Register2.png)
-
-#### Login an Admin
-
-You can log in as an Admin to view stats and/or confirm new accounts
-![](res/README/AdminSignin.png)
-
-#### Login a Customer
-
-You can log in as an Customer to explore different options such as making Reservations and Reviews,searching
-Accommodations and many more
-![](res/README/customerSignin.png)
-
-#### Login a Broker
-
-You can log in as an Customer to explore different options such as making Reservations and Reviews,searching
-Accommodations and many more
-![](res/README/brokerSignin.png)
 
 ### Datasets
 

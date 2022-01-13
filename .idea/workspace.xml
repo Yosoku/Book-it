@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Added case files in request handling method to handle GUI components">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Fix broken dependencies after merge.&#10;Thank you java,not cool">
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/Sign-Up-Button-Blue.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/Sign-Up-Button-Blue1.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/background.jpg" afterDir="false" />
@@ -78,7 +78,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/AppWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/AppWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Server.java" afterDir="false" />
@@ -219,20 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Added delete queries">
-      <created>1639225094063</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1639225094063</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Added delete queries">
-      <created>1639225106016</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1639225106016</updated>
     </task>
     <task id="LOCAL-00096" summary="Profanity filter TODO">
       <created>1639225135131</created>
@@ -563,7 +548,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642105157514</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="?">
+      <created>1642105531755</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1642105531756</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Fix broken dependencies after merge.&#10;Thank you java,not cool">
+      <created>1642105624323</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1642105624323</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,8 +590,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-Added sleepFor method and a static boolean sleep to help with visual experience and debugging" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="-Updated config files" />
     <MESSAGE value="-Make class serializable" />
     <MESSAGE value="-New accommodaitonCalendarDatabase&#10;-Useful for checking an Accommodations calendar&#10;and making reservations" />
@@ -616,7 +613,9 @@
     <MESSAGE value="Serial annotation" />
     <MESSAGE value="New singleton class representing a Swing Window for the application" />
     <MESSAGE value="Added case files in request handling method to handle GUI components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added case files in request handling method to handle GUI components" />
+    <MESSAGE value="?" />
+    <MESSAGE value="Fix broken dependencies after merge.&#10;Thank you java,not cool" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix broken dependencies after merge.&#10;Thank you java,not cool" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
