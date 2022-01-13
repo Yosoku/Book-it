@@ -3,6 +3,7 @@ package database;
 import accommodations.Accommodation;
 import accommodations.TimePeriod;
 
+import javax.swing.*;
 import java.util.HashMap;
 import java.util.TreeSet;
 
@@ -51,6 +52,19 @@ public class AccommodationsCalendarDB extends Database {
             calendar = new TreeSet<TimePeriod>();
         calendar.add(timePeriod);
         accommodationsCalendar.put(accommodation, calendar);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
