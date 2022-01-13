@@ -6,9 +6,11 @@ import application.DatabaseAPI;
 import users.Broker;
 import users.User;
 
+import javax.swing.*;
 import java.io.Serial;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 
 public class ReservationsDB extends Database {
     @Serial
@@ -34,6 +36,19 @@ public class ReservationsDB extends Database {
         if (newReservation == null)
             return;
         reservations.add(newReservation);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -76,12 +91,38 @@ public class ReservationsDB extends Database {
         if (accommodation == null)
             return;
         selectReservationsByAccommodation(accommodation).clear();
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     public void dropAllReservationsByUser(User user) {
         if (user == null)
             return;
         selectReservationsByUser(user).clear();
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -102,4 +143,28 @@ public class ReservationsDB extends Database {
         return reservations;
     }
 
+    public void dropReservation(Reservation reservation) {
+        reservations.remove(reservation);
+    }
+
+    public ArrayList<Reservation> selectAllReservations() {
+        return new ArrayList<>(reservations);
+    }
+
+    public void cleanUpDatabase() {
+        List<Reservation> deleted = new ArrayList<>();
+        for (Reservation res : reservations) {
+            if (res.user() == null)
+                deleted.add(res);
+            if (res.accommodation() == null)
+                deleted.add(res);
+            if (res.period() == null)
+                deleted.add(res);
+        }
+        for (Reservation res : deleted) {
+            dropReservation(res);
+        }
+
+
+    }
 }
