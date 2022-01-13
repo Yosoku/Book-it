@@ -1,6 +1,4 @@
 package database;
-
-
 import java.io.*;
 
 /**
@@ -55,8 +53,7 @@ public abstract class Database implements Serializable {
             FileOutputStream fileOut = new FileOutputStream(this.filename);
             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
             objectOut.writeObject(this);
-            objectOut.close();
-            fileOut.close();
+
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -93,6 +90,7 @@ public abstract class Database implements Serializable {
     public void setFilename(String filename) {
         this.filename = filename;
     }
+
 
 }
 

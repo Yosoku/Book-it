@@ -7,6 +7,7 @@ package database;
 
 import users.User;
 
+import javax.swing.*;
 import java.io.Serial;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,6 +52,19 @@ public class UserConfirmationsDB extends Database {
         if (user == null)
             return;
         userConfirmed.put(user, false); // Users are initially inserted as false
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -76,6 +90,19 @@ public class UserConfirmationsDB extends Database {
         if (user == null)
             return;
         userConfirmed.remove(user);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -88,6 +115,19 @@ public class UserConfirmationsDB extends Database {
         if (user == null)
             return;
         userConfirmed.put(user, true);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**

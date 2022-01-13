@@ -5,6 +5,7 @@ import accommodations.Accommodation;
 import communication.Review;
 import users.User;
 
+import javax.swing.*;
 import java.io.Serial;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -45,11 +46,22 @@ public class ReviewsDB extends Database {
      * @param newReview The new Review to insert in the HashSet
      */
     public void insertReview(Review newReview) {
-        if (newReview == null) {
-            System.out.println("review was null");
+        if (newReview == null)
             return;
-        }
         reviews.add(newReview);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -139,6 +151,19 @@ public class ReviewsDB extends Database {
         if (accommodation == null)
             return;
         selectReviewsByAccommodation(accommodation).clear();
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
 
@@ -151,5 +176,27 @@ public class ReviewsDB extends Database {
         if (user == null)
             return;
         selectReviewsByUser(user).clear();
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
+    }
+
+
+    public boolean isUniqueReview(Accommodation accommodation, User currentUser) {
+        for (Review review : selectReviewsByUser(currentUser)) {
+            if (review.accommodation() == accommodation)
+                return false;
+        }
+        return true;
     }
 }

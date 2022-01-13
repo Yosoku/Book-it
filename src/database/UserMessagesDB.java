@@ -3,10 +3,10 @@ package database;
 import communication.Message;
 import users.User;
 
+import javax.swing.*;
 import java.io.Serial;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * <p>
@@ -45,7 +45,7 @@ public class UserMessagesDB extends Database {
      * @param user    The user that received the message
      * @param message The message instance
      */
-    public void insertMessageToUser(User user, Message message) {
+    public void insertMessageToUser(User user, Message message, boolean write) {
         if (user == null || message == null)
             return;
         ArrayList<Message> messagesList = userInbox.get(user);
@@ -53,6 +53,22 @@ public class UserMessagesDB extends Database {
             messagesList = new ArrayList<>();
         messagesList.add(message);
         userInbox.put(user, messagesList);
+        if (write)
+            new SwingWorker<>() {
+                @Override
+                protected Object doInBackground() {
+                    System.out.println("Started writing " + this);
+                    write();
+                    return null;
+                }
+
+                @Override
+                protected void done() {
+                    System.out.println("Finished writing Databases");
+                }
+            }.execute();
+
+
     }
 
     /**
@@ -62,8 +78,8 @@ public class UserMessagesDB extends Database {
      * @param user The user to query messages from
      * @return The List of Messages mapped to the parameter user,if present in the map, null otherwise
      */
-    public List<Message> selectMessageFromUser(User user) {
-        return userInbox.get(user);
+    public ArrayList<Message> selectMessageFromUser(User user) {
+        return userInbox.get(user) != null ? userInbox.get(user) : new ArrayList<Message>();
     }
 
 
@@ -76,6 +92,19 @@ public class UserMessagesDB extends Database {
      */
     public void dropMessageFromUser(User user, Message message) {
         userInbox.get(user).remove(message);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -85,6 +114,19 @@ public class UserMessagesDB extends Database {
      */
     public void dropAllMessagesFromUser(User user) {
         userInbox.get(user).clear();
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
 
