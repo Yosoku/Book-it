@@ -7,6 +7,7 @@ import users.*;
  *
  * @author Fwteinos Wawaroutas
  */
+@Deprecated
 public class SignUpUI extends UI {
     private User newUser;
 

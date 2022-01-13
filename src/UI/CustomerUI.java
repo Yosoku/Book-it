@@ -1,7 +1,6 @@
 package UI;
 
 import accommodations.Accommodation;
-import application.Application;
 import communication.Review;
 import users.User;
 /**
@@ -9,6 +8,7 @@ import users.User;
  *
  * @author Fwteinos Wawaroutas
  */
+@Deprecated
 public class CustomerUI extends UI {
     private User customer;
 
@@ -19,9 +19,9 @@ public class CustomerUI extends UI {
      */
     public CustomerUI(User customer) {
         this.customer = customer;
-        Application.sleepFor(1);
+
         System.out.println("Welcome back " + customer.getName() + ",how would you like to proceed?");
-        Application.sleepFor(1);
+
     }
 
     /**

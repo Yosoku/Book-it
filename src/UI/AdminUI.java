@@ -1,6 +1,5 @@
 package UI;
 
-import application.Application;
 import users.User;
 
 /**
@@ -8,6 +7,7 @@ import users.User;
  *
  * @author Fwteinos Wawaroutas
  */
+@Deprecated
 public class AdminUI extends UI {
     private User admin;
 
@@ -18,9 +18,9 @@ public class AdminUI extends UI {
      */
     public AdminUI(User admin) {
         this.admin = admin;
-        Application.sleepFor(1);
+
         System.out.println("Welcome back " + admin.getName() + ",how would you like to proceed?");
-        Application.sleepFor(1);
+
     }
 
     /**

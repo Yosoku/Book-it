@@ -1,7 +1,6 @@
 package UI;
 
 import accommodations.Accommodation;
-import application.Application;
 import users.User;
 
 /**
@@ -9,6 +8,7 @@ import users.User;
  *
  * @author Fwteinos Wawaroutas
  */
+@Deprecated
 public class BrokerUI extends UI {
     private User broker;
 
@@ -19,9 +19,9 @@ public class BrokerUI extends UI {
      */
     public BrokerUI(User broker) {
         this.broker = broker;
-        Application.sleepFor(1);
+
         System.out.println("Welcome back " + broker.getName() + ",how would you like to proceed?");
-        Application.sleepFor(1);
+
     }
 
     /**
