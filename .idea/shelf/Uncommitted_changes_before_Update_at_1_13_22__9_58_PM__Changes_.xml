@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]" date="1642103918914" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/13/22, 9:58 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/MyBooking/Sign-Up-Button-Blue.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/Sign-Up-Button-Blue.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/MyBooking/background.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/background.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="res/GUI/background.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/background1.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="res/GUI/Sign-Up-Button-Blue.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/Sign-Up-Button-Blue1.png" />
+  </binary>
+</changelist>
