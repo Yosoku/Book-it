@@ -9,7 +9,6 @@ import java.awt.*;
 
 public class AppWindow extends JFrame {
     private static AppWindow instance;
-
     private AppWindow() {
         initSettings();
     }

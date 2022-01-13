@@ -2,6 +2,7 @@ package UI;
 
 import application.DatabaseAPI;
 import communication.Message;
+import config.Configurations;
 import users.User;
 
 import java.util.List;
@@ -42,7 +43,7 @@ public class InboxUI extends UI {
                     return;
                 else {
                     message.readMessage();
-                    if (Message.auth.equals(message.getSubject()))
+                    if (Configurations.CONFIRMATION_MESSAGE_SUBJECT.equals(message.getSubject()))
                         DatabaseAPI.userConfirmationsDatabase.updateUserConfirmation(user);
                 }
             }
