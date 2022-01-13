@@ -4,8 +4,10 @@ import auth.Credentials;
 import auth.Encryption;
 import users.User;
 
+import javax.swing.*;
 import java.io.Serial;
 import java.util.HashMap;
+import java.util.Objects;
 
 
 /**
@@ -49,6 +51,19 @@ public class CredentialsUserDB extends Database {
             return;
         String hash = Encryption.SHA_512(credentials.toString()); //get credentials hash in a String format
         users.put(hash, user);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
     /**
@@ -75,6 +90,19 @@ public class CredentialsUserDB extends Database {
             return;
         String hash = Encryption.SHA_512(credentials.toString());
         users.remove(hash);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
     }
 
 
@@ -88,5 +116,30 @@ public class CredentialsUserDB extends Database {
         if (user == null)
             return;
         dropUser(user.getCredentials());
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Databases");
+            }
+        }.execute();
+    }
+
+
+    public User selectUserByUsername(String username) {
+        if (username == null || username.equals(""))
+            return null;
+        else {
+            for (User user : users.values())
+                if (Objects.equals(user.getCredentials().username(), username))
+                    return user;
+        }
+        return null;
     }
 }
