@@ -1,13 +1,18 @@
 package requests;
 
+import GUI.AppWindow;
+import GUI.Inbox.InboxView;
+import GUI.ProfileView;
+import GUI.usersgui.AdminHomePage;
 import UI.AdminUI;
-import UI.InboxUI;
-import application.Application;
 import application.DatabaseAPI;
+import application.Server;
 import communication.Message;
+import config.Configurations;
 import users.Admin;
 import users.User;
 
+import javax.swing.*;
 import java.util.List;
 
 /**
@@ -26,8 +31,8 @@ public class AdminRequests implements Handler {
      * @param admin The Admin making requests
      */
     public AdminRequests(Admin admin) {
-        ui = new AdminUI(admin);
         this.admin = admin;
+        AppWindow.getInstance().changePanel(new AdminHomePage(admin));
     }
 
     /**
@@ -35,45 +40,40 @@ public class AdminRequests implements Handler {
      */
     @Override
     public void handleRequests() {
-        boolean quit = false;
-        while (!quit) {
-            ui.show();
-            switch (ui.getRequest()) {
-                case "confirm" -> {
-                    String confirmationMessage = "Hello read this email to confirm your account";
-                    List<User> unconfirmed = DatabaseAPI.userConfirmationsDatabase.selectAllUsersWhereConfirmedIs(false);
-                    System.out.printf("There are currently %d unconfirmed users. Would you like to confirmed them all?\n"
-                            , unconfirmed.size());
-                    char ans = ui.getInput("y/n", "y|Y|n|N").charAt(0);
-                    if (ans == 'y') {
-                        System.out.println("Sending confirmation message to all Unconfirmed Users...");
-                        Application.sleepFor(2);
-                        unconfirmed.forEach(user -> DatabaseAPI.userMessagesDatabase.
-                                insertMessageToUser(user, new Message(admin, user, Message.auth, confirmationMessage)));
-                    } else {
-                        for (User user : unconfirmed) {
-                            System.out.printf("Send confirmation message to user? q to exit\n %s", user.toString());
-                            ans = ui.getInput("y/n/q", "q|Q|y|Y|N|n").toLowerCase().charAt(0);
-                            if (ans == 'y')
-                                DatabaseAPI.userMessagesDatabase.insertMessageToUser
-                                        (user, new Message(admin, user, Message.auth, confirmationMessage));
-                            if (ans == 'q')
-                                break;
-                        }
+        switch (Server.getCurrentRequest()) {
+            case "confirmall" -> {
+                List<User> unconfirmed = DatabaseAPI.userConfirmationsDatabase.selectAllUsersWhereConfirmedIs(false);
+                int response = JOptionPane.showConfirmDialog
+                        (null, "This will send a confirmation email to " + unconfirmed.size() + " Users",
+                                "Are you sure", JOptionPane.YES_NO_CANCEL_OPTION);
+                if (response == JOptionPane.OK_OPTION) {
+                    for (User user : unconfirmed) {
+                        DatabaseAPI.userMessagesDatabase.insertMessageToUser
+                                (user, new Message(admin, user, Configurations.CONFIRMATION_MESSAGE_SUBJECT,
+                                        Configurations.CONFIRMATION_MESSAGE), false);
                     }
+                    JOptionPane.showMessageDialog
+                            (null, "All confirmations sent successfully",
+                                    "Confirmation success", JOptionPane.INFORMATION_MESSAGE);
                 }
-                case "stats" -> {
-                    System.out.println("Total number of users : " + DatabaseAPI.userConfirmationsDatabase.selectAllUsers().size());
-                    System.out.println("Total number of accommodations : " + DatabaseAPI.brokerAccommodationsDatabase.selectAllAccommodations().size());
-                    Application.sleepFor(3);
-                }
-                case "inbox" -> {
-                    InboxUI inbox = new InboxUI(admin);
-                    inbox.show();
-                }
-                case "signout" -> quit = true;
+                DatabaseAPI.userMessagesDatabase.write();
+            }
+            case "profile" -> {
+                SwingUtilities.invokeLater(() -> {
+                    JFrame profileView = new ProfileView(admin);
+                    profileView.setVisible(true);
+                });
 
             }
+            case "inbox" -> {
+                SwingUtilities.invokeLater(() -> {
+                    InboxView inboxView = new InboxView(DatabaseAPI.userMessagesDatabase.selectMessageFromUser(admin));
+                    inboxView.setVisible(true);
+                });
+
+            }
+            case "signout" -> SwingUtilities.invokeLater(() -> AppWindow.getInstance().signOut());
+
         }
     }
 }
