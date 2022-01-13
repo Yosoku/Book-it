@@ -1,7 +1,5 @@
 package application;
 
-import UI.UI;
-import UI.UIMessage;
 import database.*;
 
 /**
@@ -24,25 +22,26 @@ public class DatabaseAPI {
      * Loads every Database in the member fields
      */
     public static void loadData() {
-        UI.LOG(UIMessage.LOADING);
-        Object temp = accommodationsCalendarDatabase.read();
+        Object temp = credentialsUserDatabase.read();
+        if (temp != null)
+            credentialsUserDatabase = (CredentialsUserDB) temp;
+        temp = userConfirmationsDatabase.read();
+        if (temp != null)
+            userConfirmationsDatabase = (UserConfirmationsDB) temp;
+        temp = accommodationsCalendarDatabase.read();
         if (temp != null)
             accommodationsCalendarDatabase = (AccommodationsCalendarDB) temp;
         temp = brokerAccommodationsDatabase.read();
         if (temp != null)
             brokerAccommodationsDatabase = (BrokerAccommodationsDB) temp;
-        temp = credentialsUserDatabase.read();
-        if (temp != null)
-            credentialsUserDatabase = (CredentialsUserDB) temp;
+
         temp = reservationDatabase.read();
         if (temp != null)
             reservationDatabase = (ReservationsDB) temp;
         temp = reviewsDatabase.read();
         if (temp != null)
             reviewsDatabase = (ReviewsDB) temp;
-        temp = userConfirmationsDatabase.read();
-        if (temp != null)
-            userConfirmationsDatabase = (UserConfirmationsDB) temp;
+
         temp = userMessagesDatabase.read();
         if (temp != null)
             userMessagesDatabase = (UserMessagesDB) temp;
@@ -53,7 +52,6 @@ public class DatabaseAPI {
      * Writes every Database to their respective files
      */
     public static void writeData() {
-        UI.LOG(UIMessage.SAVING);
         accommodationsCalendarDatabase.write();
         brokerAccommodationsDatabase.write();
         credentialsUserDatabase.write();
