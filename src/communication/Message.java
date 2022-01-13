@@ -2,7 +2,9 @@ package communication;
 
 import users.User;
 
+import java.io.Serial;
 import java.io.Serializable;
+
 /**
  * A class representing a Message instace with information about the Sender,Receiver,the subject and the contents of Message
  * The class also implements the Serializable interface for storing in files
@@ -10,12 +12,13 @@ import java.io.Serializable;
  * @author Edward Koulakidis
  */
 public class Message implements Serializable {
+    @Serial
+    private static long serialversionUID = 0;
     private final User sender;
     private final User receiver;
     private final String subject;
     private final String contents;
     private boolean seen;
-    public static final String auth = "Authemtication email";
 
     public Message(User sender, User receiver, String subject, String contents) {
         this.sender = sender;
