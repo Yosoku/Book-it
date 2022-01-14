@@ -1,4 +1,4 @@
-package database;
+package backend.database;
 
 class UserConfirmationsTest {
 

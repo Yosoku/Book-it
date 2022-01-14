@@ -1,86 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Fix broken dependencies after merge.&#10;Thank you java,not cool">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="New BrokerHomePage GUI component">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/Sign-Up-Button-Blue.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/Sign-Up-Button-Blue1.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/background.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/background1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22__9_58_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/AccommodationSearchPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/AccommodationTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/AccommodationUI/MakeReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/AccommodationUI/ReservationTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/AccommodationUI/ReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/AccommodationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/ConnectUI/ConnectPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/ConnectUI/SignInPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/ConnectUI/SignUpPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/ConnectUI/UserHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/CreditCardPayment.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/Inbox/InboxView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/Inbox/SendMessageView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/ProfileView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/ReviewView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/UserTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/usersgui/AdminHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/usersgui/BrokerHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/GUI/usersgui/CustomerHomePage.jfd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/Sign-Up-Button-Blue.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/MyBooking/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationSearchPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationTablePanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/MakeReservationView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/ReservationTablePanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/ConnectPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/SignInPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/SignUpPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/UserHomePage.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/CreditCardPayment.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/Inbox/InboxView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/Inbox/SendMessageView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ProfileView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ReviewView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/UserTablePanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/AdminHomePage.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/BrokerHomePage.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/CustomerHomePage.jfd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/res/GUI/Sign-Up-Button-Blue.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/res/GUI/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationCalendar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationSearchPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationSearchPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationTablePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationUI/MakeReservationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationUI/MakeReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationUI/ReservationTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationUI/ReservationTablePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationUI/ReservationTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationUI/ReservationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationUI/ReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/AccommodationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ConnectUI/ConnectPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ConnectUI/ConnectPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ConnectUI/SignInPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ConnectUI/SignInPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ConnectUI/SignUpPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ConnectUI/SignUpPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ConnectUI/UserHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ConnectUI/UserHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/CreditCardPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/CreditCardPayment.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Inbox/InboxView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Inbox/InboxView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Inbox/MessagesTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Inbox/SendMessageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/Inbox/SendMessageView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ProfileView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ProfileView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ReviewView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ReviewView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/UserTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/UserTablePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/UserTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/usersgui/AdminHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/usersgui/AdminHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/usersgui/BrokerHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/usersgui/BrokerHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/usersgui/CustomerHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/usersgui/CustomerHomePage.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/application/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationCalendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationSearchPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationSearchPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationTablePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationTablePanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/MakeReservationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/MakeReservationView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationTablePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationTablePanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/ConnectPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/ConnectPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignInPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignInPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignUpPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignUpPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/UserHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/UserHomePage.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/CreditCardPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/CreditCardPayment.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/InboxView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/InboxView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/MessagesTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/SendMessageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/SendMessageView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ProfileView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ProfileView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ReviewView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/ReviewView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/UserTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/UserTablePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/UserTablePanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/AdminHomePage.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/BrokerHomePage.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/CustomerHomePage.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBooking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/AccommodationGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/AccommodationGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/UserGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/UserGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/AppWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/AppWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/usersgui/AdminHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/AdminHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/usersgui/BrokerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/BrokerHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/usersgui/CustomerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/CustomerHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/AdminUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BrokerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/BrokerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/ConnectUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/ConnectUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/CustomerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/InboxUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/InboxUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/SignInUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/SignInUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/SignUpUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/SignUpUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UIMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/UIMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/WelcomeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/UI/WelcomeUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Accommodation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/accommodations/Accommodation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/accommodations/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accommodations/TimePeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/accommodations/TimePeriod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/application/DatabaseAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/application/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/auth/Credentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/Encryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/auth/Encryption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/communication/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/communication/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/Configurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configurations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/accommodationsCalendar.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/accommodationsCalendar.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/credentialsUser.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/credentialsUser.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/reservations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/reservations.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/reviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/reviews.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userMessages.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userMessages.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/AccommodationsCalendarDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/AccommodationsCalendarDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/BrokerAccommodationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/BrokerAccommodationsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/CredentialsUserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/CredentialsUserDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReservationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/ReservationsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/ReviewsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/ReviewsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserConfirmationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/UserConfirmationsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/UserMessagesDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/UserMessagesDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/AdminRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requests/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/users/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/users/Broker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/users/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/users/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Privilege.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/users/Privilege.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/accommodations/AccommodationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/AccommodationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/accommodations/ReservationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/ReservationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/accommodations/TimePeriodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/TimePeriodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/auth/CredentialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/auth/CredentialsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/auth/EncryptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/auth/EncryptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/communication/MessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/communication/MessageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/communication/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/communication/ReviewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/AccommodationReviewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/database/AccommodationReviewsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/BrokerAccommodationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/database/BrokerAccommodationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/CredentialsUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/database/CredentialsUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/CustomerReviewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/database/CustomerReviewsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/UserConfirmationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/database/UserConfirmationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/database/UserMessagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/database/UserMessagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/users/AdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/BrokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/users/BrokerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/users/CustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/GenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/users/GenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/PrivilegeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/users/PrivilegeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/users/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +189,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/accommodations/Accommodation.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/UI/BrokerUI.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/application/Application.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/application/DatabaseAPI.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/database/ReviewsDB.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/accommodations/Reservation.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/accommodations/TimePeriod.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20qLvoPVyIZ6H79kAHYrtsVo6p6" />
   <component name="ProjectViewState">
@@ -147,6 +207,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="ignore.preview.features.used" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -162,14 +223,16 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/backend/config" />
       <recent name="$PROJECT_DIR$/src/GUI" />
       <recent name="$PROJECT_DIR$/src/GUI/ConnectUI" />
       <recent name="$PROJECT_DIR$/src/GUI/AccommodationUI" />
       <recent name="$PROJECT_DIR$/src/GUI/Inbox" />
-      <recent name="$PROJECT_DIR$/res/GUI" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="backend" />
       <recent name="" />
+      <recent name="backend.accommodations" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="accommodations" />
@@ -185,7 +248,7 @@
       <module name="MyBooking" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GUI.*" />
+          <option name="PATTERN" value="frontend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,41 +281,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Profanity filter TODO">
-      <created>1639225135131</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1639225135131</updated>
-    </task>
-    <task id="LOCAL-00097" summary="Xml and patch files">
-      <created>1639225155311</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1639225155311</updated>
-    </task>
-    <task id="LOCAL-00098" summary="Refactor for readability">
-      <created>1639225248931</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1639225248931</updated>
-    </task>
-    <task id="LOCAL-00099" summary="xml">
-      <created>1639227610855</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1639227610855</updated>
-    </task>
-    <task id="LOCAL-00100" summary="xml">
-      <created>1639229641448</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1639229641448</updated>
     </task>
     <task id="LOCAL-00101" summary="Removed getters and made API completely static">
       <created>1639248745285</created>
@@ -562,7 +590,42 @@
       <option name="project" value="LOCAL" />
       <updated>1642105624323</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="Removed deprecated instructions from README">
+      <created>1642106144450</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1642106144450</updated>
+    </task>
+    <task id="LOCAL-00146" summary="Added static requests in Server">
+      <created>1642106410964</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1642106410964</updated>
+    </task>
+    <task id="LOCAL-00147" summary="New AdminHomePage GUI component">
+      <created>1642106544650</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1642106544650</updated>
+    </task>
+    <task id="LOCAL-00148" summary="New CustomerHomePage GUI component">
+      <created>1642106726624</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1642106726624</updated>
+    </task>
+    <task id="LOCAL-00149" summary="New BrokerHomePage GUI component">
+      <created>1642106784937</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1642106784937</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,11 +653,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-Updated config files" />
-    <MESSAGE value="-Make class serializable" />
-    <MESSAGE value="-New accommodaitonCalendarDatabase&#10;-Useful for checking an Accommodations calendar&#10;and making reservations" />
-    <MESSAGE value="XML and patch files" />
-    <MESSAGE value="Updated README" />
     <MESSAGE value="Png used in README" />
     <MESSAGE value="XML stuff" />
     <MESSAGE value="javadoc" />
@@ -615,7 +673,12 @@
     <MESSAGE value="Added case files in request handling method to handle GUI components" />
     <MESSAGE value="?" />
     <MESSAGE value="Fix broken dependencies after merge.&#10;Thank you java,not cool" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix broken dependencies after merge.&#10;Thank you java,not cool" />
+    <MESSAGE value="Removed deprecated instructions from README" />
+    <MESSAGE value="Added static requests in Server" />
+    <MESSAGE value="New AdminHomePage GUI component" />
+    <MESSAGE value="New CustomerHomePage GUI component" />
+    <MESSAGE value="New BrokerHomePage GUI component" />
+    <option name="LAST_COMMIT_MESSAGE" value="New BrokerHomePage GUI component" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

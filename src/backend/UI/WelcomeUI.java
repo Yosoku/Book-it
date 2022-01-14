@@ -1,4 +1,4 @@
-package UI;
+package backend.UI;
 
 /**
  * class to show the welcome UI to the user

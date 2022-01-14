@@ -1,6 +1,4 @@
-package database;
-
-import static org.junit.jupiter.api.Assertions.*;
+package backend.database;
 
 class UserMessagesTest {
 

@@ -1,7 +1,7 @@
-package communication;
+package backend.communication;
 
-import accommodations.Accommodation;
-import users.User;
+import backend.accommodations.Accommodation;
+import backend.users.User;
 
 import java.io.Serial;
 import java.io.Serializable;

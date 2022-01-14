@@ -1,7 +1,7 @@
-package database;
+package backend.database;
 
-import communication.Message;
-import users.User;
+import backend.communication.Message;
+import backend.users.User;
 
 import javax.swing.*;
 import java.io.Serial;
