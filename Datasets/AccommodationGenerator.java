@@ -1,8 +1,10 @@
-import accommodations.Accommodation;
-import application.DatabaseAPI;
-import users.Broker;
-import users.Privilege;
-import users.User;
+
+
+import backend.accommodations.Accommodation;
+import backend.application.DatabaseAPI;
+import backend.users.Broker;
+import backend.users.Privilege;
+import backend.users.User;
 
 import java.io.File;
 import java.io.FileNotFoundException;
