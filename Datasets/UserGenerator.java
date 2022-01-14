@@ -1,11 +1,14 @@
-import application.DatabaseAPI;
-import auth.Credentials;
-import users.Broker;
-import users.Customer;
-import users.Gender;
+import backend.application.DatabaseAPI;
+import backend.auth.Credentials;
+import backend.users.Broker;
+import backend.users.Customer;
+import backend.users.Gender;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.security.SecureRandom;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -38,10 +41,8 @@ public class UserGenerator {
         fullnames = new ArrayList<>();
         genders = new ArrayList<>();
         parseReddit(); //usernames
-        parseFacebook(); // fullnames& genders
         parseEmails();
-        DatabaseAPI.loadData();
-
+        parseNames();
     }
 
     /**
@@ -87,6 +88,16 @@ public class UserGenerator {
         }
     }
 
+    public void parseNames() {
+        String filename = "Datasets/names.csv";
+        try {
+            fullnames = (ArrayList<String>) Files.readAllLines(Path.of(filename));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
     /**
      * The method used for generating Users. It generates Users of unique usernames and emails by using 2 HashSets at O(1)
      * read complexity because of the very low chances (1 in 466.560.000 for duplicate emails).
@@ -96,31 +107,34 @@ public class UserGenerator {
      * @param number Number of users to generate
      */
     public void createUsers(int number) {
+        DatabaseAPI.loadData();
         HashSet<String> usernameTaken = new HashSet<>();
         HashSet<String> emailTaken = new HashSet<>();
         for (int i = 0; i < number; i++) {
             String email = emails.get(rand.nextInt(emails.size()));
             if (emailTaken.contains(email)) {
                 email = getDomain(email);
-                emailTaken.add(email);
             }
+            emailTaken.add(email);
+            email = getDomain(email);
             String username = usernames.get(rand.nextInt(usernames.size()));
             while (usernameTaken.contains(username)) {
                 username = usernames.get(rand.nextInt(usernames.size()));
                 usernameTaken.add(username);
             }
-            int fbIndex = rand.nextInt(fullnames.size());
-            String fullname = fullnames.get(fbIndex);
-            Gender gender = genders.get(fbIndex);
+            String fullname = fullnames.get(rand.nextInt(fullnames.size()));
+            Gender gender = (Gender) pyrandomChoice(Gender.FEMALE, Gender.MALE);
             Credentials credentials = new Credentials(username, getRandomPassword());
             if (rand.nextInt(100) > 50) {
                 Broker broker = new Broker(credentials, fullname, rand.nextInt(60) + 18, email, gender, getPhone(), "");
                 DatabaseAPI.userConfirmationsDatabase.insertUserConfirmation(broker);
                 DatabaseAPI.credentialsUserDatabase.insertUser(broker.getCredentials(), broker);
+                System.out.println(broker);
             } else {
                 Customer customer = new Customer(credentials, fullname, rand.nextInt(60) + 18, email, gender, getPhone());
                 DatabaseAPI.userConfirmationsDatabase.insertUserConfirmation(customer);
                 DatabaseAPI.credentialsUserDatabase.insertUser(customer.getCredentials(), customer);
+                System.out.println(customer);
             }
 
         }
@@ -144,6 +158,13 @@ public class UserGenerator {
     }
 
 
+    public Object pyrandomChoice(Object a, Object b) {
+        if (rand.nextInt(100) + 1 > 50) {
+            return a;
+        }
+        return b;
+    }
+
     /**
      * Method for generating a random password from the basic ASCII table excluding special chars
      *
@@ -164,40 +185,6 @@ public class UserGenerator {
         return sb.toString();
     }
 
-
-    /**
-     * Method for parsing a Dataset containing information about facebook Users and storing it in fullnames and Genders
-     */
-    public void parseFacebook() {
-        String filename = "Datasets/USA_01.csv";
-        Scanner scanner;
-        try {
-            scanner = new Scanner(new File(filename));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            return;
-        }
-        int i = 0;
-        scanner.useDelimiter(":");
-        while (scanner.hasNextLine()) {
-            scanner.nextLine();
-            scanner.next();
-            scanner.next();
-            String name = scanner.next() + scanner.next();
-            Gender gender;
-            try {
-
-                gender = Gender.getGender(scanner.next());
-                if (gender == null) {
-                    gender = rand.nextInt(100) > 50 ? Gender.FEMALE : Gender.MALE;
-                }
-            } catch (Exception e) {
-                break;
-            }
-            fullnames.add(name);
-            genders.add(gender);
-        }
-    }
 
     /**
      * This method takes an email and edits by changing domain and country.
