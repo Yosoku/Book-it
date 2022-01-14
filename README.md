@@ -52,6 +52,7 @@ Datasets used in this project were extracted by
 * [data.gov.gr](https://www.data.gov.gr/)
 * [kaggle](https://www.kaggle.com/colinmorris/reddit-usernames)
 * [generatedata.com](https://generatedata.com/)
+* [Faker](https://faker.readthedocs.io/en/master/)
 
 ### License
 
