@@ -34,14 +34,12 @@ public class DatabaseAPI {
         temp = brokerAccommodationsDatabase.read();
         if (temp != null)
             brokerAccommodationsDatabase = (BrokerAccommodationsDB) temp;
-
         temp = reservationDatabase.read();
         if (temp != null)
             reservationDatabase = (ReservationsDB) temp;
         temp = reviewsDatabase.read();
         if (temp != null)
             reviewsDatabase = (ReviewsDB) temp;
-
         temp = userMessagesDatabase.read();
         if (temp != null)
             userMessagesDatabase = (UserMessagesDB) temp;
