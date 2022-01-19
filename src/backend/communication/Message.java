@@ -4,6 +4,7 @@ import backend.users.User;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * A class representing a Message instace with information about the Sender,Receiver,the subject and the contents of Message
@@ -61,6 +62,19 @@ public class Message implements Serializable {
     public void readMessage() {
         setSeen(true);
         System.out.println(contents);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Message message = (Message) o;
+        return seen == message.seen && Objects.equals(sender, message.sender) && Objects.equals(receiver, message.receiver) && Objects.equals(subject, message.subject) && Objects.equals(contents, message.contents);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(sender, receiver, subject, contents, seen);
     }
 
     /**
