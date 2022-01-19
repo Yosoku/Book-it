@@ -1,9 +1,11 @@
 package backend.requests;
 
-import backend.UI.BrokerUI;
+import backend.accommodations.Accommodation;
+import backend.application.Application;
 import backend.application.DatabaseAPI;
 import backend.application.Server;
 import backend.users.Broker;
+import frontend.AccommodationView;
 import frontend.AppWindow;
 import frontend.Inbox.InboxView;
 import frontend.ProfileView;
@@ -20,7 +22,6 @@ import javax.swing.*;
 
 public class BrokerRequests implements Handler {
     private Broker broker;
-    private BrokerUI ui;
 
     /**
      * Initializer constructor
@@ -45,30 +46,26 @@ public class BrokerRequests implements Handler {
 
 
             }
-            case "add" -> {
-
+            case "add_new_accommodation" -> {
+                AccommodationView accommodationView = new AccommodationView(new Accommodation(0, "", "", null, "", 0));
+                accommodationView.setVisible(true);
+                accommodationView.setAllFieldsEditable(true);
+                accommodationView.getEditButton().setVisible(false);
             }
-            case "edit" -> {
+            case "edit_accommodation" -> {
 
             }
             case "delete" -> {
-
-
+                DatabaseAPI.reservationDatabase.dropAllReservationsByAccommodation(AccommodationView.accommodation);
+                DatabaseAPI.reviewsDatabase.dropAllReviewsByAccommodation(AccommodationView.accommodation);
+                DatabaseAPI.brokerAccommodationsDatabase.dropAccommodation((Broker)
+                        Application.getInstance().getCurrentUser(), AccommodationView.accommodation);
             }
-            case "profile" -> {
-                SwingUtilities.invokeLater(() -> {
-                    JFrame profileView = new ProfileView(broker);
-                    profileView.setVisible(true);
-                });
-
-            }
-            case "inbox" -> {
-                SwingUtilities.invokeLater(() -> {
-                    InboxView inboxView = new InboxView(DatabaseAPI.userMessagesDatabase.selectMessageFromUser(broker));
-                    inboxView.setVisible(true);
-                });
-
-            }
+            case "profile" -> SwingUtilities.invokeLater(() -> ProfileView.getInstance().setVisible(true));
+            case "inbox" -> SwingUtilities.invokeLater(() -> {
+                InboxView.closeView();
+                InboxView.getInstance().setVisible(true);
+            });
             case "signout" -> SwingUtilities.invokeLater(() -> AppWindow.getInstance().signOut());
         }
     }
