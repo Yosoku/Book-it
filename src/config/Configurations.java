@@ -29,6 +29,7 @@ public class Configurations {
     public static final String CREDIT_CARD_REGEX = "^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])" +
             "[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\\d{3})\\d{11})$";
     public static final String CVV_REGEX = "^[0-9]{3}$";
-    public static final String CONFIRMATION_MESSAGE = "Hello read this email to confirm your account";
-    public static final String CONFIRMATION_MESSAGE_SUBJECT = "Authentication email";
+    public static final String CONFIRMATION_MESSAGE = "Greetings,\nThis is Edward,the main administrator " +
+            "of the Application. thank you for choosing us and enjoy your stay";
+    public static final String CONFIRMATION_MESSAGE_SUBJECT = "Authentication message";
 }
