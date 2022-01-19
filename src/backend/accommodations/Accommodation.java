@@ -3,7 +3,7 @@ package backend.accommodations;
 import javax.swing.*;
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.List;
+import java.util.Objects;
 
 
 /**
@@ -15,11 +15,25 @@ import java.util.List;
 public class Accommodation implements Serializable {
     @Serial
     private static final long serialVersionUID = 0;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Accommodation that = (Accommodation) o;
+        return ID == that.ID && space == that.space && price == that.price && Objects.equals(city, that.city) && Objects.equals(address, that.address) && Objects.equals(image, that.image) && Objects.equals(description, that.description);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(ID, space, city, address, image, description, price);
+    }
+
     private int ID;
     private int space; // square meters
     private String city;
     private String address;
-    private List<ImageIcon> images;
+    private ImageIcon image;
     private String description;    //Brief description of the accommodation
     private int price; // Price per night
 
@@ -29,15 +43,15 @@ public class Accommodation implements Serializable {
      * @param space       The space of the accommodation in square meters
      * @param city        The city the accommodation is located in
      * @param address     The exact address of the accommodation
-     * @param images      A list of images of the accommodation
+     * @param image       A list of images of the accommodation
      * @param description A brief description of the accommodation
      * @param price       The price per night of the accommodation
      */
-    public Accommodation(int space, String city, String address, List<ImageIcon> images, String description, int price) {
+    public Accommodation(int space, String city, String address, ImageIcon image, String description, int price) {
         this.space = space;
         this.city = city;
         this.address = address;
-        this.images = images;
+        this.image = image;
         this.description = description;
         this.price = price;
     }
@@ -54,7 +68,7 @@ public class Accommodation implements Serializable {
                 ", space=" + space +
                 ", city='" + city + '\'' +
                 ", address='" + address + '\'' +
-                ", images=" + images +
+                ", images=" + image +
                 ", description='" + description + '\'' +
                 ", price=" + price +
                 '}';
@@ -86,12 +100,12 @@ public class Accommodation implements Serializable {
         this.city = city;
     }
 
-    public List<ImageIcon> getImages() {
-        return images;
+    public ImageIcon getImage() {
+        return image;
     }
 
-    public void setImages(List<ImageIcon> images) {
-        this.images = images;
+    public void setImage(ImageIcon image) {
+        this.image = image;
     }
 
     public String getDescription() {
@@ -117,16 +131,4 @@ public class Accommodation implements Serializable {
     public void setPrice(int price) {
         this.price = price;
     }
-
-
-    /**
-     * isOccupied is a method that helps with reservations and gives a higher level interface for users. Occupation is
-     * NOT the same as availability(field:available). Occupied is only related to a Time period where an accommodation
-     * has someone living/not living in it
-     *
-     * @param period the time period we wish to check if the accommodation is free to reserve
-     * @return true if the accommodation is reserved for the time period @param,false otherwise
-     */
-
-
 }
