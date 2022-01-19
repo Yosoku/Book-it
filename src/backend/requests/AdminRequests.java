@@ -1,6 +1,5 @@
 package backend.requests;
 
-import backend.UI.AdminUI;
 import backend.application.DatabaseAPI;
 import backend.application.Server;
 import backend.communication.Message;
@@ -22,7 +21,6 @@ import java.util.List;
  * @author Edward Koulakidis
  */
 public class AdminRequests implements Handler {
-    private AdminUI ui;
     private Admin admin;
 
     /**
@@ -58,20 +56,11 @@ public class AdminRequests implements Handler {
                 }
                 DatabaseAPI.userMessagesDatabase.write();
             }
-            case "profile" -> {
-                SwingUtilities.invokeLater(() -> {
-                    JFrame profileView = new ProfileView(admin);
-                    profileView.setVisible(true);
-                });
-
-            }
-            case "inbox" -> {
-                SwingUtilities.invokeLater(() -> {
-                    InboxView inboxView = new InboxView(DatabaseAPI.userMessagesDatabase.selectMessageFromUser(admin));
-                    inboxView.setVisible(true);
-                });
-
-            }
+            case "profile" -> SwingUtilities.invokeLater(() -> ProfileView.getInstance().setVisible(true));
+            case "inbox" -> SwingUtilities.invokeLater(() -> {
+                InboxView.closeView();
+                InboxView.getInstance().setVisible(true);
+            });
             case "signout" -> SwingUtilities.invokeLater(() -> AppWindow.getInstance().signOut());
 
         }
