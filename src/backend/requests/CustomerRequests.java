@@ -1,6 +1,5 @@
 package backend.requests;
 
-import backend.UI.CustomerUI;
 import backend.application.DatabaseAPI;
 import backend.application.Server;
 import backend.users.Customer;
@@ -20,7 +19,6 @@ import javax.swing.*;
  * @author Edward Koulakidis
  */
 public class CustomerRequests implements Handler {
-    private CustomerUI ui;
     private Customer customer;
 
     /**
@@ -45,33 +43,14 @@ public class CustomerRequests implements Handler {
                 DatabaseAPI.reservationDatabase.insertReservation(MakeReservationView.reservation);
                 DatabaseAPI.accommodationsCalendarDatabase.insertTimePeriodToAccommodation(MakeReservationView.accommodation, MakeReservationView.reservation.period());
             }
-            case "profile" -> {
-                SwingUtilities.invokeLater(() -> {
-                    JFrame profileView = new ProfileView(customer);
-                    profileView.setVisible(true);
-                });
-
-            }
-            case "inbox" -> {
-                SwingUtilities.invokeLater(() -> {
-                    InboxView inboxView = new InboxView(DatabaseAPI.userMessagesDatabase.selectMessageFromUser(customer));
-                    inboxView.setVisible(true);
-                });
-
-            }
+            case "profile" -> SwingUtilities.invokeLater(() -> ProfileView.getInstance().setVisible(true));
+            case "inbox" -> SwingUtilities.invokeLater(() -> {
+                InboxView.closeView();
+                InboxView.getInstance().setVisible(true);
+            });
             case "signout" -> SwingUtilities.invokeLater(() -> AppWindow.getInstance().signOut());
 
         }
-
-    }
-
-
-
-    /**
-     * Method for searching accommodations with different filters
-     */
-    private void searchAccommodations() {
-
 
     }
 }
