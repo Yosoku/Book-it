@@ -2,25 +2,27 @@ package backend.accommodations;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.util.Objects;
 
 /**
- * A record for repersenting a Time Period. It holds information about the start/end LocalDateTime and a method
+ * A record for repersenting a Time Period. It holds information about the start/end LocalDate and a method
  * for checking intersectings between 2 time period instances.The record implements the Serializable interface,for
  * file storage and also the Comparable interface,which is useful for storing the TimePeriods in an ordered Set
  *
  * @author Edward Koulakidis
  */
-public record TimePeriod(LocalDateTime start, LocalDateTime end) implements Serializable, Comparable<TimePeriod> {
+public record TimePeriod(LocalDate start, LocalDate end) implements Serializable, Comparable<TimePeriod> {
     @Serial
     private static long SerialVersionUID = 0;
 
     /**
      * Initializer constructor which makes sure the start date is before the end date
+     *
      * @param start starting Date
-     * @param end ending Date
+     * @param end   ending Date
      */
-    public TimePeriod(LocalDateTime start, LocalDateTime end) {
+    public TimePeriod(LocalDate start, LocalDate end) {
         if (start.isBefore(end)) { //normal
             this.start = start;
             this.end = end;
@@ -39,7 +41,7 @@ public record TimePeriod(LocalDateTime start, LocalDateTime end) implements Seri
      * Date of each period
      *
      * @param other another TimePeriod object to compare
-     * @return The result of LocalDateTime.compareTo of start + end
+     * @return The result of LocalDate.compareTo of start + end
      */
     @Override
     public int compareTo(TimePeriod other) {
@@ -97,5 +99,18 @@ public record TimePeriod(LocalDateTime start, LocalDateTime end) implements Seri
     @Override
     public String toString() {
         return start + " till " + end;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TimePeriod that = (TimePeriod) o;
+        return Objects.equals(start, that.start) && Objects.equals(end, that.end);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(start, end);
     }
 }
