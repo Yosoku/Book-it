@@ -5,6 +5,7 @@ import backend.users.User;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * A record representing a Review instace with information about number of stars,a description,the User and the Accommodation
@@ -16,6 +17,19 @@ public record Review(int stars, String description, User user,
                      Accommodation accommodation) implements Serializable {
     @Serial
     private static final long serialVersionUID = 0;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Review review = (Review) o;
+        return stars == review.stars && Objects.equals(description, review.description) && Objects.equals(user, review.user) && Objects.equals(accommodation, review.accommodation);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(stars, description, user, accommodation);
+    }
 
     /**
      * Initializer constructor which makes sure that stars are withing 1-5 inclusive boundaries
