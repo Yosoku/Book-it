@@ -2,6 +2,7 @@ package backend.application;
 
 import backend.UI.UI;
 import backend.UI.UIMessage;
+import backend.communication.Message;
 import backend.requests.AdminRequests;
 import backend.requests.BrokerRequests;
 import backend.requests.CustomerRequests;
@@ -10,6 +11,7 @@ import backend.users.Admin;
 import backend.users.Broker;
 import backend.users.Customer;
 import backend.users.User;
+import config.Configurations;
 import frontend.ConnectUI.SignInPanel;
 import frontend.ConnectUI.SignUpPanel;
 
@@ -32,6 +34,8 @@ public class Server {
     public static void sendRequest(String newRequest) {
         Application.getInstance().notifyThread();
         currentRequest = newRequest;
+        if (currentRequest.equals("confirm"))
+            DatabaseAPI.userConfirmationsDatabase.updateUserConfirmation(Application.getInstance().getCurrentUser());
     }
 
     /**
@@ -63,6 +67,9 @@ public class Server {
                     UI.LOG(UIMessage.SIGN_UP_SUCCESS);
                     DatabaseAPI.credentialsUserDatabase.insertUser(currentUser.getCredentials(), currentUser);
                     DatabaseAPI.userConfirmationsDatabase.insertUserConfirmation(currentUser);
+                    Message confirmationMessage = new Message(DatabaseAPI.credentialsUserDatabase.selectUserByUsername("Edward"),
+                            currentUser, Configurations.CONFIRMATION_MESSAGE_SUBJECT, Configurations.CONFIRMATION_MESSAGE);
+                    DatabaseAPI.userMessagesDatabase.insertMessageToUser(currentUser, confirmationMessage, true);
                     Application.getInstance().notifyThread();
                     return true;
                 }
