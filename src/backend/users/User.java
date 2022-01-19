@@ -2,6 +2,7 @@ package backend.users;
 
 import backend.auth.Credentials;
 
+import javax.swing.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
@@ -34,6 +35,7 @@ public abstract class User implements Serializable {
     protected String email;
     protected Gender gender;
     protected String phone;
+    protected ImageIcon icon;
 
     /**
      * A basic constructor which takes the parameters below and initializes a User object
@@ -56,6 +58,15 @@ public abstract class User implements Serializable {
         this.gender = gender;
         this.phone = phone;
         this.privilege = privilege;
+        icon = null;
+    }
+
+    public ImageIcon getIcon() {
+        return icon;
+    }
+
+    public void setIcon(ImageIcon icon) {
+        this.icon = icon;
     }
 
     //=========================== Getters & Setters ====================================================================
@@ -87,6 +98,10 @@ public abstract class User implements Serializable {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -98,10 +113,6 @@ public abstract class User implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(privilege, name, age, credentials, email, gender, phone);
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public Gender getGender() {
