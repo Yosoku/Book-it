@@ -4,6 +4,7 @@ import backend.users.User;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * A record representing a Reservation instance in a Booking Application. The record holds information about the TimePeriod
@@ -16,6 +17,19 @@ public record Reservation(User user, Accommodation accommodation, TimePeriod per
 
     @Serial
     private static final long serialVersionUID = 0;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Reservation that = (Reservation) o;
+        return Objects.equals(user, that.user) && Objects.equals(accommodation, that.accommodation) && Objects.equals(period, that.period) && Objects.equals(comments, that.comments);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(user, accommodation, period, comments);
+    }
 
     @Override
     public int compareTo(Reservation o) {
