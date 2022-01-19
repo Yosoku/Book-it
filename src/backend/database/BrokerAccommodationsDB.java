@@ -108,7 +108,7 @@ public class BrokerAccommodationsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -136,7 +136,7 @@ public class BrokerAccommodationsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -193,28 +193,9 @@ public class BrokerAccommodationsDB extends Database {
         return null;
     }
 
-    public HashSet<Accommodation> selectAccommodationsBySpace(int low, int high) {
-        HashSet<Accommodation> values = new HashSet<>();
-        if (low >= high)
-            return values;
-        for (Accommodation accommodation : selectAllAccommodations()) {
-            if (accommodation.getSpace() > low && accommodation.getSpace() < high)
-                values.add(accommodation);
-        }
-        return values;
-    }
 
 
-    public HashSet<Accommodation> selectAccommodationsByPrice(int low, int high) {
-        HashSet<Accommodation> values = new HashSet<>();
-        if (low >= high)
-            return values;
-        for (Accommodation accommodation : selectAllAccommodations()) {
-            if (accommodation.getPrice() > low && accommodation.getPrice() < high)
-                values.add(accommodation);
-        }
-        return values;
-    }
+
 
 
     public HashSet<Accommodation> selectAccommodationsBySpaceAndPrice(int lowSpace, int highSpace, int lowPrice, int highPrice) {
@@ -228,16 +209,6 @@ public class BrokerAccommodationsDB extends Database {
         return values;
     }
 
-    public HashSet<Accommodation> selectAccommodationsByCity(String city) {
-        HashSet<Accommodation> values = new HashSet<>();
-        if (Objects.equals(city, ""))
-            return values;
-        for (Accommodation accommodation : selectAllAccommodations()) {
-            if (accommodation.getCity().equals(city))
-                values.add(accommodation);
-        }
-        return values;
-    }
 
     public HashSet<Accommodation> selectAccommodationsBySpaceAndPriceAndCity(String city, int highSpace, int highPrice) {
         HashSet<Accommodation> values = new HashSet<>();
@@ -246,6 +217,23 @@ public class BrokerAccommodationsDB extends Database {
                 values.add(ac);
         }
         return values;
+    }
+
+    public HashSet<Accommodation> selectAccommodationsBySpaceAndPriceAndCityAndOwner(String city, int highSpace, int highPrice, Broker broker) {
+        HashSet<Accommodation> values = new HashSet<>();
+        if (broker == null)
+            return selectAccommodationsBySpaceAndPriceAndCity(city, highSpace, highPrice);
+        else {
+            for (Accommodation ac : selectAllAccommodationsFromBroker(broker)) {
+                if (ac.getSpace() <= highSpace && ac.getPrice() <= highPrice) {
+                    if (Objects.equals(city, ""))
+                        values.add(ac);
+                    else if (Objects.equals(ac.getCity(), city))
+                        values.add(ac);
+                }
+            }
+            return values;
+        }
     }
 
     public HashSet<Accommodation> selectAllAccommodationsWithReservations(Broker broker) {
