@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="forms">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Server">
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/AccommodationsCalendarDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/AccommodationsCalendarDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/BrokerAccommodationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/BrokerAccommodationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/CredentialsUserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/CredentialsUserDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/ReservationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/ReservationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/ReviewsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/ReviewsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/UserConfirmationsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/UserConfirmationsDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/UserMessagesDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/UserMessagesDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/AdminRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/backend/accommodations/auth/CredentialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/auth/CredentialsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/backend/accommodations/auth/EncryptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/auth/EncryptionTest.java" afterDir="false" />
     </list>
@@ -227,41 +213,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00161" summary="New Signup GUI component">
-      <created>1642220762537</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1642220762537</updated>
-    </task>
-    <task id="LOCAL-00162" summary="New ConnectPanel component to combine signup-signin functionality in 1 panel">
-      <created>1642220813296</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1642220813296</updated>
-    </task>
-    <task id="LOCAL-00163" summary="-Equals and Hashcode overrides&#10;-Change of List&lt;ImageIcon&gt; to ImageIcon">
-      <created>1642634082887</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1642634082888</updated>
-    </task>
-    <task id="LOCAL-00164" summary="-Equals and Hashcode overrides">
-      <created>1642634094222</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1642634094222</updated>
-    </task>
-    <task id="LOCAL-00165" summary="-Equals and Hashcode overrides&#10;-LocalDateTime change to LocalDate">
-      <created>1642634122143</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1642634122143</updated>
     </task>
     <task id="LOCAL-00166" summary="Indentation">
       <created>1642634158000</created>
@@ -571,7 +522,42 @@
       <option name="project" value="LOCAL" />
       <updated>1642775909328</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="main">
+      <created>1642775983654</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775983654</updated>
+    </task>
+    <task id="LOCAL-00211" summary="xmls">
+      <created>1642776068532</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1642776068532</updated>
+    </task>
+    <task id="LOCAL-00212" summary="requirements">
+      <created>1642776083605</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1642776083605</updated>
+    </task>
+    <task id="LOCAL-00213" summary="Queries">
+      <created>1642776115655</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1642776115655</updated>
+    </task>
+    <task id="LOCAL-00214" summary="Server">
+      <created>1642776139584</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1642776139584</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -599,11 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TablePanel component for showing a JTable with accommodations" />
-    <MESSAGE value="Profile like view for an accommodation" />
-    <MESSAGE value="Images Used in buttons etc" />
-    <MESSAGE value="production" />
-    <MESSAGE value="xmls" />
     <MESSAGE value="updated config files" />
     <MESSAGE value="Reservation panel with calendar etc" />
     <MESSAGE value="TableModel for JTable of Reservations" />
@@ -624,7 +605,12 @@
     <MESSAGE value="Reservation information componenent" />
     <MESSAGE value="Review information component" />
     <MESSAGE value="forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="forms" />
+    <MESSAGE value="main" />
+    <MESSAGE value="xmls" />
+    <MESSAGE value="requirements" />
+    <MESSAGE value="Queries" />
+    <MESSAGE value="Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
