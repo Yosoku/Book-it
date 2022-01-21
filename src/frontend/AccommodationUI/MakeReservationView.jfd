@@ -1,0 +1,111 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.generateCode": false
+		}
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"defaultCloseOperation": 2
+			"background": new java.awt.Color( 0, 21, 36, 255 )
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "checkinButton"
+					"background": &Color0 new java.awt.Color( 0, 21, 36, 255 )
+					"foreground": &Color1 new java.awt.Color( 221, 199, 160, 255 )
+					"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/checkin.png" )
+					"borderPainted": false
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkin", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 545
+					"y": 25
+					"width": 95
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "checkoutButton"
+					"background": #Color0
+					"foreground": #Color1
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cheout.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"borderPainted": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkout", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 95
+					"height": 30
+					"x": 985
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "makeReservationButton"
+					"background": #Color0
+					"foreground": #Color1
+					"font": #SwingDerivedFont0
+					"borderPainted": false
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/reserve.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "makeReservation", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 995
+					"y": 500
+					"height": 30
+					"width": 90
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "commentsText"
+					"text": "Add any comments here"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					"foreground": new java.awt.Color( 255, 236, 209, 255 )
+					"lineWrap": true
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+					"border": new javax.swing.border.TitledBorder( "" )
+					addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "commentsTextFocusGained", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 760
+					"y": 395
+					"width": 325
+					"height": 100
+				} )
+				add( new FormComponent( "frontend.AccommodationCalendar" ) {
+					name: "checkoutCalendar"
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 760
+					"y": 50
+					"width": 325
+					"height": 335
+				} )
+				add( new FormComponent( "frontend.AccommodationCalendar" ) {
+					name: "checkinCalendar"
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 325
+					"height": 335
+					"x": 315
+					"y": 50
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": -5
+				"width": 1280
+				"height": 690
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1280, 710 )
+		} )
+	}
+}

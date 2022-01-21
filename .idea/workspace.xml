@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Profile like view for an accommodation">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/Sign-Up-Button-Blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/Sign-Up-Button-Blue1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_13_22,_9_58_PM_[Changes]/background1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationSearchPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/MakeReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/ReservationTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/ConnectPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/SignInPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/SignUpPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/UserHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/CreditCardPayment.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/Inbox/InboxView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/Inbox/SendMessageView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ProfileView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ReviewView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/UserTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/AdminHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/BrokerHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/CustomerHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/names.csv" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="TablePanel for JTable of Reservations">
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/AccommodationSearchPanel.jfd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/AccommodationTablePanel.jfd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/AccommodationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/MakeReservationView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/MakeReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationTablePanel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationTablePanel.jfd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
@@ -65,11 +37,6 @@
       <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTableModel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTablePanel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTablePanel.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/AccommodationGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/AccommodationGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/application/Application.java" afterDir="false" />
@@ -84,9 +51,6 @@
       <change beforePath="$PROJECT_DIR$/src/backend/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/AdminRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/Configurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Configurations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/reservations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/reservations.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/reviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/reviews.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/AppWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/AppWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/ConnectUI/ConnectPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/ConnectPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/ConnectUI/SignInPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignInPanel.java" afterDir="false" />
@@ -303,55 +267,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00133" summary="-Swing Worker Utility to write Database to file after any change has been made&#10;-New query to select accommodations with filters">
-      <created>1642103821140</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1642103821141</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Made class Deprecated">
-      <created>1642104322115</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1642104322115</updated>
-    </task>
-    <task id="LOCAL-00135" summary="New Config class file holding static references to Regex Strings and other settings used through the Application">
-      <created>1642104380917</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1642104380917</updated>
-    </task>
-    <task id="LOCAL-00136" summary="-Added a getDays method to return the integer number of days in a period instance&#10;-Changed toString() a little bit">
-      <created>1642104453383</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1642104453383</updated>
-    </task>
-    <task id="LOCAL-00137" summary="Updating config files">
-      <created>1642104503255</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1642104503255</updated>
-    </task>
-    <task id="LOCAL-00138" summary="Serial annotation">
-      <created>1642104637579</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1642104637579</updated>
-    </task>
-    <task id="LOCAL-00139" summary="New singleton class representing a Swing Window for the application">
-      <created>1642104731089</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1642104731089</updated>
     </task>
     <task id="LOCAL-00140" summary="Added case files in request handling method to handle GUI components">
       <created>1642105103645</created>
@@ -647,7 +562,56 @@
       <option name="project" value="LOCAL" />
       <updated>1642774193027</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Images Used in buttons etc">
+      <created>1642774256553</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774256553</updated>
+    </task>
+    <task id="LOCAL-00183" summary="production">
+      <created>1642774352391</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774352391</updated>
+    </task>
+    <task id="LOCAL-00184" summary="xmls">
+      <created>1642774373198</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774373198</updated>
+    </task>
+    <task id="LOCAL-00185" summary="updated config files">
+      <created>1642774416092</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774416092</updated>
+    </task>
+    <task id="LOCAL-00186" summary="Reservation panel with calendar etc">
+      <created>1642774494999</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774494999</updated>
+    </task>
+    <task id="LOCAL-00187" summary="TableModel for JTable of Reservations">
+      <created>1642774511084</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774511084</updated>
+    </task>
+    <task id="LOCAL-00188" summary="TablePanel for JTable of Reservations">
+      <created>1642774534151</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774534151</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -675,12 +639,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed broken ser config files" />
-    <MESSAGE value="Updated imports due to folder restructure" />
-    <MESSAGE value="-Updated imports due to folder restructure&#10;- New parseNames method to replace parseFacebook" />
-    <MESSAGE value="New names.csv dataset for fullnames" />
-    <MESSAGE value="Added Faker to Dataset credits" />
-    <MESSAGE value="Updated config files" />
     <MESSAGE value="New Signin GUI component" />
     <MESSAGE value="New Signup GUI component" />
     <MESSAGE value="New ConnectPanel component to combine signup-signin functionality in 1 panel" />
@@ -693,14 +651,20 @@
     <MESSAGE value="-New queries" />
     <MESSAGE value="-Added ImageIcon as Profile pic" />
     <MESSAGE value="main" />
-    <MESSAGE value="updated config files" />
     <MESSAGE value="-Fixed bug where InboxView was appearing as 2 pixels" />
     <MESSAGE value="Calendar GUI panel" />
     <MESSAGE value="Panel for searching accommodations" />
     <MESSAGE value="TableModel component for custructing a JTable with accommodations" />
     <MESSAGE value="TablePanel component for showing a JTable with accommodations" />
     <MESSAGE value="Profile like view for an accommodation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Profile like view for an accommodation" />
+    <MESSAGE value="Images Used in buttons etc" />
+    <MESSAGE value="production" />
+    <MESSAGE value="xmls" />
+    <MESSAGE value="updated config files" />
+    <MESSAGE value="Reservation panel with calendar etc" />
+    <MESSAGE value="TableModel for JTable of Reservations" />
+    <MESSAGE value="TablePanel for JTable of Reservations" />
+    <option name="LAST_COMMIT_MESSAGE" value="TablePanel for JTable of Reservations" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
