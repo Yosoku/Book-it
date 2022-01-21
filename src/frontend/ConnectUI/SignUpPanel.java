@@ -176,114 +176,169 @@ public class SignUpPanel extends JPanel {
         //======== this ========
         setMinimumSize(new Dimension(300, 380));
         setPreferredSize(new Dimension(300, 380));
-        setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(
-                new javax.swing.border.EmptyBorder(0, 0, 0, 0), "JF\u006frmDes\u0069gner \u0045valua\u0074ion"
-                , javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BOTTOM
-                , new java.awt.Font("D\u0069alog", java.awt.Font.BOLD, 12)
-                , java.awt.Color.red), getBorder()));
-        addPropertyChangeListener(
-                e -> {
-                    if ("\u0062order".equals(e.getPropertyName())) throw new RuntimeException()
-                            ;
-                });
+        setBackground(new Color(0, 21, 36));
+        setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border
+                .EmptyBorder(0, 0, 0, 0), "", javax.swing.border.TitledBorder.CENTER, javax
+                .swing.border.TitledBorder.BOTTOM, new java.awt.Font("", java.awt.Font.BOLD,
+                12), java.awt.Color.red), getBorder()));
+        addPropertyChangeListener(e -> {
+            if ("bord\u0065r".equals(e.
+                    getPropertyName())) throw new RuntimeException();
+        });
         setLayout(null);
 
         //---- firstnameLabel ----
         firstnameLabel.setText("First name");
+        firstnameLabel.setForeground(new Color(221, 199, 160));
+        firstnameLabel.setBackground(new Color(221, 199, 160));
+        firstnameLabel.setFont(firstnameLabel.getFont().deriveFont(firstnameLabel.getFont().getSize() + 5f));
         add(firstnameLabel);
-        firstnameLabel.setBounds(new Rectangle(new Point(0, 5), firstnameLabel.getPreferredSize()));
+        firstnameLabel.setBounds(new Rectangle(new Point(5, 10), firstnameLabel.getPreferredSize()));
 
         //---- lastnameLabel ----
         lastnameLabel.setText("Last name");
+        lastnameLabel.setForeground(new Color(221, 199, 160));
+        lastnameLabel.setBackground(new Color(221, 199, 160));
+        lastnameLabel.setFont(lastnameLabel.getFont().deriveFont(lastnameLabel.getFont().getSize() + 5f));
         add(lastnameLabel);
-        lastnameLabel.setBounds(150, 5, 90, lastnameLabel.getPreferredSize().height);
+        lastnameLabel.setBounds(155, 10, 130, lastnameLabel.getPreferredSize().height);
 
         //---- emailLabel ----
         emailLabel.setText("Email");
+        emailLabel.setForeground(new Color(221, 199, 160));
+        emailLabel.setBackground(new Color(221, 199, 160));
+        emailLabel.setFont(emailLabel.getFont().deriveFont(emailLabel.getFont().getSize() + 5f));
         add(emailLabel);
-        emailLabel.setBounds(new Rectangle(new Point(0, 110), emailLabel.getPreferredSize()));
+        emailLabel.setBounds(5, 125, 75, emailLabel.getPreferredSize().height);
 
         //---- passwordLabel ----
         passwordLabel.setText("Password");
+        passwordLabel.setForeground(new Color(221, 199, 160));
+        passwordLabel.setFont(passwordLabel.getFont().deriveFont(passwordLabel.getFont().getSize() + 5f));
         add(passwordLabel);
-        passwordLabel.setBounds(new Rectangle(new Point(0, 165), passwordLabel.getPreferredSize()));
+        passwordLabel.setBounds(new Rectangle(new Point(5, 200), passwordLabel.getPreferredSize()));
 
         //---- passwordField ----
+        passwordField.setBackground(new Color(0, 21, 36));
+        passwordField.setForeground(new Color(255, 236, 209));
+        passwordField.setFont(passwordField.getFont().deriveFont(passwordField.getFont().getSize() + 3f));
+        passwordField.setCaretColor(new Color(221, 199, 160));
         passwordField.addCaretListener(this::passwordFieldCaretUpdate);
         add(passwordField);
-        passwordField.setBounds(0, 180, 300, 30);
+        passwordField.setBounds(0, 220, 300, 30);
 
         //---- phoneLabel ----
         phoneLabel.setText("Phone number");
+        phoneLabel.setForeground(new Color(221, 199, 160));
+        phoneLabel.setBackground(new Color(221, 199, 160));
+        phoneLabel.setFont(phoneLabel.getFont().deriveFont(phoneLabel.getFont().getSize() + 5f));
         add(phoneLabel);
-        phoneLabel.setBounds(new Rectangle(new Point(0, 215), phoneLabel.getPreferredSize()));
+        phoneLabel.setBounds(new Rectangle(new Point(5, 275), phoneLabel.getPreferredSize()));
 
         //---- maleButton ----
         maleButton.setText("Male");
+        maleButton.setBackground(new Color(0, 21, 36));
+        maleButton.setForeground(new Color(221, 199, 160));
+        maleButton.setFont(maleButton.getFont().deriveFont(maleButton.getFont().getSize() + 5f));
         add(maleButton);
-        maleButton.setBounds(new Rectangle(new Point(0, 325), maleButton.getPreferredSize()));
+        maleButton.setBounds(new Rectangle(new Point(5, 410), maleButton.getPreferredSize()));
 
         //---- femaleButton ----
         femaleButton.setText("Female");
+        femaleButton.setBackground(new Color(0, 21, 36));
+        femaleButton.setForeground(new Color(221, 199, 160));
+        femaleButton.setFont(femaleButton.getFont().deriveFont(femaleButton.getFont().getSize() + 5f));
         add(femaleButton);
-        femaleButton.setBounds(new Rectangle(new Point(60, 325), femaleButton.getPreferredSize()));
+        femaleButton.setBounds(new Rectangle(new Point(75, 410), femaleButton.getPreferredSize()));
 
         //---- brokerCheckbox ----
         brokerCheckbox.setText("Broker");
         brokerCheckbox.setToolTipText("Check if you want to register as a Broker");
+        brokerCheckbox.setBackground(new Color(0, 21, 36));
+        brokerCheckbox.setForeground(new Color(221, 199, 160));
+        brokerCheckbox.setFont(brokerCheckbox.getFont().deriveFont(brokerCheckbox.getFont().getSize() + 5f));
         add(brokerCheckbox);
-        brokerCheckbox.setBounds(new Rectangle(new Point(130, 355), brokerCheckbox.getPreferredSize()));
+        brokerCheckbox.setBounds(new Rectangle(new Point(80, 530), brokerCheckbox.getPreferredSize()));
 
         //---- usernameLabel ----
         usernameLabel.setText("Username");
+        usernameLabel.setForeground(new Color(221, 199, 160));
+        usernameLabel.setBackground(new Color(221, 199, 160));
+        usernameLabel.setFont(usernameLabel.getFont().deriveFont(usernameLabel.getFont().getSize() + 5f));
         add(usernameLabel);
-        usernameLabel.setBounds(new Rectangle(new Point(0, 60), usernameLabel.getPreferredSize()));
+        usernameLabel.setBounds(new Rectangle(new Point(5, 70), usernameLabel.getPreferredSize()));
 
         //---- firstnameField ----
+        firstnameField.setBackground(new Color(0, 21, 36));
+        firstnameField.setForeground(new Color(255, 236, 209));
+        firstnameField.setFont(firstnameField.getFont().deriveFont(firstnameField.getFont().getSize() + 3f));
+        firstnameField.setCaretColor(new Color(221, 199, 160));
         firstnameField.addCaretListener(this::firstnameFieldCaretUpdate);
         add(firstnameField);
-        firstnameField.setBounds(0, 20, 140, 30);
+        firstnameField.setBounds(0, 30, 140, 30);
 
         //---- lastnameField ----
+        lastnameField.setBackground(new Color(0, 21, 36));
+        lastnameField.setForeground(new Color(255, 236, 209));
+        lastnameField.setFont(lastnameField.getFont().deriveFont(lastnameField.getFont().getSize() + 3f));
+        lastnameField.setCaretColor(new Color(221, 199, 160));
         lastnameField.addCaretListener(this::lastnameFieldCaretUpdate);
         add(lastnameField);
-        lastnameField.setBounds(150, 20, 150, 30);
+        lastnameField.setBounds(150, 30, 150, 30);
 
         //---- usernameField ----
+        usernameField.setBackground(new Color(0, 21, 36));
+        usernameField.setForeground(new Color(255, 236, 209));
+        usernameField.setFont(usernameField.getFont().deriveFont(usernameField.getFont().getSize() + 3f));
+        usernameField.setCaretColor(new Color(221, 199, 160));
         usernameField.addCaretListener(this::usernameFieldCaretUpdate);
         add(usernameField);
-        usernameField.setBounds(0, 75, 300, 30);
+        usernameField.setBounds(0, 90, 300, 30);
 
         //---- emailField ----
+        emailField.setBackground(new Color(0, 21, 36));
+        emailField.setForeground(new Color(255, 236, 209));
+        emailField.setFont(emailField.getFont().deriveFont(emailField.getFont().getSize() + 3f));
+        emailField.setCaretColor(new Color(221, 199, 160));
         emailField.addCaretListener(this::emailFieldCaretUpdate);
         add(emailField);
-        emailField.setBounds(0, 125, 300, 30);
+        emailField.setBounds(0, 150, 300, 30);
 
         //---- phoneField ----
+        phoneField.setBackground(new Color(0, 21, 36));
+        phoneField.setForeground(new Color(255, 236, 209));
+        phoneField.setFont(phoneField.getFont().deriveFont(phoneField.getFont().getSize() + 3f));
+        phoneField.setCaretColor(new Color(221, 199, 160));
         phoneField.addCaretListener(this::phoneFieldCaretUpdate);
         add(phoneField);
-        phoneField.setBounds(0, 230, 300, 30);
+        phoneField.setBounds(0, 295, 300, 30);
 
         //---- ageSlider ----
         ageSlider.setMajorTickSpacing(15);
         ageSlider.setMinimum(18);
         ageSlider.setMaximum(98);
         ageSlider.setValue(18);
+        ageSlider.setBackground(new Color(0, 21, 36));
+        ageSlider.setForeground(new Color(221, 199, 160));
         ageSlider.addChangeListener(this::ageSliderStateChanged);
         add(ageSlider);
-        ageSlider.setBounds(0, 290, 255, 30);
+        ageSlider.setBounds(5, 375, 290, 30);
 
         //---- ageLabel ----
         ageLabel.setText("Age:18");
+        ageLabel.setBackground(new Color(221, 199, 160));
+        ageLabel.setFont(ageLabel.getFont().deriveFont(ageLabel.getFont().getSize() + 5f));
+        ageLabel.setForeground(new Color(221, 199, 160));
         add(ageLabel);
-        ageLabel.setBounds(0, 285, 70, ageLabel.getPreferredSize().height);
+        ageLabel.setBounds(5, 345, 70, ageLabel.getPreferredSize().height);
 
         //---- enterButton ----
-        enterButton.setText("Sign up");
-        enterButton.setIcon(null);
+        enterButton.setIcon(new ImageIcon(getClass().getResource("/ConnectPanel/signup.png")));
+        enterButton.setBorder(null);
+        enterButton.setBorderPainted(false);
         enterButton.addActionListener(this::signUpButton);
         add(enterButton);
-        enterButton.setBounds(215, 335, 70, 40);
+        enterButton.setBounds(175, 520, 100, 40);
 
         {
             // compute preferred size
