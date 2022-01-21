@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="style">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="forms">
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/CreditCardPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/CreditCardPayment.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ReservationInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ReservationInfo.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ReviewView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ReviewView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/AdminHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/BrokerHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/CustomerHomePage.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/HelpPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/HelpPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/ProfileView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/ProfileView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTablePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTablePanel.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/application/Application.java" afterDir="false" />
@@ -35,10 +18,6 @@
       <change beforePath="$PROJECT_DIR$/src/backend/requests/AdminRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/AdminRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/AppWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/AppWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/usersgui/AdminHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/AdminHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/usersgui/BrokerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/BrokerHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/usersgui/CustomerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/CustomerHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/backend/accommodations/auth/CredentialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/auth/CredentialsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/backend/accommodations/auth/EncryptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/auth/EncryptionTest.java" afterDir="false" />
     </list>
@@ -248,83 +227,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00150" summary="Folder restructure">
-      <created>1642133626375</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1642133626376</updated>
-    </task>
-    <task id="LOCAL-00151" summary="Folder restructure">
-      <created>1642133656012</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1642133656012</updated>
-    </task>
-    <task id="LOCAL-00152" summary="Folder restructure">
-      <created>1642133745446</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1642133745446</updated>
-    </task>
-    <task id="LOCAL-00153" summary="Fixed broken ser config files">
-      <created>1642133837588</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1642133837588</updated>
-    </task>
-    <task id="LOCAL-00154" summary="Updated imports due to folder restructure">
-      <created>1642187849458</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1642187849458</updated>
-    </task>
-    <task id="LOCAL-00155" summary="-Updated imports due to folder restructure&#10;- New parseNames method to replace parseFacebook">
-      <created>1642187904419</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1642187904419</updated>
-    </task>
-    <task id="LOCAL-00156" summary="New names.csv dataset for fullnames">
-      <created>1642187920450</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1642187920450</updated>
-    </task>
-    <task id="LOCAL-00157" summary="Updated config files">
-      <created>1642187967693</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1642187967693</updated>
-    </task>
-    <task id="LOCAL-00158" summary="Added Faker to Dataset credits">
-      <created>1642188387306</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1642188387306</updated>
-    </task>
-    <task id="LOCAL-00159" summary="Updated config files">
-      <created>1642220598881</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1642220598882</updated>
-    </task>
-    <task id="LOCAL-00160" summary="New Signin GUI component">
-      <created>1642220691690</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1642220691690</updated>
     </task>
     <task id="LOCAL-00161" summary="New Signup GUI component">
       <created>1642220762537</created>
@@ -592,7 +494,84 @@
       <option name="project" value="LOCAL" />
       <updated>1642775279602</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="style">
+      <created>1642775550073</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775550073</updated>
+    </task>
+    <task id="LOCAL-00200" summary="Help panel with extra info">
+      <created>1642775612382</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775612382</updated>
+    </task>
+    <task id="LOCAL-00201" summary="User profile">
+      <created>1642775643429</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775643429</updated>
+    </task>
+    <task id="LOCAL-00202" summary="TableModel for a users jtable">
+      <created>1642775655872</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775655872</updated>
+    </task>
+    <task id="LOCAL-00203" summary="TablePanel for users">
+      <created>1642775679888</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775679888</updated>
+    </task>
+    <task id="LOCAL-00204" summary="forms">
+      <created>1642775686867</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775686867</updated>
+    </task>
+    <task id="LOCAL-00205" summary="close ibox and profile before signout">
+      <created>1642775732257</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775732257</updated>
+    </task>
+    <task id="LOCAL-00206" summary="Credit card payment page">
+      <created>1642775802112</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775802112</updated>
+    </task>
+    <task id="LOCAL-00207" summary="Reservation information componenent">
+      <created>1642775858165</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775858165</updated>
+    </task>
+    <task id="LOCAL-00208" summary="Review information component">
+      <created>1642775902429</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775902429</updated>
+    </task>
+    <task id="LOCAL-00209" summary="forms">
+      <created>1642775909328</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775909328</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -620,14 +599,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-Equals and hashcode" />
-    <MESSAGE value="-New queries" />
-    <MESSAGE value="-Added ImageIcon as Profile pic" />
-    <MESSAGE value="main" />
-    <MESSAGE value="-Fixed bug where InboxView was appearing as 2 pixels" />
-    <MESSAGE value="Calendar GUI panel" />
-    <MESSAGE value="Panel for searching accommodations" />
-    <MESSAGE value="TableModel component for custructing a JTable with accommodations" />
     <MESSAGE value="TablePanel component for showing a JTable with accommodations" />
     <MESSAGE value="Profile like view for an accommodation" />
     <MESSAGE value="Images Used in buttons etc" />
@@ -643,9 +614,17 @@
     <MESSAGE value="TableModel for Jtable with messages" />
     <MESSAGE value="Message information view" />
     <MESSAGE value="Message reply view" />
-    <MESSAGE value="forms" />
     <MESSAGE value="style" />
-    <option name="LAST_COMMIT_MESSAGE" value="style" />
+    <MESSAGE value="Help panel with extra info" />
+    <MESSAGE value="User profile" />
+    <MESSAGE value="TableModel for a users jtable" />
+    <MESSAGE value="TablePanel for users" />
+    <MESSAGE value="close ibox and profile before signout" />
+    <MESSAGE value="Credit card payment page" />
+    <MESSAGE value="Reservation information componenent" />
+    <MESSAGE value="Review information component" />
+    <MESSAGE value="forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="forms" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
