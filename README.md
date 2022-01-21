@@ -43,6 +43,9 @@ Note that the Credentials below are case __SENSITIVE__
 
 `git clone https://github.com/auth-csd-oop-2021/mybooking-team-rocket.git`
 
+### Credit Card Generator
+
+You will need a valid Credit Card to book rooms in the application,this link will [help](https://www.vccgenerator.org/)
 
 ### Datasets
 
