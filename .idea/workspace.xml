@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="TablePanel for JTable of Reservations">
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/AccommodationSearchPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/AccommodationTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/AccommodationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/MakeReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationTablePanel.jfd" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="style">
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/ConnectPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignInPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignUpPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/UserHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/UserHomePage.jfd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/CreditCardPayment.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/CreditCardPayment.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/InboxView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/InboxView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/MessageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/MessageView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/MessagesTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/SendMessageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/Inbox/SendMessageView.jfd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/ReservationInfo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/ReservationInfo.jfd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/ReviewView.java" afterDir="false" />
@@ -37,6 +20,7 @@
       <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTableModel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTablePanel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/usersgui/UserTablePanel.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java Project 2021-2022.docx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/application/Application.java" afterDir="false" />
@@ -52,9 +36,6 @@
       <change beforePath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/BrokerRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/requests/CustomerRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/AppWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/AppWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/ConnectUI/ConnectPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/ConnectPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/ConnectUI/SignInPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignInPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/ConnectUI/SignUpPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/ConnectUI/SignUpPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/usersgui/AdminHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/AdminHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/usersgui/BrokerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/BrokerHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/usersgui/CustomerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/usersgui/CustomerHomePage.java" afterDir="false" />
@@ -267,76 +248,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00140" summary="Added case files in request handling method to handle GUI components">
-      <created>1642105103645</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1642105103645</updated>
-    </task>
-    <task id="LOCAL-00141" summary="Added case files in request handling method to handle GUI components">
-      <created>1642105112847</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1642105112847</updated>
-    </task>
-    <task id="LOCAL-00142" summary="Added case files in request handling method to handle GUI components">
-      <created>1642105157514</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1642105157514</updated>
-    </task>
-    <task id="LOCAL-00143" summary="?">
-      <created>1642105531755</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1642105531756</updated>
-    </task>
-    <task id="LOCAL-00144" summary="Fix broken dependencies after merge.&#10;Thank you java,not cool">
-      <created>1642105624323</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1642105624323</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Removed deprecated instructions from README">
-      <created>1642106144450</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1642106144450</updated>
-    </task>
-    <task id="LOCAL-00146" summary="Added static requests in Server">
-      <created>1642106410964</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1642106410964</updated>
-    </task>
-    <task id="LOCAL-00147" summary="New AdminHomePage GUI component">
-      <created>1642106544650</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1642106544650</updated>
-    </task>
-    <task id="LOCAL-00148" summary="New CustomerHomePage GUI component">
-      <created>1642106726624</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1642106726624</updated>
-    </task>
-    <task id="LOCAL-00149" summary="New BrokerHomePage GUI component">
-      <created>1642106784937</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1642106784937</updated>
     </task>
     <task id="LOCAL-00150" summary="Folder restructure">
       <created>1642133626375</created>
@@ -611,7 +522,77 @@
       <option name="project" value="LOCAL" />
       <updated>1642774534151</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="forms">
+      <created>1642774883695</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774883695</updated>
+    </task>
+    <task id="LOCAL-00190" summary="Added help panel">
+      <created>1642774955220</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774955220</updated>
+    </task>
+    <task id="LOCAL-00191" summary="Added enter key functionality">
+      <created>1642774996611</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1642774996611</updated>
+    </task>
+    <task id="LOCAL-00192" summary="Added enter key functionality">
+      <created>1642775077487</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775077487</updated>
+    </task>
+    <task id="LOCAL-00193" summary="forms">
+      <created>1642775099344</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775099344</updated>
+    </task>
+    <task id="LOCAL-00194" summary="Inbox component">
+      <created>1642775163412</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775163412</updated>
+    </task>
+    <task id="LOCAL-00195" summary="TableModel for Jtable with messages">
+      <created>1642775176687</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775176687</updated>
+    </task>
+    <task id="LOCAL-00196" summary="Message information view">
+      <created>1642775206221</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775206221</updated>
+    </task>
+    <task id="LOCAL-00197" summary="Message reply view">
+      <created>1642775272947</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775272947</updated>
+    </task>
+    <task id="LOCAL-00198" summary="forms">
+      <created>1642775279602</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1642775279602</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -639,14 +620,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New Signin GUI component" />
-    <MESSAGE value="New Signup GUI component" />
-    <MESSAGE value="New ConnectPanel component to combine signup-signin functionality in 1 panel" />
-    <MESSAGE value="-Equals and Hashcode overrides&#10;-Change of List&lt;ImageIcon&gt; to ImageIcon" />
-    <MESSAGE value="-Equals and Hashcode overrides" />
-    <MESSAGE value="-Equals and Hashcode overrides&#10;-LocalDateTime change to LocalDate" />
-    <MESSAGE value="Indentation" />
-    <MESSAGE value="Autoconfirm functionality" />
     <MESSAGE value="-Equals and hashcode" />
     <MESSAGE value="-New queries" />
     <MESSAGE value="-Added ImageIcon as Profile pic" />
@@ -664,7 +637,15 @@
     <MESSAGE value="Reservation panel with calendar etc" />
     <MESSAGE value="TableModel for JTable of Reservations" />
     <MESSAGE value="TablePanel for JTable of Reservations" />
-    <option name="LAST_COMMIT_MESSAGE" value="TablePanel for JTable of Reservations" />
+    <MESSAGE value="Added help panel" />
+    <MESSAGE value="Added enter key functionality" />
+    <MESSAGE value="Inbox component" />
+    <MESSAGE value="TableModel for Jtable with messages" />
+    <MESSAGE value="Message information view" />
+    <MESSAGE value="Message reply view" />
+    <MESSAGE value="forms" />
+    <MESSAGE value="style" />
+    <option name="LAST_COMMIT_MESSAGE" value="style" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
