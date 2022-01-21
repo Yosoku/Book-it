@@ -46,7 +46,7 @@ public class ReservationsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -101,7 +101,7 @@ public class ReservationsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -120,7 +120,7 @@ public class ReservationsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -145,6 +145,19 @@ public class ReservationsDB extends Database {
 
     public void dropReservation(Reservation reservation) {
         reservations.remove(reservation);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Database");
+            }
+        }.execute();
     }
 
     public ArrayList<Reservation> selectAllReservations() {

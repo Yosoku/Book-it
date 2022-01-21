@@ -59,10 +59,9 @@ public class UserConfirmationsDB extends Database {
                 write();
                 return null;
             }
-
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -100,7 +99,7 @@ public class UserConfirmationsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -125,7 +124,7 @@ public class UserConfirmationsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }

@@ -29,7 +29,6 @@ public class CredentialsUserDB extends Database {
     @Serial
     private static final long serialVersionUID = 0;
     private HashMap<String, User> users; //Mapping of hash(Credentials) -> User
-
     /**
      * An initializer constructor used to initialize the map and call the Base class with the specified filename to store
      * the map
@@ -58,10 +57,9 @@ public class CredentialsUserDB extends Database {
                 write();
                 return null;
             }
-
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -97,10 +95,9 @@ public class CredentialsUserDB extends Database {
                 write();
                 return null;
             }
-
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -123,10 +120,9 @@ public class CredentialsUserDB extends Database {
                 write();
                 return null;
             }
-
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -138,6 +134,17 @@ public class CredentialsUserDB extends Database {
         else {
             for (User user : users.values())
                 if (Objects.equals(user.getCredentials().username(), username))
+                    return user;
+        }
+        return null;
+    }
+
+    public User selectUserByFullname(String fullname) {
+        if (fullname == null || fullname.equals(""))
+            return null;
+        else {
+            for (User user : users.values())
+                if (Objects.equals(user.getName(), fullname))
                     return user;
         }
         return null;

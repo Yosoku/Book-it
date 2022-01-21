@@ -59,7 +59,7 @@ public class ReviewsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -161,7 +161,7 @@ public class ReviewsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -186,11 +186,18 @@ public class ReviewsDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
 
+    public float getAverageRatingForAccommodation(Accommodation accommodation) {
+        float counter = 0.f;
+        for (Review review : selectReviewsByAccommodation(accommodation))
+            counter += review.stars();
+        counter = counter / selectReviewsByAccommodation(accommodation).size();
+        return counter != counter ? 0 : counter;
+    }
 
     public boolean isUniqueReview(Accommodation accommodation, User currentUser) {
         for (Review review : selectReviewsByUser(currentUser)) {

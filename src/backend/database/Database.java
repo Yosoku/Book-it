@@ -1,4 +1,5 @@
 package backend.database;
+
 import java.io.*;
 
 /**
@@ -32,6 +33,7 @@ public abstract class Database implements Serializable {
 
     /**
      * A basic constructor to initialize the filename. Often used in kid classes in the form of super("file/path/to/store/objects");
+     *
      * @param filename The path from Source directory often src/config/filename
      */
     public Database(String filename) {
@@ -43,8 +45,8 @@ public abstract class Database implements Serializable {
      * The method used for writing Database kids in files using the technique of Serialization and ObjectOutputStream.
      * write() also makes sure the specified filename <b>exists</b> before writing the object. The method doesn't take
      * any parameters as it writes this object in the ObjectOutputStream
-     * @see <a href="https://www.tutorialspoint.com/java/java_serialization.htm">Serialization in Java</a>
      *
+     * @see <a href="https://www.tutorialspoint.com/java/java_serialization.htm">Serialization in Java</a>
      */
     public void write() {
         try {
@@ -53,7 +55,8 @@ public abstract class Database implements Serializable {
             FileOutputStream fileOut = new FileOutputStream(this.filename);
             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
             objectOut.writeObject(this);
-
+            fileOut.close();
+            objectOut.close();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -62,9 +65,9 @@ public abstract class Database implements Serializable {
     /**
      * The method used for reading Database kids from files using the technique of Serialization and ObjectInputStream.
      * read() also makes sure the specified filename <b>exists</b> before reading the object.
+     *
      * @return the <b>Object</b> read from <code>ObjectInputStream</code> and <b>null</b> otherwise
      * @see <a href="https://www.tutorialspoint.com/java/java_serialization.htm">Serialization in Java</a>
-     *
      */
     public Object read() {
         Object obj = null;
@@ -76,8 +79,8 @@ public abstract class Database implements Serializable {
             obj = objectIn.readObject();
             objectIn.close();
             fileIn.close();
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
+        } catch (IOException | ClassNotFoundException exception) {
+            exception.printStackTrace();
         }
         return obj;
     }

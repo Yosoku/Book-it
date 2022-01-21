@@ -8,6 +8,7 @@ import javax.swing.*;
 import java.io.Serial;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Objects;
 
 
@@ -194,10 +195,6 @@ public class BrokerAccommodationsDB extends Database {
     }
 
 
-
-
-
-
     public HashSet<Accommodation> selectAccommodationsBySpaceAndPrice(int lowSpace, int highSpace, int lowPrice, int highPrice) {
         HashSet<Accommodation> values = new HashSet<>();
         if (lowSpace >= highSpace || lowPrice >= highPrice)
@@ -245,5 +242,13 @@ public class BrokerAccommodationsDB extends Database {
                 all.add(accommodation);
         }
         return all;
+    }
+
+    public Broker selectBrokerFromAccommodation(Accommodation accommodation) {
+        for (Map.Entry<Broker, HashSet<Accommodation>> entry : brokerProperties.entrySet()) {
+            if (entry.getValue().contains(accommodation))
+                return entry.getKey();
+        }
+        return null;
     }
 }

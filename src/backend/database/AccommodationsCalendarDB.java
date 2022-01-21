@@ -4,6 +4,7 @@ import backend.accommodations.Accommodation;
 import backend.accommodations.TimePeriod;
 
 import javax.swing.*;
+import java.io.Serial;
 import java.util.HashMap;
 import java.util.TreeSet;
 
@@ -24,6 +25,8 @@ import java.util.TreeSet;
  */
 
 public class AccommodationsCalendarDB extends Database {
+    @Serial
+    private static final long serialVersionUID = 0;
     private HashMap<Accommodation, TreeSet<TimePeriod>> accommodationsCalendar;
 
     /**
@@ -45,8 +48,10 @@ public class AccommodationsCalendarDB extends Database {
      * @param accommodation The accommodation that the timePeriod instance is referring to
      */
     public void insertTimePeriodToAccommodation(Accommodation accommodation, TimePeriod timePeriod) {
+        System.out.println("calendar insertion");
         if (timePeriod == null || accommodation == null)
             return;
+        System.out.println("Nothing was null");
         TreeSet<TimePeriod> calendar = accommodationsCalendar.get(accommodation);
         if (calendar == null)
             calendar = new TreeSet<TimePeriod>();
@@ -62,7 +67,7 @@ public class AccommodationsCalendarDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -97,13 +102,25 @@ public class AccommodationsCalendarDB extends Database {
      * @return The TreeSet of TimePeriod instances regarding accommodation.Effectively returns the Calendar of booked dates
      */
     public TreeSet<TimePeriod> selectCalendarFromAccommodation(Accommodation accommodation) {
-        TreeSet<TimePeriod> calendar = new TreeSet<>();
-        if (accommodation == null)
-            return calendar;
-        if (accommodationsCalendar.get(accommodation) == null)
-            return calendar;
-        return accommodationsCalendar.get(accommodation);
+        return accommodationsCalendar.get(accommodation) == null ? new TreeSet<>() : accommodationsCalendar.get(accommodation);
+    }
 
+    public void dropTimePeriodFromAccommodation(Accommodation accommodation, TimePeriod period) {
+        if (accommodationsCalendar.get(accommodation) != null)
+            accommodationsCalendar.get(accommodation).remove(period);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Database");
+            }
+        }.execute();
     }
 }
 

@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.io.Serial;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 
 /**
  * <p>
@@ -64,11 +65,9 @@ public class UserMessagesDB extends Database {
 
                 @Override
                 protected void done() {
-                    System.out.println("Finished writing Databases");
+                    System.out.println("Finished writing Database");
                 }
             }.execute();
-
-
     }
 
     /**
@@ -102,7 +101,7 @@ public class UserMessagesDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
@@ -113,7 +112,8 @@ public class UserMessagesDB extends Database {
      * @param user The user to delete messages from
      */
     public void dropAllMessagesFromUser(User user) {
-        userInbox.get(user).clear();
+        if (userInbox.get(user) != null) //user has messages
+            userInbox.get(user).clear();
         new SwingWorker<>() {
             @Override
             protected Object doInBackground() {
@@ -124,7 +124,39 @@ public class UserMessagesDB extends Database {
 
             @Override
             protected void done() {
-                System.out.println("Finished writing Databases");
+                System.out.println("Finished writing Database");
+            }
+        }.execute();
+    }
+
+    public Message selectMessageFromUserByContents(User user, String contents) {
+        if (user == null || Objects.equals(contents, ""))
+            return null;
+        for (Message message : userInbox.get(user))
+            if (message.getContents().equals(contents))
+                return message;
+        return null;
+    }
+
+    public void updateMessageSeen(User user, Message message) {
+        if (user == null || message == null)
+            return;
+        System.out.println("Update");
+        System.out.println(message);
+        userInbox.get(user).remove(message);
+        message.setSeen(true);
+        insertMessageToUser(user, message, true);
+        new SwingWorker<>() {
+            @Override
+            protected Object doInBackground() {
+                System.out.println("Started writing " + this);
+                write();
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                System.out.println("Finished writing Database");
             }
         }.execute();
     }
