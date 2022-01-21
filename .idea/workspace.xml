@@ -1,62 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="config files update">
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/AccommodationSearchPanel/fitlers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/AccommodationSearchPanel/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/AdminHomePage/users.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/BrokerHomePage/accommodations.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/BrokerHomePage/reservations.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/ConnectPanel/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/ConnectPanel/register.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/ConnectPanel/signin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/ConnectPanel/signup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/addAccommodation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/checkin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/cheout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/confirmationIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/contact.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/AccommodationSearchPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/AccommodationTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/AccommodationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/Inbox/MessageView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ReservationInfo.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/HelpPanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/ProfileView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/UserTablePanel.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/helpIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inbox/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inbox/newMessage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inbox/reply.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inbox/send.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inboxIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/m6adsasdasdasdasdfe4pfbcokihwm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/profile/edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/profile/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/profileIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/reservationButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/reserve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/reviewButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/signoutIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/submitReview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/backend/database/AccommodationsCalendarDBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/UserHomePage.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/AdminHomePage.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/AdminHomePage.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/BrokerHomePage.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/BrokerHomePage.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/CustomerHomePage.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/CustomerHomePage.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/database/AccommodationsCalendarDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/AccommodationsCalendarDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/accommodationsCalendar.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/accommodationsCalendar.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/reviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/reviews.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/userMessages.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userMessages.ser" afterDir="false" />
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="tests">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,20 +193,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00168" summary="-Equals and hashcode">
-      <created>1642634248926</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1642634248926</updated>
-    </task>
-    <task id="LOCAL-00169" summary="-Equals and hashcode">
-      <created>1642634255000</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1642634255000</updated>
     </task>
     <task id="LOCAL-00170" summary="-New queries">
       <created>1642634289723</created>
@@ -590,7 +523,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642776739227</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="tests">
+      <created>1642783892860</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1642783892861</updated>
+    </task>
+    <task id="LOCAL-00218" summary="tests">
+      <created>1642783944846</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1642783944846</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -618,7 +565,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TableModel for JTable of Reservations" />
     <MESSAGE value="TablePanel for JTable of Reservations" />
     <MESSAGE value="Added help panel" />
     <MESSAGE value="Added enter key functionality" />
@@ -643,7 +589,8 @@
     <MESSAGE value="Server" />
     <MESSAGE value="Custom renderer for Jtable messages" />
     <MESSAGE value="config files update" />
-    <option name="LAST_COMMIT_MESSAGE" value="config files update" />
+    <MESSAGE value="tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
