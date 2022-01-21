@@ -3,6 +3,8 @@ package frontend;
 import backend.application.Application;
 import config.Configurations;
 import frontend.ConnectUI.ConnectPanel;
+import frontend.Inbox.InboxView;
+import frontend.usersgui.ProfileView;
 
 import javax.swing.*;
 import java.awt.*;
@@ -43,6 +45,8 @@ public class AppWindow extends JFrame {
         if (result == JOptionPane.OK_OPTION) {
             changePanel(new ConnectPanel());
             Application.getInstance().setConnected(false);
+            InboxView.closeView();
+            ProfileView.closeView();
         }
 
     }
