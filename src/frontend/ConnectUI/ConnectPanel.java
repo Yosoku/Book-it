@@ -2,6 +2,7 @@ package frontend.ConnectUI;
 
 
 import config.Configurations;
+import frontend.usersgui.HelpPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -35,48 +36,48 @@ public class ConnectPanel extends JPanel {
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - Edward
-        signInPanel = new SignInPanel();
         signIn = new JButton();
-        signUpPanel = new SignUpPanel();
         signUp = new JButton();
+        signInPanel = new SignInPanel();
+        signUpPanel = new SignUpPanel();
+        helpPanel1 = new HelpPanel();
 
         //======== this ========
         setPreferredSize(new Dimension(1920, 1080));
         setMinimumSize(new Dimension(1920, 1080));
         setMaximumSize(new Dimension(1920, 1080));
-        setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.
-                EmptyBorder(0, 0, 0, 0), "JFor\u006dDesi\u0067ner \u0045valu\u0061tion", javax.swing.border.TitledBorder.CENTER, javax.swing
-                .border.TitledBorder.BOTTOM, new java.awt.Font("Dia\u006cog", java.awt.Font.BOLD, 12),
-                java.awt.Color.red), getBorder()));
+        setBackground(new Color(0, 21, 36));
+        setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder
+                (0, 0, 0, 0), "", javax.swing.border.TitledBorder.CENTER, javax.swing.border
+                .TitledBorder.BOTTOM, new java.awt.Font("", java.awt.Font.BOLD, 12), java.awt
+                .Color.red), getBorder()));
         addPropertyChangeListener(e -> {
-            if ("bord\u0065r".equals(e.getPropertyName()))
-                throw new RuntimeException();
+            if ("\u0062ord\u0065r".equals(e.getPropertyName())) throw new RuntimeException()
+                    ;
         });
         setLayout(null);
 
-        //---- signInPanel ----
-        signInPanel.setOpaque(false);
-        add(signInPanel);
-        signInPanel.setBounds(490, 85, 290, 295);
-
         //---- signIn ----
-        signIn.setText("Login");
         signIn.setToolTipText("Already registered?Sign in");
+        signIn.setIcon(new ImageIcon(getClass().getResource("/ConnectPanel/login.png")));
+        signIn.setBorder(null);
         signIn.addActionListener(this::signIn);
         add(signIn);
-        signIn.setBounds(485, 5, 300, 70);
-
-        //---- signUpPanel ----
-        signUpPanel.setOpaque(false);
-        add(signUpPanel);
-        signUpPanel.setBounds(805, 85, signUpPanel.getPreferredSize().width, 400);
+        signIn.setBounds(330, 5, 310, 70);
 
         //---- signUp ----
-        signUp.setText("Register");
         signUp.setToolTipText("New User? Sign up!");
+        signUp.setIcon(new ImageIcon(getClass().getResource("/ConnectPanel/register.png")));
+        signUp.setBorder(null);
         signUp.addActionListener(this::signUp);
         add(signUp);
-        signUp.setBounds(805, 5, 300, 70);
+        signUp.setBounds(655, 5, 310, 70);
+        add(signInPanel);
+        signInPanel.setBounds(330, 110, 309, 340);
+        add(signUpPanel);
+        signUpPanel.setBounds(655, 95, 310, signUpPanel.getPreferredSize().height);
+        add(helpPanel1);
+        helpPanel1.setBounds(1140, 0, 140, 1025);
 
         {
             // compute preferred size
@@ -104,9 +105,10 @@ public class ConnectPanel extends JPanel {
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
     // Generated using JFormDesigner Evaluation license - Edward
-    private SignInPanel signInPanel;
     private JButton signIn;
-    private SignUpPanel signUpPanel;
     private JButton signUp;
+    private SignInPanel signInPanel;
+    private SignUpPanel signUpPanel;
+    private HelpPanel helpPanel1;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }
