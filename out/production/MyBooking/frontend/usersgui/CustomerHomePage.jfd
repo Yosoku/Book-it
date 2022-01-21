@@ -3,6 +3,9 @@ JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.generateCode": false
+		}
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
 			"autoSize": false
 		} ) {

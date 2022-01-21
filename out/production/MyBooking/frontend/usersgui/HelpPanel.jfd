@@ -1,0 +1,83 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 21, 97, 109, 255 )
+			"minimumSize": new java.awt.Dimension( 140, 370 )
+			"maximumSize": new java.awt.Dimension( 140, 370 )
+			"preferredSize": new java.awt.Dimension( 140, 370 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "readmeButton"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/readme.png" )
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "readme", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 90
+				"width": 130
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "aboutButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/about.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "about", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 5
+				"y": 170
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "contactButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/contact.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "contact", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 5
+				"y": 250
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exitButton"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/exit.png" )
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exit", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 5
+				"y": 330
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "helpButton"
+				"focusable": false
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/helpIcon.png" )
+				"selectedIcon": new com.jformdesigner.model.SwingIcon( 0, "/helpIcon.png" )
+				"contentAreaFilled": false
+				"focusPainted": false
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"borderPainted": false
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "help", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"x": 5
+				"y": 15
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 790, 25 )
+			"size": new java.awt.Dimension( 140, 490 )
+		} )
+	}
+}

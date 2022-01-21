@@ -1,11 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="Server">
+    <list default="true" id="7c480eed-0051-420e-be03-141a0340660e" name="Changes" comment="config files update">
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/AccommodationSearchPanel/fitlers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/AccommodationSearchPanel/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/AdminHomePage/users.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/BrokerHomePage/accommodations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/BrokerHomePage/reservations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/ConnectPanel/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/ConnectPanel/register.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/ConnectPanel/signin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/ConnectPanel/signup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/addAccommodation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/checkin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/cheout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/confirmationIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/contact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/AccommodationSearchPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/AccommodationTablePanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/AccommodationUI/AccommodationView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/Inbox/MessageView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/ReservationInfo.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/HelpPanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/ProfileView.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/UserTablePanel.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/helpIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inbox/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inbox/newMessage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inbox/reply.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inbox/send.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/inboxIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/m6adsasdasdasdasdfe4pfbcokihwm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/profile/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/profile/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/profileIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/readme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/reservationButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/reserve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/reviewButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/signoutIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyBooking/submitReview.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/frontend/AccommodationUI/ReservationView.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/backend/accommodations/auth/CredentialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/auth/CredentialsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/backend/accommodations/auth/EncryptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/backend/accommodations/auth/EncryptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/backend/database/AccommodationsCalendarDBTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyBooking/frontend/ConnectUI/UserHomePage.jfd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/AdminHomePage.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/AdminHomePage.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/BrokerHomePage.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/BrokerHomePage.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/CustomerHomePage.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBooking/frontend/usersgui/CustomerHomePage.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/database/AccommodationsCalendarDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/database/AccommodationsCalendarDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/accommodationsCalendar.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/accommodationsCalendar.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/brokerAccommodations.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/reviews.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/reviews.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userConfirmation.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userConfirmation.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/userMessages.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/userMessages.ser" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +73,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -99,109 +150,100 @@
       <recent name="backend.accommodations" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="backend.database" />
       <recent name="accommodations" />
       <recent name="auth" />
       <recent name="communication" />
       <recent name="users" />
-      <recent name="database" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="MyBooking" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in MyBooking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccommodationsCalendarDBTest">
+    <configuration name="AccommodationsCalendarDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBooking" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="config.*" />
-          <option name="ENABLED" value="true" />
-          <option name="INCLUDE" value="false" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="frontend.AccommodationUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="backend.UI.*" />
-          <option name="ENABLED" value="true" />
-          <option name="INCLUDE" value="false" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="AccommodationGenerator" />
-          <option name="ENABLED" value="true" />
-          <option name="INCLUDE" value="false" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="UserGenerator" />
-          <option name="ENABLED" value="true" />
-          <option name="INCLUDE" value="false" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CredentialsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBooking" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backend.accommodations.auth.*" />
+          <option name="PATTERN" value="backend.database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="backend.accommodations.auth" />
-      <option name="MAIN_CLASS_NAME" value="backend.accommodations.auth.CredentialsTest" />
+      <option name="PACKAGE_NAME" value="backend.database" />
+      <option name="MAIN_CLASS_NAME" value="backend.database.AccommodationsCalendarDBTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncryptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccommodationsCalendarDBTest.accommodationAvailableInTimePeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBooking" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backend.accommodations.auth.*" />
+          <option name="PATTERN" value="backend.database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="backend.accommodations.auth" />
-      <option name="MAIN_CLASS_NAME" value="backend.accommodations.auth.EncryptionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="backend.database" />
+      <option name="MAIN_CLASS_NAME" value="backend.database.AccommodationsCalendarDBTest" />
+      <option name="METHOD_NAME" value="accommodationAvailableInTimePeriod" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccommodationsCalendarDBTest.dropTimePeriodFromAccommodation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBooking" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backend.accommodations.communication.*" />
+          <option name="PATTERN" value="backend.database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="backend.accommodations.communication" />
-      <option name="MAIN_CLASS_NAME" value="backend.accommodations.communication.MessageTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="backend.database" />
+      <option name="MAIN_CLASS_NAME" value="backend.database.AccommodationsCalendarDBTest" />
+      <option name="METHOD_NAME" value="dropTimePeriodFromAccommodation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccommodationsCalendarDBTest.insertTimePeriodToAccommodation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBooking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backend.database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backend.database" />
+      <option name="MAIN_CLASS_NAME" value="backend.database.AccommodationsCalendarDBTest" />
+      <option name="METHOD_NAME" value="insertTimePeriodToAccommodation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccommodationsCalendarDBTest.selectCalendarFromAccommodation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBooking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backend.database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backend.database" />
+      <option name="MAIN_CLASS_NAME" value="backend.database.AccommodationsCalendarDBTest" />
+      <option name="METHOD_NAME" value="selectCalendarFromAccommodation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.All in MyBooking" />
-        <item itemvalue="JUnit.MessageTest" />
-        <item itemvalue="JUnit.EncryptionTest" />
-        <item itemvalue="JUnit.CredentialsTest" />
+        <item itemvalue="JUnit.AccommodationsCalendarDBTest" />
+        <item itemvalue="JUnit.AccommodationsCalendarDBTest.dropTimePeriodFromAccommodation" />
+        <item itemvalue="JUnit.AccommodationsCalendarDBTest.selectCalendarFromAccommodation" />
+        <item itemvalue="JUnit.AccommodationsCalendarDBTest.accommodationAvailableInTimePeriod" />
+        <item itemvalue="JUnit.AccommodationsCalendarDBTest.insertTimePeriodToAccommodation" />
       </list>
     </recent_temporary>
   </component>
@@ -213,20 +255,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636767403726</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Indentation">
-      <created>1642634158000</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1642634158000</updated>
-    </task>
-    <task id="LOCAL-00167" summary="Autoconfirm functionality">
-      <created>1642634187236</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1642634187236</updated>
     </task>
     <task id="LOCAL-00168" summary="-Equals and hashcode">
       <created>1642634248926</created>
@@ -557,7 +585,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642776139584</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="Custom renderer for Jtable messages">
+      <created>1642776482716</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1642776482717</updated>
+    </task>
+    <task id="LOCAL-00216" summary="config files update">
+      <created>1642776739226</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1642776739227</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,8 +627,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated config files" />
-    <MESSAGE value="Reservation panel with calendar etc" />
     <MESSAGE value="TableModel for JTable of Reservations" />
     <MESSAGE value="TablePanel for JTable of Reservations" />
     <MESSAGE value="Added help panel" />
@@ -610,7 +650,9 @@
     <MESSAGE value="requirements" />
     <MESSAGE value="Queries" />
     <MESSAGE value="Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server" />
+    <MESSAGE value="Custom renderer for Jtable messages" />
+    <MESSAGE value="config files update" />
+    <option name="LAST_COMMIT_MESSAGE" value="config files update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

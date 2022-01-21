@@ -1,0 +1,125 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 600, 200 )
+			"background": new java.awt.Color( 0, 21, 36, 255 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "filterButton"
+				"focusable": false
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/AccommodationSearchPanel/fitlers.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "filter", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 100
+				"height": 30
+				"x": 45
+				"y": 40
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "cityField"
+				"text": "Thessaloniki"
+				"foreground": new java.awt.Color( 221, 199, 160, 255 )
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				"caretColor": new java.awt.Color( 221, 199, 160, 255 )
+				"selectedTextColor": new java.awt.Color( 247, 248, 247, 255 )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+				addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "cityFieldCaretUpdate", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 30
+				"x": 150
+				"y": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "searchButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/AccommodationSearchPanel/search.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "search", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 100
+				"height": 30
+				"x": 495
+				"y": 40
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "filterPanel"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "priceLabel"
+					"text": "€"
+					"horizontalAlignment": 2
+					"focusable": false
+					"horizontalTextPosition": 0
+					"foreground": new java.awt.Color( 221, 199, 160, 255 )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 230
+					"y": 25
+					"width": 85
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "spaceLabel"
+					"text": "m2"
+					"horizontalTextPosition": 0
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+					"foreground": new java.awt.Color( 221, 199, 160, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 230
+					"y": 75
+					"width": 80
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JSlider" ) {
+					name: "priceSlider"
+					"maximum": 1000
+					"value": 1000
+					"majorTickSpacing": 100
+					"minorTickSpacing": 50
+					"paintTicks": true
+					"toolTipText": "Max Price value to search"
+					"opaque": false
+					"background": new java.awt.Color( 221, 199, 160, 255 )
+					"foreground": new java.awt.Color( 221, 199, 160, 255 )
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "priceSliderStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 30
+					"y": 25
+					"width": 195
+				} )
+				add( new FormComponent( "javax.swing.JSlider" ) {
+					name: "spaceSlider"
+					"maximum": 1000
+					"value": 1000
+					"majorTickSpacing": 100
+					"minorTickSpacing": 50
+					"paintTicks": true
+					"toolTipText": "Max square meters to search"
+					"opaque": false
+					"background": new java.awt.Color( 221, 199, 160, 255 )
+					"foreground": new java.awt.Color( 221, 199, 160, 255 )
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "spaceSliderStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 195
+					"height": 24
+					"x": 30
+					"y": 75
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 115
+				"x": 150
+				"y": 80
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 85, 0 )
+			"size": new java.awt.Dimension( 770, 580 )
+		} )
+	}
+}

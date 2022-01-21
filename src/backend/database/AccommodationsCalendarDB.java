@@ -48,10 +48,8 @@ public class AccommodationsCalendarDB extends Database {
      * @param accommodation The accommodation that the timePeriod instance is referring to
      */
     public void insertTimePeriodToAccommodation(Accommodation accommodation, TimePeriod timePeriod) {
-        System.out.println("calendar insertion");
         if (timePeriod == null || accommodation == null)
             return;
-        System.out.println("Nothing was null");
         TreeSet<TimePeriod> calendar = accommodationsCalendar.get(accommodation);
         if (calendar == null)
             calendar = new TreeSet<TimePeriod>();
@@ -64,7 +62,6 @@ public class AccommodationsCalendarDB extends Database {
                 write();
                 return null;
             }
-
             @Override
             protected void done() {
                 System.out.println("Finished writing Database");
@@ -106,7 +103,7 @@ public class AccommodationsCalendarDB extends Database {
     }
 
     public void dropTimePeriodFromAccommodation(Accommodation accommodation, TimePeriod period) {
-        if (accommodationsCalendar.get(accommodation) != null)
+        if (accommodationsCalendar.get(accommodation) != null && period != null)
             accommodationsCalendar.get(accommodation).remove(period);
         new SwingWorker<>() {
             @Override
