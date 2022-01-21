@@ -5,11 +5,11 @@ import backend.application.Application;
 import backend.application.DatabaseAPI;
 import backend.application.Server;
 import backend.users.Broker;
-import frontend.AccommodationView;
+import frontend.AccommodationUI.AccommodationView;
 import frontend.AppWindow;
 import frontend.Inbox.InboxView;
-import frontend.ProfileView;
 import frontend.usersgui.BrokerHomePage;
+import frontend.usersgui.ProfileView;
 
 import javax.swing.*;
 
@@ -51,6 +51,7 @@ public class BrokerRequests implements Handler {
                 accommodationView.setVisible(true);
                 accommodationView.setAllFieldsEditable(true);
                 accommodationView.getEditButton().setVisible(false);
+                accommodationView.getDeleteButton().setVisible(false);
             }
             case "edit_accommodation" -> {
 

@@ -8,8 +8,8 @@ import backend.users.User;
 import config.Configurations;
 import frontend.AppWindow;
 import frontend.Inbox.InboxView;
-import frontend.ProfileView;
 import frontend.usersgui.AdminHomePage;
+import frontend.usersgui.ProfileView;
 
 import javax.swing.*;
 import java.util.List;

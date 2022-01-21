@@ -6,8 +6,8 @@ import backend.users.Customer;
 import frontend.AccommodationUI.MakeReservationView;
 import frontend.AppWindow;
 import frontend.Inbox.InboxView;
-import frontend.ProfileView;
 import frontend.usersgui.CustomerHomePage;
+import frontend.usersgui.ProfileView;
 
 import javax.swing.*;
 
