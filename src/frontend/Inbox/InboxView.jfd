@@ -1,0 +1,121 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.generateCode": false
+		}
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"alwaysOnTop": true
+			"defaultCloseOperation": 2
+			"resizable": false
+			"visible": true
+			"title": "Inbox"
+			"minimumSize": new java.awt.Dimension( 860, 530 )
+			"$sizePolicy": 1
+			"background": new java.awt.Color( 0, 21, 36, 255 )
+			"iconImage": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "panel1MouseClicked", true ) )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "sendMessageButton"
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/inbox/newMessage.png" )
+					"borderPainted": false
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sendMessage", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 145
+					"height": 40
+					"x": 45
+					"y": 20
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+					name: "cardPanel"
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						"border": new javax.swing.border.EtchedBorder( 1, null, null )
+						"background": new java.awt.Color( 0, 21, 36, 255 )
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "inboxTable"
+							"background": new java.awt.Color( 0, 21, 36, 255 )
+							"gridColor": new java.awt.Color( 0, 21, 33, 255 )
+							"fillsViewportHeight": true
+							"foreground": new java.awt.Color( 221, 199, 160, 255 )
+							"rowMargin": 0
+							"rowHeight": 20
+							"showHorizontalLines": false
+							"showVerticalLines": false
+							"intercellSpacing": new java.awt.Dimension( 0, 0 )
+							"selectionBackground": new java.awt.Color( 21, 97, 109, 255 )
+							"selectionForeground": new java.awt.Color( 221, 199, 160, 255 )
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							"selectionMode": 0
+							"updateSelectionOnSort": false
+							"focusable": false
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "INBOX"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "noMessagesLabel"
+						"text": "Your inbox is empty"
+						"foreground": new java.awt.Color( 221, 199, 160, 255 )
+						"background": new java.awt.Color( 0, 21, 36, 255 )
+						"horizontalTextPosition": 2
+						"horizontalAlignment": 0
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+						"verticalAlignment": 1
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "NO_MESSAGES_LABEL"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 355
+					"y": 15
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "replyButton"
+					"borderPainted": false
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/inbox/reply.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reply", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 595
+					"y": 450
+					"width": 100
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "deleteMessageButton"
+					"borderPainted": false
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/inbox/delete.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteMessage", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 710
+					"y": 450
+					"width": 100
+					"height": 30
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"height": 505
+				"width": 860
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 860, 530 )
+		} )
+	}
+}

@@ -1,0 +1,88 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"alwaysOnTop": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "messageArea"
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+					"border": new com.jformdesigner.model.SwingBorder( "ComboPopup.border" )
+					"foreground": &Color0 new java.awt.Color( 221, 199, 160, 255 )
+					"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					"editable": false
+					"lineWrap": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 115
+					"y": 125
+					"width": 345
+					"height": 205
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "subjectField"
+					"background": &Color1 new java.awt.Color( 0, 21, 36, 255 )
+					"foreground": #Color0
+					"font": #SwingDerivedFont0
+					"editable": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 230
+					"height": 30
+					"x": 230
+					"y": 75
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "fromField"
+					"toolTipText": "Add the username you wish to message"
+					"background": #Color1
+					"foreground": #Color0
+					"font": #SwingDerivedFont0
+					"editable": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 230
+					"y": 40
+					"width": 230
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "subjectLabel"
+					"text": "Subject"
+					"foreground": &Color2 new java.awt.Color( 221, 202, 112, 255 )
+					"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 120
+					"y": 80
+					"width": 105
+					"height": 23
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "fromLabel"
+					"text": "From"
+					"foreground": #Color2
+					"font": #SwingDerivedFont1
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 120
+					"y": 45
+					"width": 65
+					"height": 23
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 585
+				"height": 470
+				"x": 0
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 145, 55 )
+			"size": new java.awt.Dimension( 585, 500 )
+		} )
+	}
+}
