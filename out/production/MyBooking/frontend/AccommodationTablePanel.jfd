@@ -1,0 +1,60 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 0, 21, 36, 255 )
+			"border": new javax.swing.border.TitledBorder( null, "Accommodations", 3, 2, new java.awt.Font( "Ubuntu", 0, 20 ), new java.awt.Color( 21, 97, 109, 255 ) )
+			"maximumSize": new java.awt.Dimension( 770, 630 )
+			"minimumSize": new java.awt.Dimension( 770, 630 )
+			"preferredSize": new java.awt.Dimension( 770, 630 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addButton"
+				"borderPainted": false
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/addAccommodation.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "add", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "add", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 680
+				"y": 35
+				"width": 90
+				"height": 30
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "accommodationTable"
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+					"fillsViewportHeight": true
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					"foreground": new java.awt.Color( 255, 236, 209, 255 )
+					"selectionMode": 0
+					"showHorizontalLines": false
+					"showVerticalLines": false
+					"focusable": false
+					"gridColor": new java.awt.Color( 0, 21, 36, 255 )
+					"rowMargin": 0
+					"rowHeight": 20
+					"selectionBackground": new java.awt.Color( 21, 97, 109, 255 )
+					"selectionForeground": new java.awt.Color( 221, 199, 160, 255 )
+					"updateSelectionOnSort": false
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "accommodationTableMouseClicked", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 705
+				"height": 545
+				"x": 45
+				"y": 85
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 775, 630 )
+		} )
+	}
+}

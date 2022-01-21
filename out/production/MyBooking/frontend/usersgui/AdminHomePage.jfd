@@ -1,0 +1,219 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"focusable": false
+			"background": new java.awt.Color( 0, 21, 36, 255 )
+			addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "thisMouseClicked", true ) )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewUsersButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/AdminHomePage/users.png" )
+				"borderPainted": false
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewUsers", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 695
+				"y": 20
+				"width": 95
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewAccommodationsButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/BrokerHomePage/accommodations.png" )
+				"borderPainted": false
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewAccommodations", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 30
+				"x": 805
+				"y": 25
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "tablePanel"
+				"minimumSize": new java.awt.Dimension( 500, 500 )
+				"maximumSize": new java.awt.Dimension( 500, 500 )
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "reservationPanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "reservationTable"
+							"background": new java.awt.Color( 0, 21, 36, 255 )
+							"fillsViewportHeight": true
+							"foreground": new java.awt.Color( 221, 199, 160, 255 )
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							"showHorizontalLines": false
+							"showVerticalLines": false
+							"focusable": false
+							"gridColor": new java.awt.Color( 0, 21, 36, 255 )
+							"rowHeight": 20
+							"selectionBackground": new java.awt.Color( 21, 97, 109, 255 )
+							"updateSelectionOnSort": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 770
+						"height": 630
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "RESERVATIONS"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "userPanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "userTable"
+							"background": new java.awt.Color( 0, 21, 36, 255 )
+							"fillsViewportHeight": true
+							"foreground": new java.awt.Color( 221, 199, 160, 255 )
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							"selectionMode": 0
+							"showVerticalLines": false
+							"showHorizontalLines": false
+							"focusable": false
+							"rowHeight": 20
+							"selectionBackground": new java.awt.Color( 21, 97, 109, 255 )
+							"updateSelectionOnSort": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 770
+						"height": 630
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card2"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "accommodationPanel"
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+					"border": new javax.swing.border.TitledBorder( null, "Accommodations", 3, 2, new java.awt.Font( "Ubuntu", 0, 20 ), new java.awt.Color( 21, 97, 109, 255 ) )
+					"maximumSize": new java.awt.Dimension( 770, 630 )
+					"minimumSize": new java.awt.Dimension( 770, 630 )
+					"preferredSize": new java.awt.Dimension( 770, 630 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addButton"
+						"borderPainted": false
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/addAccommodation.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "add", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "add", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 680
+						"y": 35
+						"width": 90
+						"height": 30
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane3"
+						"background": new java.awt.Color( 0, 21, 36, 255 )
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "accommodationTable"
+							"background": new java.awt.Color( 0, 21, 36, 255 )
+							"fillsViewportHeight": true
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+							"foreground": new java.awt.Color( 221, 199, 160, 255 )
+							"selectionMode": 0
+							"showHorizontalLines": false
+							"showVerticalLines": false
+							"focusable": false
+							"gridColor": new java.awt.Color( 0, 21, 36, 255 )
+							"rowMargin": 0
+							"rowHeight": 20
+							"selectionBackground": new java.awt.Color( 21, 97, 109, 255 )
+							"selectionForeground": new java.awt.Color( 221, 199, 160, 255 )
+							"updateSelectionOnSort": false
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 705
+						"height": 545
+						"x": 45
+						"y": 85
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "card3"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 265
+				"y": 65
+				"height": 630
+				"width": 770
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewReservationsButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/BrokerHomePage/reservations.png" )
+				"borderPainted": false
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewReservations", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 545
+				"y": 20
+				"height": 30
+				"width": 130
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/inbox/delete.png" )
+				"borderPainted": false
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delete", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 940
+				"y": 715
+				"width": 95
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "profileButton"
+				"focusable": false
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/profileIcon.png" )
+				"selectedIcon": new com.jformdesigner.model.SwingIcon( 0, "/profileIcon.png" )
+				"contentAreaFilled": false
+				"focusPainted": false
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"borderPainted": false
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "profile", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 10
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "inboxButton"
+				"focusable": false
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/inboxIcon.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "inbox", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 10
+				"y": 65
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "signoutButton"
+				"focusable": false
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/signoutIcon.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "signout", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 10
+				"y": 125
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1280, 1025 )
+		} )
+	}
+}

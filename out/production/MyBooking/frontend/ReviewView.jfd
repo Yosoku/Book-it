@@ -1,0 +1,92 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"alwaysOnTop": true
+			"defaultCloseOperation": 2
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "description"
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+					"foreground": new java.awt.Color( 255, 236, 209, 255 )
+					"lineWrap": true
+					"caretColor": new java.awt.Color( 221, 199, 160, 255 )
+					"border": new javax.swing.border.TitledBorder( "" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 190
+					"height": 85
+					"x": 300
+					"y": 145
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Description"
+					"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+					"foreground": &Color0 new java.awt.Color( 221, 199, 160, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 28
+					"x": 300
+					"y": 110
+				} )
+				add( new FormComponent( "javax.swing.JSlider" ) {
+					name: "starSlider"
+					"maximum": 5
+					"minimum": 1
+					"minorTickSpacing": 1
+					"snapToTicks": true
+					"value": 1
+					"background": new java.awt.Color( 0, 21, 36, 255 )
+					"foreground": new java.awt.Color( 221, 199, 160, 255 )
+					"paintTicks": true
+					"paintLabels": true
+					"cursor": new java.awt.Cursor( 12 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 200
+					"height": 35
+					"x": 300
+					"y": 70
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Stars"
+					"font": #SwingDerivedFont0
+					"foreground": #Color0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 50
+					"height": 25
+					"x": 300
+					"y": 45
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "submitButton"
+					"borderPainted": false
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/submitReview.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "submit", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 90
+					"height": 30
+					"x": 410
+					"y": 260
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"height": 405
+				"width": 810
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 810, 435 )
+		} )
+	}
+}

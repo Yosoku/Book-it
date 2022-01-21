@@ -1,0 +1,64 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 1920, 1080 )
+			"minimumSize": new java.awt.Dimension( 1920, 1080 )
+			"maximumSize": new java.awt.Dimension( 1920, 1080 )
+			"background": new java.awt.Color( 0, 21, 36, 255 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "signIn"
+				"toolTipText": "Already registered?Sign in"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/ConnectPanel/login.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "signIn", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 310
+				"height": 70
+				"x": 330
+				"y": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "signUp"
+				"toolTipText": "New User? Sign up!"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/ConnectPanel/register.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "signUp", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 310
+				"height": 70
+				"x": 655
+				"y": 5
+			} )
+			add( new FormComponent( "frontend.ConnectUI.SignInPanel" ) {
+				name: "signInPanel"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 330
+				"y": 110
+				"height": 340
+				"width": 309
+			} )
+			add( new FormComponent( "frontend.ConnectUI.SignUpPanel" ) {
+				name: "signUpPanel"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 655
+				"y": 95
+				"width": 310
+			} )
+			add( new FormComponent( "frontend.HelpPanel" ) {
+				name: "helpPanel1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 1140
+				"y": 0
+				"height": 1025
+				"width": 140
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 10 )
+			"size": new java.awt.Dimension( 1280, 1025 )
+		} )
+	}
+}
