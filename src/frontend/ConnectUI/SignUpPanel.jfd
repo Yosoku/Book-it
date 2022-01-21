@@ -1,0 +1,220 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 300, 380 )
+			"preferredSize": new java.awt.Dimension( 300, 380 )
+			"background": new java.awt.Color( 0, 21, 36, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "firstnameLabel"
+				"text": "First name"
+				"foreground": &Color0 new java.awt.Color( 221, 199, 160, 255 )
+				"background": &Color1 new java.awt.Color( 221, 199, 160, 255 )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lastnameLabel"
+				"text": "Last name"
+				"foreground": #Color0
+				"background": #Color1
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 155
+				"y": 10
+				"width": 130
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "emailLabel"
+				"text": "Email"
+				"foreground": #Color0
+				"background": #Color1
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 125
+				"width": 75
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "passwordLabel"
+				"text": "Password"
+				"foreground": #Color0
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField"
+				"background": &Color2 new java.awt.Color( 0, 21, 36, 255 )
+				"foreground": &Color3 new java.awt.Color( 255, 236, 209, 255 )
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				"caretColor": &Color4 new java.awt.Color( 221, 199, 160, 255 )
+				addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "passwordFieldCaretUpdate", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"y": 220
+				"width": 300
+				"height": 30
+				"x": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "phoneLabel"
+				"text": "Phone number"
+				"foreground": #Color0
+				"background": #Color1
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 275
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "maleButton"
+				"text": "Male"
+				"background": &Color5 new java.awt.Color( 0, 21, 36, 255 )
+				"foreground": &Color6 new java.awt.Color( 221, 199, 160, 255 )
+				"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 410
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "femaleButton"
+				"text": "Female"
+				"background": #Color5
+				"foreground": #Color6
+				"font": #SwingDerivedFont2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": 410
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "brokerCheckbox"
+				"text": "Broker"
+				"toolTipText": "Check if you want to register as a Broker"
+				"background": #Color5
+				"foreground": #Color6
+				"font": #SwingDerivedFont2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 80
+				"y": 530
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "usernameLabel"
+				"text": "Username"
+				"foreground": #Color0
+				"background": #Color1
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 70
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "firstnameField"
+				"background": #Color2
+				"foreground": #Color3
+				"font": #SwingDerivedFont1
+				"caretColor": #Color4
+				addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "firstnameFieldCaretUpdate", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"y": 30
+				"height": 30
+				"width": 140
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "lastnameField"
+				"background": #Color2
+				"foreground": #Color3
+				"font": #SwingDerivedFont1
+				"caretColor": #Color4
+				addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "lastnameFieldCaretUpdate", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 150
+				"y": 30
+				"width": 150
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "usernameField"
+				"background": #Color2
+				"foreground": #Color3
+				"font": #SwingDerivedFont1
+				"caretColor": #Color4
+				addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "usernameFieldCaretUpdate", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"y": 90
+				"width": 300
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "emailField"
+				"background": #Color2
+				"foreground": #Color3
+				"font": #SwingDerivedFont1
+				"caretColor": #Color4
+				addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "emailFieldCaretUpdate", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"y": 150
+				"width": 300
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "phoneField"
+				"background": #Color2
+				"foreground": #Color3
+				"font": #SwingDerivedFont1
+				"caretColor": #Color4
+				addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "phoneFieldCaretUpdate", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"y": 295
+				"width": 300
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JSlider" ) {
+				name: "ageSlider"
+				"majorTickSpacing": 15
+				"minimum": 18
+				"maximum": 98
+				"value": 18
+				"background": #Color2
+				"foreground": new java.awt.Color( 221, 199, 160, 255 )
+				addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "ageSliderStateChanged", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 375
+				"height": 30
+				"width": 290
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ageLabel"
+				"text": "Age:18"
+				"background": #Color1
+				"font": #SwingDerivedFont0
+				"foreground": new java.awt.Color( 221, 199, 160, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 345
+				"width": 70
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "enterButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/ConnectPanel/signup.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"borderPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "signUpButton", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 100
+				"height": 40
+				"x": 175
+				"y": 520
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 255, 0 )
+			"size": new java.awt.Dimension( 310, 570 )
+		} )
+	}
+}

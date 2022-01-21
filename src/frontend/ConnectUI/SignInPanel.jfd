@@ -1,0 +1,75 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 300, 300 )
+			"maximumSize": new java.awt.Dimension( 300, 300 )
+			"preferredSize": new java.awt.Dimension( 300, 300 )
+			"background": new java.awt.Color( 0, 21, 36, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "usernameLabel"
+				"text": "Username"
+				"background": new java.awt.Color( 221, 199, 160, 255 )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+				"foreground": new java.awt.Color( 221, 199, 160, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 5
+				"width": 110
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "usernameField"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				"foreground": &Color0 new java.awt.Color( 255, 236, 209, 255 )
+				"caretColor": &Color1 new java.awt.Color( 255, 236, 209, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 30
+				"width": 300
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "passwordLabel"
+				"text": "Password"
+				"foreground": new java.awt.Color( 221, 199, 160, 255 )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 70
+				"width": 100
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				"font": #SwingDerivedFont0
+				"foreground": #Color0
+				"caretColor": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 90
+				"width": 300
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "enterButton"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/ConnectPanel/signin.png" )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"borderPainted": false
+				"cursor": new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "enter", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 190
+				"y": 140
+				"width": 100
+				"height": 40
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 330, 0 )
+			"size": new java.awt.Dimension( 305, 300 )
+		} )
+	}
+}
