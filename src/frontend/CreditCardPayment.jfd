@@ -1,0 +1,134 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.generateCode": false
+		}
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 21, 36, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Payment details"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 15, false )
+					"horizontalAlignment": 0
+					"foreground": &Color0 new java.awt.Color( 255, 236, 209, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 445
+					"height": 65
+					"x": 195
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Name on Card"
+					"foreground": #Color0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"y": 105
+					"width": 110
+					"height": 25
+					"x": 195
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nameField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"y": 128
+					"width": 445
+					"height": 30
+					"x": 195
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Card Number"
+					"foreground": #Color0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 110
+					"height": 25
+					"y": 185
+					"x": 195
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "cardNumberField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 445
+					"height": 30
+					"y": 209
+					"x": 195
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "CVV Number"
+					"foreground": #Color0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 110
+					"height": 25
+					"y": 260
+					"x": 195
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "CVVfield"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"y": 290
+					"width": 85
+					"height": 30
+					"x": 195
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Expires"
+					"foreground": #Color0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 30
+					"x": 370
+					"y": 255
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "monthBox"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -3, false )
+					"foreground": &Color1 new java.awt.Color( 255, 236, 209, 255 )
+					"background": &Color2 new java.awt.Color( 21, 97, 109, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 370
+					"y": 285
+					"width": 40
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "yearBox"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -3, false )
+					"foreground": #Color1
+					"background": #Color2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 35
+					"x": 410
+					"y": 285
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "payButton"
+					"text": "Pay"
+					"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pay", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 560
+					"y": 370
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 805
+				"height": 475
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 805, 505 )
+		} )
+	}
+}
