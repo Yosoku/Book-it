@@ -22,7 +22,8 @@ public class Configurations {
     public static final String PHONE_REGEX = "^\\d{10}$";
     public static final Color INVALID_TEXT_COLOR = Color.red;
     public static final Color VALID_TEXT_COLOR = Color.GREEN;
-    public static final String POSITIVE_INTEGER_REGEX = "^[0-9]\\d*$";
+    public static final String POSITIVE_INTEGER_REGEX = "^[1-9]\\d*$";
+    public static final String CITY_REGEX = "^[a-zA-Z\\u0080-\\u024F]+(?:. |-| |')*([1-9a-zA-Z\\u0080-\\u024F]+(?:. |-| |'))*[a-zA-Z\\u0080-\\u024F]*$";
     public static final String ANY_WORD = "^[A-Za-z]*$";
     public static final String ADDRESS_REGEX = "^[A-Za-z]+\\s[0-9]{1,3}$";
     public static final String ANY_TEXT_REGEX = ".*";
