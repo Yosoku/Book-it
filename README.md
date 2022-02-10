@@ -4,7 +4,7 @@
 
 ### Version 2.0
 
-**Book it** is a desktop Application Booking clone created in Java.
+**Book it** is a desktop Application [Booking](https://www.booking.com/index.el.html) clone created in Java. The project was a part of the of the Java curriculum in the University of Aristotle.
 
 ### Authors
 
