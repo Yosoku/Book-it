@@ -4,9 +4,11 @@
 
 ### Version 2.0
 
+**Book it** is a desktop Application Booking clone created in Java.
+
 ### Authors
 
-    Edouardos Koulakidis ID 2938
+    Edward Koulakidis
 
 ### Features in v2.0
 
@@ -14,13 +16,13 @@
 - User messaging
 - Secure password storing using 512 bit digest [SHA-2](https://en.wikipedia.org/wiki/SHA-2)
 - Regulated input using [Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression)
-- GUI
+- Swing GUI
 - Complete Documentation
 - 100.000 Users and 10.000 Accommodations
 
-Below are 4 Admin accounts to test **Admin** features and 2 dummy accounts for **Broker** & **Customer**
+Below are 4 Admin accounts to test **Admin** features and 2 dummy accounts for **Broker** & **Customer** access.
 
-Note that the Credentials below are case **SENSITIVE**
+Note that the Credentials are case **SENSITIVE**
 
 | Admin               | Username  |       Password |                 Email |
 | :------------------ | :-------: | -------------: | --------------------: |
@@ -36,13 +38,11 @@ Note that the Credentials below are case **SENSITIVE**
 
 ### Getting Started
 
-#### Clone
-
 `git clone https://github.com/auth-csd-oop-2021/mybooking-team-rocket.git`
 
 ### Credit Card Generator
 
-You will need a valid Credit Card to book rooms in the application,this link will [help](https://www.vccgenerator.org/)
+You will need a valid Credit Card to book rooms in the application,this [link](https://www.vccgenerator.org/) will help.
 
 ### Datasets
 
